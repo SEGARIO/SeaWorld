@@ -5,25 +5,49 @@ public class blockChangeScriot : MonoBehaviour
     public Renderer[] _renderers;
     public Material[] _wetSprites;
     public Material[] drySprites;
-
-    WeatherManager _weatherManager;
+    public int _distance;
+    public GameObject _water;
+    bool _canChangeRandom;
+    int random ;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _weatherManager = FindObjectOfType<WeatherManager>();
+        random = Random.Range(0, 2);
+        _canChangeRandom = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(_weatherManager._isDry)
+        if(this.transform.position.y > _water.transform.position.y + _distance)
         {
             for (int i = 0; i < _renderers.Length; i++)
             {
                 _renderers[i].material = drySprites[i];
             }
         }
-        if (!_weatherManager._isDry)
+        if (this.transform.position.y == _water.transform.position.y + _distance + 1)
+        {
+            
+
+            if(random == 0)
+            {
+                for (int i = 0; i < _renderers.Length; i++)
+                {
+                    _renderers[i].material = _wetSprites[i];
+                }
+            }
+            else
+            {
+                for (int i = 0; i < _renderers.Length; i++)
+                {
+                    _renderers[i].material = drySprites[i];
+                }
+            }
+          
+        }
+
+        if (this.transform.position.y < _water.transform.position.y + _distance + 1)
         {
             for (int i = 0; i < _renderers.Length; i++)
             {
