@@ -63,6 +63,17 @@ public class blockChangeScriot : MonoBehaviour
                 _renderers[i].material.color = _wetColor;
             }
         }
+        if (this.transform.position.y == _water.transform.position.y + 1)
+        {
+            if (random == 0)
+            {
+                for (int i = 0; i < _renderers.Length; i++)
+                {
+                    _renderers[i].material.color = _wetColor;
+                }
+            }
+           
+        }
     }
 
 
