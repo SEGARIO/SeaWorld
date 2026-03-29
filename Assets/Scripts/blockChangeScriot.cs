@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class blockChangeScriot : MonoBehaviour
 {
+    public Color _wetColor;
     public Renderer[] _renderers;
     public Material[] _wetSprites;
     public Material[] drySprites;
@@ -12,6 +13,7 @@ public class blockChangeScriot : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _water = GameObject.FindWithTag("Water");
         random = Random.Range(0, 2);
         _canChangeRandom = true;
     }
@@ -52,6 +54,13 @@ public class blockChangeScriot : MonoBehaviour
             for (int i = 0; i < _renderers.Length; i++)
             {
                 _renderers[i].material = _wetSprites[i];
+            }
+        }
+        if (this.transform.position.y == _water.transform.position.y)
+        {
+            for (int i = 0; i < _renderers.Length; i++)
+            {
+                _renderers[i].material.color = _wetColor;
             }
         }
     }
