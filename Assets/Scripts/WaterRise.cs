@@ -6,7 +6,7 @@ public class WaterRise : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        this.transform.position = new Vector3(0, -14, 0);
         _allBlocks = FindObjectsOfType<blockChangeScriot>();
         WaterElevate();
     }
