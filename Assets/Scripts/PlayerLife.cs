@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class TouchedByBullet : MonoBehaviour
+public class PlayerLife : MonoBehaviour
 {
     public Renderer[] _renderers;
-    
+
     public Color[] _originalColors;
     public Color _hitColor;
-    public EnemyScript _enemyScript;
+    public int _life;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,22 +20,23 @@ public class TouchedByBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag ==  "Bullet")
+        if (collision.gameObject.tag == "Enemy")
         {
             for (int i = 0; i < _renderers.Length; i++)
             {
                 _renderers[i].material.color = _hitColor;
-                
+
                 Invoke("OriginalColors", 0.1f);
             }
-            _enemyScript._life -= 1;
-            _enemyScript.DetectPlayer();
-           Destroy(collision.gameObject);
+            _life -= 1;
+            GameFeel.Instance.PlayJuice(1.5f, 0.3f);
+            GameFeel.Instance.Flash(0.1f);
+
         }
     }
 
