@@ -8,13 +8,14 @@ public class PNJScript : MonoBehaviour
     public DialogueSystem _dialogueSystem;
     public GameObject _pressA;
     public GameObject _dialogueCanvas;
+    bool _canStart = true;
 
     void Update()
     {
         if (_dialogueSystem.IsDialogueFinished())
         {
             player.GetComponent<PlayerController>().enabled = true;
-            _pressA.SetActive(true);
+            _canStart = true;
             _dialogueCanvas.SetActive(false);
         }
         if (player == null) return;
@@ -25,13 +26,24 @@ public class PNJScript : MonoBehaviour
         {
             if (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
             {
+                if(_canStart)
+                {
+                    _dialogueSystem.StartDialogue();
+                    _canStart = false;
+                }
+                
                 Interact();
-                _pressA.SetActive(false);
+               
             }
             else
             {
                 
             }
+            _pressA.SetActive(true);
+        }
+        else
+        {
+            _pressA.SetActive(false);
         }
     }
 

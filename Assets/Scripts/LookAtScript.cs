@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class LookAtScript : MonoBehaviour
 {
+    public GameObject _target;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,6 +12,6 @@ public class LookAtScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.LookAt(_target.transform);
     }
 }
