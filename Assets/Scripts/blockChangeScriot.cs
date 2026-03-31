@@ -19,7 +19,7 @@ public class blockChangeScriot : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void WaterRise()
     {
         if(this.transform.position.y > _water.transform.position.y + _distance)
         {
