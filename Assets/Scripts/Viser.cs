@@ -3,10 +3,13 @@ using UnityEngine.InputSystem;
 
 public class Viser : MonoBehaviour
 {
-    public Transform center;        // point autour duquel tourner
-    public float maxDistance = 5f;  // distance max
-    public float height = 1.5f;     // hauteur optionnelle
-    public float smoothSpeed = 10f; // fluidité
+    public Transform center;
+    public float maxDistance = 5f;
+    public float height = 1.5f;
+    public float smoothSpeed = 10f;
+
+    [Header("Scale")]
+    public float maxScale = 1f; // taille max quand joystick à fond
 
     private Vector2 lookInput;
     private Vector3 currentOffset;
@@ -15,27 +18,32 @@ public class Viser : MonoBehaviour
     {
         if (center == null) return;
 
-        // Direction du joystick (X = droite/gauche, Y = avant/arrière)
         Vector3 direction = new Vector3(lookInput.x, 0f, lookInput.y);
-
-        // Distance dépend de la force du joystick
         float magnitude = Mathf.Clamp01(direction.magnitude);
 
-        Vector3 targetOffset = direction.normalized * magnitude * maxDistance;
+        Vector3 targetOffset = Vector3.zero;
 
-        // Lerp pour un mouvement fluide
+        if (direction != Vector3.zero)
+        {
+            targetOffset = direction.normalized * magnitude * maxDistance;
+        }
+
         currentOffset = Vector3.Lerp(currentOffset, targetOffset, smoothSpeed * Time.deltaTime);
 
-        // Position finale
         Vector3 targetPosition = center.position + currentOffset + Vector3.up * height;
-
         transform.position = targetPosition;
 
-        // Optionnel : regarder le centre
         transform.LookAt(center);
+
+        // 🔥 SCALE basé sur la distance
+        float distance = currentOffset.magnitude;
+        float t = distance / maxDistance; // normalisé entre 0 et 1
+
+        float scaleValue = t * maxScale;
+
+        transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
     }
 
-    // Input System
     public void OnLook(InputValue value)
     {
         lookInput = value.Get<Vector2>();

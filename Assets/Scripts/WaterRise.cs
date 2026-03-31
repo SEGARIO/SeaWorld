@@ -6,8 +6,9 @@ public class WaterRise : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        WaterElevate();
+        
         _allBlocks = FindObjectsOfType<blockChangeScriot>();
+        WaterElevate();
     }
 
     // Update is called once per frame
