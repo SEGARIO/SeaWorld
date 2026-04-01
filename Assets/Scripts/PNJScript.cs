@@ -3,18 +3,25 @@ using UnityEngine.InputSystem;
 
 public class PNJScript : MonoBehaviour
 {
+    public bool _canRotate;
     public Transform player;
     public float range = 3f;
     public DialogueSystem _dialogueSystem;
     public GameObject _pressA;
     public GameObject _dialogueCanvas;
     bool _canStart = true;
+    Animator _animator;
 
+    private void Start()
+    {
+        _animator = GetComponentInChildren<Animator>();
+    }
     void Update()
     {
         if (_dialogueSystem.IsDialogueFinished())
         {
             Debug.Log("Finished");
+            _animator.SetBool("IsTalking", false);
             //player.GetComponent<PlayerController>().enabled = true;
             _canStart = true;
             _dialogueCanvas.SetActive(false);
@@ -52,6 +59,7 @@ public class PNJScript : MonoBehaviour
 
     void Interact()
     {
+        _animator.SetBool("IsTalking", true);
         _dialogueSystem.enabled = true;
         _dialogueCanvas.SetActive(true);
         player.GetComponent<PlayerController>().enabled = false;
