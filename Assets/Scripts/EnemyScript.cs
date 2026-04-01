@@ -44,7 +44,7 @@ public class EnemyScript : MonoBehaviour
 
             float distance = Vector3.Distance(transform.position, player.position);
 
-            Debug.Log("Distance au player : " + distance);
+            //Debug.Log("Distance au player : " + distance);
 
             if(distance <= _enemy._detectionRange)
             {

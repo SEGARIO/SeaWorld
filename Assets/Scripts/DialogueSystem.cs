@@ -14,6 +14,12 @@ public class DialogueSet
 
 public class DialogueSystem : MonoBehaviour
 {
+    [Header("Sound")]
+    public AudioSource audioSource;
+    public AudioClip letterSound;
+    public float pitchVariation = 0.2f;
+    public int soundFrequency = 2;
+
     [Header("UI")]
     public TextMeshProUGUI dialogueText;
 
@@ -76,6 +82,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void StartDialogue()
     {
+        
         currentIndex = 0;
         dialogueFinished = false;
         StartCoroutine(TypeText());
@@ -85,10 +92,21 @@ public class DialogueSystem : MonoBehaviour
     {
         isTyping = true;
         dialogueText.text = "";
-
-        foreach (char letter in currentDialogues[currentIndex])
+        int letterCount = 0;
+        foreach (char letter in currentDialogues[currentIndex]) // ou dialogues si t’as pas changé
         {
             dialogueText.text += letter;
+
+            if (audioSource != null && letterSound != null && letter != ' ')
+            {
+                if (letterCount % soundFrequency == 0)
+                {
+                    audioSource.pitch = 1f + Random.Range(-pitchVariation, pitchVariation);
+                    audioSource.PlayOneShot(letterSound);
+                }
+            }
+
+            letterCount++;
             yield return new WaitForSeconds(typingSpeed);
         }
 
@@ -112,6 +130,7 @@ public class DialogueSystem : MonoBehaviour
     void EndDialogue()
     {
         dialogueFinished = true;
+        FindObjectOfType<PlayerController>().enabled = true;
         Debug.Log("Dialogue terminé !");
     }
 

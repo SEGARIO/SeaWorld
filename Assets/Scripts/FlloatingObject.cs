@@ -5,6 +5,7 @@ public class FlloatingObject : MonoBehaviour
     public GameObject _water;
     bool _isFloating;
     public GameObject _waterVisual;
+    public bool _canFloat;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,14 +15,25 @@ public class FlloatingObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(this.transform.position.y == _water.transform.position.y)
+        if(_canFloat)
         {
-            _isFloating = true;
-        }
+            if (this.transform.position.y == _water.transform.position.y)
+            {
+                _isFloating = true;
+            }
 
-        if(_isFloating)
-        {
-            this.transform.position = new Vector3(this.transform.position.x, _waterVisual.transform.position.y, this.transform.position.z);
+            if (_isFloating)
+            {
+                this.transform.position = new Vector3(this.transform.position.x, _waterVisual.transform.position.y, this.transform.position.z);
+            }
         }
+        else
+        {
+            if (this.transform.position.y == _water.transform.position.y)
+            {
+                Destroy(gameObject);
+            }
+        }
+       
     }
 }

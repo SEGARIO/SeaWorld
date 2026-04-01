@@ -14,7 +14,8 @@ public class PNJScript : MonoBehaviour
     {
         if (_dialogueSystem.IsDialogueFinished())
         {
-            player.GetComponent<PlayerController>().enabled = true;
+            Debug.Log("Finished");
+            //player.GetComponent<PlayerController>().enabled = true;
             _canStart = true;
             _dialogueCanvas.SetActive(false);
         }
@@ -40,10 +41,12 @@ public class PNJScript : MonoBehaviour
                 
             }
             _pressA.SetActive(true);
+            _dialogueSystem.enabled = true;
         }
         else
         {
             _pressA.SetActive(false);
+            _dialogueSystem.enabled = false;
         }
     }
 
