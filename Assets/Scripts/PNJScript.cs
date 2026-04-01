@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PNJScript : MonoBehaviour
 {
@@ -11,17 +12,27 @@ public class PNJScript : MonoBehaviour
     public GameObject _dialogueCanvas;
     bool _canStart = true;
     Animator _animator;
-
+    Quaternion initialRotation;
     private void Start()
     {
         _animator = GetComponentInChildren<Animator>();
+        if(_canRotate)
+        {
+            initialRotation = transform.rotation;
+
+        }
     }
     void Update()
     {
         if (_dialogueSystem.IsDialogueFinished())
         {
             Debug.Log("Finished");
-            _animator.SetBool("IsTalking", false);
+            if (_animator != null)
+
+            {
+                _animator.SetBool("IsTalking", false);
+            }
+            
             //player.GetComponent<PlayerController>().enabled = true;
             _canStart = true;
             _dialogueCanvas.SetActive(false);
@@ -59,7 +70,17 @@ public class PNJScript : MonoBehaviour
 
     void Interact()
     {
-        _animator.SetBool("IsTalking", true);
+        if(_canRotate)
+        {
+            transform.rotation = Quaternion.Euler(0f, Quaternion.LookRotation(player.position - transform.position).eulerAngles.y, 0f);
+
+        }
+        if (_animator != null)
+
+        {
+            _animator.SetBool("IsTalking", true);
+        }
+       
         _dialogueSystem.enabled = true;
         _dialogueCanvas.SetActive(true);
         player.GetComponent<PlayerController>().enabled = false;
