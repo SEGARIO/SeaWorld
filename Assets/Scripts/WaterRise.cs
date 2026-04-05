@@ -9,7 +9,7 @@ public class WaterRise : MonoBehaviour
     void Start()
     {
         _dialogues = FindObjectsOfType<DialogueSystem>();
-        this.transform.position = new Vector3(0, -14, 0);
+        this.transform.position = new Vector3(0, -15, 0);
         _allBlocks = FindObjectsOfType<blockChangeScriot>();
         _allActivables = FindObjectsOfType<LevelActivate>();
         WaterElevate();
