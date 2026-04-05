@@ -3,6 +3,7 @@ using UnityEngine;
 public class WaterRise : MonoBehaviour
 {
     blockChangeScriot[] _allBlocks;
+    LevelActivate[] _allActivables;
     public DialogueSystem[] _dialogues;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -10,6 +11,7 @@ public class WaterRise : MonoBehaviour
         _dialogues = FindObjectsOfType<DialogueSystem>();
         this.transform.position = new Vector3(0, -14, 0);
         _allBlocks = FindObjectsOfType<blockChangeScriot>();
+        _allActivables = FindObjectsOfType<LevelActivate>();
         WaterElevate();
     }
 
@@ -31,6 +33,10 @@ public class WaterRise : MonoBehaviour
         {
             _allBlocks[i].WaterRise();
          }
+        for (int i = 0; i < _allActivables.Length; i++)
+        {
+            _allActivables[i].WaterRise();
+        }
         for (int i = 0; i < _dialogues.Length; i++)
         {
             _dialogues[i].SetWaterLevel((int)this.transform.position.y);
