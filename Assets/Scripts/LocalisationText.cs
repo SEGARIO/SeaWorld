@@ -23,7 +23,17 @@ public class LocalisationText : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            _text.text = _names[(int)_water.gameObject.transform.position.y +13];
+            
+
+            if(_water.gameObject.transform.position.y <= -13)
+            {
+                _text.text = _names[0];
+            }
+            else
+            {
+                _text.text = _names[(int)_water.gameObject.transform.position.y + 13];
+            }
+
             _anim.SetTrigger("Activate");
         }
     }
