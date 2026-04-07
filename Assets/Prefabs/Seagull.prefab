@@ -830,6 +830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2482593876513034590}
   - component: {fileID: 5666584773643894286}
+  - component: {fileID: 4375731580441263220}
   m_Layer: 0
   m_Name: Seagull
   m_TagString: Untagged
@@ -878,3 +879,18 @@ MonoBehaviour:
   _pressA: {fileID: 7597977247859402408}
   _givesItem: 1
   item: {fileID: 11400000, guid: 7d602bf143c2d9242994efbaa1f946ee, type: 2}
+--- !u!114 &4375731580441263220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9032141302967931520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f6824a164353b418a145741f32a032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _water: {fileID: 0}
+  _waterVisual: {fileID: 0}
+  _canFloat: 0
