@@ -25,13 +25,13 @@ public class LocalisationText : MonoBehaviour
         {
             
 
-            if(_water.gameObject.transform.position.y <= -13)
+            if(_water.gameObject.transform.position.y <= -14)
             {
                 _text.text = _names[0];
             }
             else
             {
-                _text.text = _names[(int)_water.gameObject.transform.position.y + 12];
+                _text.text = _names[(int)_water.gameObject.transform.position.y + 14];
             }
 
             _anim.SetTrigger("Activate");
