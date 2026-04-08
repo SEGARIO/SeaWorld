@@ -31,7 +31,7 @@ public class LocalisationText : MonoBehaviour
             }
             else
             {
-                _text.text = _names[(int)_water.gameObject.transform.position.y + 13];
+                _text.text = _names[(int)_water.gameObject.transform.position.y + 12];
             }
 
             _anim.SetTrigger("Activate");
