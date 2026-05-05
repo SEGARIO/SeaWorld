@@ -20,6 +20,7 @@ public class FlloatingObject : MonoBehaviour
             if (this.transform.position.y == _water.transform.position.y)
             {
                 _isFloating = true;
+                Debug.Log("IsFloating");
             }
 
             if (_isFloating)
