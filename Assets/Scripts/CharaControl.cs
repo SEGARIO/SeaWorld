@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using static UnityEngine.Rendering.DebugUI;
 
 public class CharaControl : MonoBehaviour
 {
@@ -7,10 +9,12 @@ public class CharaControl : MonoBehaviour
     public GameObject _ui;
     public GameObject _moveOpt;
     public GameObject _attackOpt;
-    public GameObject _attackPrefab;
 
-   
-   
+    public Text _AttackCost;
+    public Text _MoveCost;
+
+    public UnityEngine.UI.Button _attackButton;
+    public UnityEngine.UI.Button _moveButton;
 
     public float speed = 2f;
 
@@ -27,6 +31,14 @@ public class CharaControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(_playerManager._mana < _character._attackCost)
+        {
+            _attackButton.interactable = false;
+        }
+        if (_playerManager._mana < _character._moveCost)
+        {
+            _moveButton.interactable = false;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -48,6 +60,8 @@ public class CharaControl : MonoBehaviour
     void Clicked()
     {
         _ui.SetActive(true);
+        _MoveCost.text = "Cost : " + _character._moveCost;
+        _AttackCost.text = "Cost : " + _character._attackCost;
         _playerManager._character = this;
     }
 

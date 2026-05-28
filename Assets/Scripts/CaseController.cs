@@ -123,6 +123,7 @@ public class CaseController : MonoBehaviour
         if(_caseSelectedM)
         {
             _playerManager._destination.SetActive(true);
+            _playerManager._mana -= _playerManager._character._character._moveCost;
             Invoke("DestroyDest", 1);
             _playerManager._destination.transform.position = this.transform.position;
             _playerManager._canMoveCharacter = true;
@@ -132,6 +133,7 @@ public class CaseController : MonoBehaviour
         }
         if (_caseSelectedA)
         {
+            _playerManager._mana -= _playerManager._character._character._attackCost;
            Instantiate(_playerManager._character._character._attackPrefab, this.transform.position, Quaternion.identity);
         }
 
