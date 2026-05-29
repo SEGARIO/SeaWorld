@@ -17,8 +17,25 @@ public class SO_Characters : ScriptableObject
         Sound,
         Electric,
         Plant,
+        Metal,
+        Poison,
+        Magic,
+        Food,
+        Space,
+        Light,
     }
     public Type _type;
+
+    public enum Piece
+    {
+        King,
+        Queen,
+        Knight,
+        Bishop,
+        Tower,
+        Pawn,
+    }
+    public Piece _piece;
     public enum PlayType
     {
        Support,
