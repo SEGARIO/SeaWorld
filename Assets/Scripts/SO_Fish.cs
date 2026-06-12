@@ -7,6 +7,7 @@ public class SO_Fish : ScriptableObject
     public string _name;
     public string _description;
     public int _life;
+    public int _price;
     public GameObject _visual;
     [Flags]
     public enum Apat
@@ -52,5 +53,6 @@ public class SO_Fish : ScriptableObject
     public Times _times;
 
     public int _timeBeforeCatch;
+    public int _timeBeforeRun;
     public int _encounters;
 }

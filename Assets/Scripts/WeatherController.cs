@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using static SO_Fish;
 
 public class WeatherController : MonoBehaviour
 {
@@ -11,16 +12,61 @@ public class WeatherController : MonoBehaviour
     public SO_Fish.Times _currentTime;
     public GameObject _bulle;
     public Vising _vising;
+
+    [Header("Weather")]
+    public GameObject _rain;
+    public GameObject _sun;
+    public GameObject _storm;
+    public GameObject _snow;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+       NewWeather();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void NewWeather()
+    {
+        _currentWeather = (SO_Fish.Weathers)(1 << Random.Range(0, 4));
+        Invoke("NewWeather", Random.Range(30, 120));
+
+        if (_currentWeather == Weathers.Snow)
+        {
+
+            _snow.SetActive(true);
+            _rain.SetActive(false);
+            _storm.SetActive(false);
+            _sun.SetActive(false);
+        }
+        if (_currentWeather == Weathers.Sunny)
+        {
+
+            _snow.SetActive(false);
+            _rain.SetActive(false);
+            _storm.SetActive(false);
+            _sun.SetActive(true);
+        }
+        if (_currentWeather == Weathers.Rainy)
+        {
+
+            _snow.SetActive(false);
+            _rain.SetActive(true);
+            _storm.SetActive(false);
+            _sun.SetActive(false);
+        }
+        if (_currentWeather == Weathers.Thunder)
+        {
+
+            _snow.SetActive(false);
+            _rain.SetActive(false);
+            _storm.SetActive(true);
+            _sun.SetActive(false);
+        }
     }
 
     public void RefreshFishList()
@@ -43,16 +89,27 @@ public class WeatherController : MonoBehaviour
                     {
                         fishes.Add(_bestiary._fishes[i]);
                         _currentFish = fishes[Random.Range(0, fishes.Count)];
-                        Invoke("Bite", _currentFish._timeBeforeCatch);
+                        
                     }
                 }
             }
         }
+        Invoke("Bite", _currentFish._timeBeforeCatch);
     }
 
     void Bite()
     {
+        Debug.Log("Bite");
         _vising._canCatch = true;
-        _bulle.SetActive(true);    
+        _bulle.SetActive(true);
+        Invoke("Run", _currentFish._timeBeforeRun);
+    }
+
+    void Run()
+    {
+        Debug.Log("Run");
+        _vising._canCatch = false;
+        _bulle.SetActive(false);
+        RefreshFishList();
     }
 }

@@ -9,6 +9,7 @@ public class Bestiary : MonoBehaviour
     public Transform _fishDisplay;
     GameObject _fishDisplayed;
     public GameObject _noData;
+    public Animator _animBook;
     int value;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,19 +37,23 @@ public class Bestiary : MonoBehaviour
 
     void NextFish()
     {
+
         value += 1;
+        _animBook.SetTrigger("Play");
         DisplayFish();
        
     }
     void PreviousFish()
     {
         value -= 1;
+        _animBook.SetTrigger("Unplay");
         DisplayFish();
 
     }
 
     void DisplayFish()
     {
+        
         Destroy(_fishDisplayed);
         _currentDisplayFish = _fishes[value];
         if (_currentDisplayFish._encounters > 0)

@@ -62,8 +62,9 @@ public class Vising : MonoBehaviour
                 objectToMove.transform.position = hit.point;
             }
 
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0) )
             {
+                Debug.Log("REFRESH");
                 _isVising = false;
                 _cane.SetActive(true);
                 _anim.SetTrigger("Drop");
@@ -101,7 +102,7 @@ public class Vising : MonoBehaviour
     void Catching()
     {
         Debug.Log("Click");
-        if(!_isVising)
+        if(!_isVising && _canCatch)
         {
            
             _life -= 1;
@@ -147,16 +148,22 @@ public class Vising : MonoBehaviour
         //_animParent.SetTrigger("Activate");
         _parentVisual.SetActive(false);
         Destroy(_visual);
-        _isVising = true;
+        
         _anim.SetTrigger("Restart");
         _viser.SetActive(true);
         _sphereApat.localScale = new Vector3(1, 0.8f  ,1);
         _Apat.localScale = new Vector3(0, 0 ,0);
         
         _canClick = false;
-        //_weather.RefreshFishList();
-      
 
+        //_weather.RefreshFishList();
+        Invoke("IsVising", 0.5f);
+
+    }
+
+    void IsVising()
+    {
+        _isVising = true;
     }
     public void SetIntensity(float value)
     {
