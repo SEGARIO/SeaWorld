@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bestiary : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class Bestiary : MonoBehaviour
     public GameObject _noData;
     public Animator _animBook;
     int value;
+
+    public Text _nameText;
+    public Text _description;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -56,13 +60,18 @@ public class Bestiary : MonoBehaviour
         
         Destroy(_fishDisplayed);
         _currentDisplayFish = _fishes[value];
+        
         if (_currentDisplayFish._encounters > 0)
         {
             _fishDisplayed = Instantiate(_currentDisplayFish._visual, _fishDisplay.position, Quaternion.identity, _fishDisplay);
+            _nameText.text = _fishes[value]._name;
+            _description.text = _fishes[value]._description;
         }
         else
         {
             _fishDisplayed = Instantiate(_noData, _fishDisplay.position, Quaternion.identity, _fishDisplay);
+            _nameText.text = "???";
+            _description.text = "Not encountered yet.";
         }
     }
 }

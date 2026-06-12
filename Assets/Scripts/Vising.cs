@@ -6,6 +6,7 @@ using static UnityEditor.FilePathAttribute;
 
 public class Vising : MonoBehaviour
 {
+    public int _money;
     [SerializeField] private Camera cam;
     [SerializeField] private GameObject objectToMove;
     [SerializeField] private LayerMask planeLayer;
@@ -130,6 +131,7 @@ public class Vising : MonoBehaviour
         Debug.Log("Catched" + _weather._currentFish);
         _controller.mouseSensitivity = 0;
         _weather._currentFish._encounters += 1;
+        _money += _weather._currentFish._price;
         _cane.SetActive(false);
         _viser.SetActive(false);
         _press.SetActive(false);
