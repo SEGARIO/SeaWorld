@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UIElements;
 using static UnityEditor.FilePathAttribute;
 
@@ -23,8 +25,25 @@ public class Vising : MonoBehaviour
     bool _canClick;
     public Transform _sphereApat;
     public Transform _Apat;
+    [SerializeField] private Volume volume;
+    [SerializeField] private float intensity = -0.5f;
+    public bool _canCatch;
+
+    private LensDistortion lensDistortion;
+
+    private Vignette vignette;
+    GameFeel _gamefeel;
     private void Start()
     {
+        _gamefeel = FindObjectOfType<GameFeel>();
+        if (volume.profile.TryGet(out lensDistortion))
+        {
+            lensDistortion.intensity.value = intensity;
+        }
+        if (volume.profile.TryGet(out vignette))
+        {
+            vignette.intensity.value = 0;
+        }
         _animParent = _parentVisual.GetComponent<Animator>();
         _controller = GetComponent<FPSController>();
         _canDisplay = true;
@@ -55,7 +74,7 @@ public class Vising : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0) && _canCatch)
             {
                 Catching();
             }
@@ -84,10 +103,17 @@ public class Vising : MonoBehaviour
         Debug.Log("Click");
         if(!_isVising)
         {
-            
+           
             _life -= 1;
+            
+            if(_life > 0)
+            {
+                _gamefeel.PlayJuice(0.5f, 0.05f);
+                SetIntensity(-0.5f);
+                SetIntensityV(-0.4f);
+            }
 
-            if(_life <= 0 && _canDisplay)
+            if (_life <= 0 && _canDisplay)
             {
                 Catch();
             }
@@ -107,9 +133,12 @@ public class Vising : MonoBehaviour
         _viser.SetActive(false);
         _press.SetActive(false);
         Invoke("CanClick", 1);
+        SetIntensity(0);
+        SetIntensityV(0);
     }
     void CanClick()
     {
+        _canCatch = false;
         _canClick = true;
     }
     void ClickNext()
@@ -126,7 +155,21 @@ public class Vising : MonoBehaviour
         
         _canClick = false;
         //_weather.RefreshFishList();
+      
 
     }
-
+    public void SetIntensity(float value)
+    {
+        if (lensDistortion != null)
+        {
+            lensDistortion.intensity.value = value;
+        }
+    }
+    public void SetIntensityV(float value)
+    {
+        if (vignette != null)
+        {
+            vignette.intensity.value = value;
+        }
+    }
 }

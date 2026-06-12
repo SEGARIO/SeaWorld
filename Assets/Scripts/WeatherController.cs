@@ -10,6 +10,7 @@ public class WeatherController : MonoBehaviour
     public SO_Fish.Weathers _currentWeather;
     public SO_Fish.Times _currentTime;
     public GameObject _bulle;
+    public Vising _vising;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -51,6 +52,7 @@ public class WeatherController : MonoBehaviour
 
     void Bite()
     {
+        _vising._canCatch = true;
         _bulle.SetActive(true);    
     }
 }
