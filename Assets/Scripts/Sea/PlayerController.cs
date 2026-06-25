@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Vector2 moveInput;
     private Vector3 velocity;
-
+    public ParticleSystem _smokeParticles;
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -30,6 +30,11 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
             controller.Move(move * speed * Time.deltaTime);
+            _smokeParticles.startLifetime = 1;
+        }
+        else
+        {
+            _smokeParticles.startLifetime = 0;
         }
 
         // Gravité

@@ -7,6 +7,7 @@ public class TouchedByBullet : MonoBehaviour
     public Color[] _originalColors;
     public Color _hitColor;
     public EnemyScript _enemyScript;
+    public GameObject _particl;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +35,7 @@ public class TouchedByBullet : MonoBehaviour
                 Invoke("OriginalColors", 0.1f);
             }
             _enemyScript._life -= 1;
+           
             _enemyScript.DetectPlayer();
            Destroy(collision.gameObject);
         }
