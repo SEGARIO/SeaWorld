@@ -10,6 +10,7 @@ public class EnemyScript : MonoBehaviour
     bool _followplayer;
     Animator _anim;
    Transform player;
+    public ParticleSystem _smokePart;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,6 +37,11 @@ public class EnemyScript : MonoBehaviour
         {
             _anim.SetBool("IsWalking", true);
             _agent.SetDestination(FindObjectOfType<PlayerController>().gameObject.transform.position);
+            _smokePart.startLifetime = 2;
+        }
+        else
+        {
+            _smokePart.startLifetime = 0;
         }
        
         if(_enemy._isAgressive)
