@@ -7,6 +7,9 @@ public class Stone : MonoBehaviour
     public Material[] _mat;
     public LuminousStones _luminous;
     public int i;
+    public ParticleSystem _particle;
+    
+    public AudioSource _source;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,6 +36,8 @@ public class Stone : MonoBehaviour
             if(!_isLuminous)
             {
                 _isLuminous = true;
+                _particle.Play();
+                _source.Play();
                 _luminous.Activate(i);
             }
            

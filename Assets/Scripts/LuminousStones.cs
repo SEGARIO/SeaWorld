@@ -11,8 +11,11 @@ public class LuminousStones : MonoBehaviour
     public bool[] _canAdd;
     bool _isCompleted;
     public ParticleSystem _system;
+    public SpawnLuminousENemies _spawner;
+    public bool canAd;
     private void Start()
     {
+        canAd = true;
         for (int i = 0; i < _givenOrder.Length; i++)
         {
             _canAdd[i] = true;
@@ -60,7 +63,8 @@ public class LuminousStones : MonoBehaviour
     {
         _index += 1;
         _givenOrder[_index - 1] = indexer;
-       
+
+        canAd = true;
     }
 
     void Resetter()
@@ -75,6 +79,13 @@ public class LuminousStones : MonoBehaviour
         for (int i = 0; i < _givenOrder.Length; i++)
         {
             _canAdd[i] = true;
+        }
+       
+      if(canAd)
+        {
+            _spawner.index = 0;
+            _spawner.Spawn();
+            canAd = false;
         }
     }
 
