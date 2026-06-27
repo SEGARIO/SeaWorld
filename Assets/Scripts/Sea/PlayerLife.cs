@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
@@ -20,6 +21,7 @@ public class PlayerLife : MonoBehaviour
     public RectTransform _pivotwLife;
     float _maxlife;
 
+    public Image _image;
     public Color[] _colorsBar;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -57,6 +59,18 @@ public class PlayerLife : MonoBehaviour
 
 
         if(_life >= _maxlife / 2)
+        {
+            _image.color = _colorsBar[0];
+        }
+        if (_life >= _maxlife / 4 && _life < _maxlife/2)
+        {
+            _image.color = _colorsBar[1];
+        }
+        if (_life < _maxlife / 4 )
+        {
+            _image.color = _colorsBar[2];
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)
