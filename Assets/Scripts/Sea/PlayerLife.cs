@@ -47,6 +47,10 @@ public class PlayerLife : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(_life > _maxlife)
+        {
+            _life = _maxlife;
+        }
         vignette.intensity.value -= Time.deltaTime / 3 ;
         _pivotLife.localScale = new Vector3(_life / _maxlife, _pivotLife.localScale.y, _pivotLife.localScale.z);
 
