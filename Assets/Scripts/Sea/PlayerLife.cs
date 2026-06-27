@@ -9,17 +9,23 @@ public class PlayerLife : MonoBehaviour
 
     public Color[] _originalColors;
     public Color _hitColor;
-    public int _life;
+    public float _life;
     public PlayerController _controller;
     public Transform _checkpointPosition;
 
     [SerializeField] private Volume volume;
     public GameObject _deathPanel;
     private Vignette vignette;
+    public RectTransform _pivotLife;
+    public RectTransform _pivotwLife;
+    float _maxlife;
+
+    public Color[] _colorsBar;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _maxlife = _life;
         if (volume.profile.TryGet(out vignette))
         {
 
@@ -40,6 +46,17 @@ public class PlayerLife : MonoBehaviour
     void Update()
     {
         vignette.intensity.value -= Time.deltaTime / 3 ;
+        _pivotLife.localScale = new Vector3(_life / _maxlife, _pivotLife.localScale.y, _pivotLife.localScale.z);
+
+        _pivotwLife.localScale = new Vector3(
+    Mathf.Lerp(_pivotwLife.localScale.x, _pivotLife.localScale.x, 2 * Time.deltaTime),
+    _pivotwLife.localScale.y,
+    _pivotwLife.localScale.z
+);
+
+
+
+        if(_life >= _maxlife / 2)
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -14,6 +14,7 @@ public class SO_PlayableCgaracters : ScriptableObject
 
     [Header("Stats")]
     [Range(1, 10)] public int _life;
+    [Range(1, 5)] public int _shield;
     [Range(1, 10)] public int _speed;
     [Range(1, 10)] public int _attack;
 }
