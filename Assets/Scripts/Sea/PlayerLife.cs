@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
@@ -11,22 +13,33 @@ public class PlayerLife : MonoBehaviour
     public PlayerController _controller;
     public Transform _checkpointPosition;
 
+    [SerializeField] private Volume volume;
+    public GameObject _deathPanel;
+    private Vignette vignette;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _checkpointPosition = FindObjectOfType<GameManager>()._checkpoint;
-        this.transform.position = _checkpointPosition.position;
+        if (volume.profile.TryGet(out vignette))
+        {
+
+            vignette.intensity.value = 0;
+        }
+       
         _renderers = GetComponentsInChildren<Renderer>();
         for (int i = 0; i < _renderers.Length; i++)
         {
             _originalColors[i] = _renderers[i].material.color;
         }
+        _checkpointPosition = FindObjectOfType<GameManager>()._checkpoint;
+        this.transform.position = _checkpointPosition.position;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        vignette.intensity.value -= Time.deltaTime / 3 ;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -40,6 +53,7 @@ public class PlayerLife : MonoBehaviour
                 Invoke("OriginalColors", 0.1f);
             }
             _life -= 1;
+            SetVignette(0.4f);
             GameFeel.Instance.PlayJuice(1.5f, 0.3f);
             GameFeel.Instance.Flash(0.1f);
 
@@ -62,11 +76,28 @@ public class PlayerLife : MonoBehaviour
     void Death()
     {
         _controller.enabled = false;
-        Invoke("Restart", 2);
+        Invoke("DeathPanel", 2);
     }
 
+    void DeathPanel()
+    {
+        _deathPanel.SetActive(true);   
+    }
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void Resetter()
+    {
+        FindObjectOfType<GameManager>()._checkpoint = null;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void SetVignette(float intensity)
+    {
+        if (vignette != null)
+        {
+            vignette.intensity.value = Mathf.Clamp01(intensity);
+        }
     }
 }
