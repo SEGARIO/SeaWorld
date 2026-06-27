@@ -53,7 +53,8 @@ public class WaterRiser : MonoBehaviour
             if(_canPLaySystem)
             {
                 _system.Play();
-                _canPLaySystem=false;
+                GameFeel.Instance.PlayJuice(2, 0.5f);
+                _canPLaySystem =false;
             }
             
         }

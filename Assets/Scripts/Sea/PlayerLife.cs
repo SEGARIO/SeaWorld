@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
@@ -7,9 +8,14 @@ public class PlayerLife : MonoBehaviour
     public Color[] _originalColors;
     public Color _hitColor;
     public int _life;
+    public PlayerController _controller;
+    public Transform _checkpointPosition;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _checkpointPosition = FindObjectOfType<GameManager>()._checkpoint;
+        this.transform.position = _checkpointPosition.position;
         _renderers = GetComponentsInChildren<Renderer>();
         for (int i = 0; i < _renderers.Length; i++)
         {
@@ -37,6 +43,11 @@ public class PlayerLife : MonoBehaviour
             GameFeel.Instance.PlayJuice(1.5f, 0.3f);
             GameFeel.Instance.Flash(0.1f);
 
+            if(_life <= 0)
+            {
+                Death();
+                
+            }
         }
     }
 
@@ -46,5 +57,16 @@ public class PlayerLife : MonoBehaviour
         {
             _renderers[i].material.color = _originalColors[i];
         }
+    }
+
+    void Death()
+    {
+        _controller.enabled = false;
+        Invoke("Restart", 2);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
