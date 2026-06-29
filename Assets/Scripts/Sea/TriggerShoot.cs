@@ -9,13 +9,13 @@ public class TriggerShoot : MonoBehaviour
     public float force = 10f;
     public GameObject _viserTarget;
     public float cooldown = 1f;
-
+    public bool _isCurrentPlayer;
     private float lastShootTime;
 
     void Update()
     {
         transform.LookAt(_viserTarget.transform.position);
-        if (Gamepad.current != null && Gamepad.current.rightTrigger.isPressed)
+        if (Gamepad.current != null && Gamepad.current.rightTrigger.isPressed && _isCurrentPlayer)
         {
             Shoot();
         }

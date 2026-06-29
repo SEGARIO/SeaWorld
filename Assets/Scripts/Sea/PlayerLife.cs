@@ -23,6 +23,7 @@ public class PlayerLife : MonoBehaviour
 
     public Image _image;
     public Color[] _colorsBar;
+    public bool _isCurrentPlayer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,33 +48,37 @@ public class PlayerLife : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_life > _maxlife)
+        if(_isCurrentPlayer)
         {
-            _life = _maxlife;
-        }
-        vignette.intensity.value -= Time.deltaTime / 3 ;
-        _pivotLife.localScale = new Vector3(_life / _maxlife, _pivotLife.localScale.y, _pivotLife.localScale.z);
+            if (_life > _maxlife)
+            {
+                _life = _maxlife;
+            }
+            vignette.intensity.value -= Time.deltaTime / 3;
+            _pivotLife.localScale = new Vector3(_life / _maxlife, _pivotLife.localScale.y, _pivotLife.localScale.z);
 
-        _pivotwLife.localScale = new Vector3(
-    Mathf.Lerp(_pivotwLife.localScale.x, _pivotLife.localScale.x, 2 * Time.deltaTime),
-    _pivotwLife.localScale.y,
-    _pivotwLife.localScale.z
-);
+            _pivotwLife.localScale = new Vector3(
+        Mathf.Lerp(_pivotwLife.localScale.x, _pivotLife.localScale.x, 2 * Time.deltaTime),
+        _pivotwLife.localScale.y,
+        _pivotwLife.localScale.z
+    );
 
 
 
-        if(_life >= _maxlife / 2)
-        {
-            _image.color = _colorsBar[0];
+            if (_life >= _maxlife / 2)
+            {
+                _image.color = _colorsBar[0];
+            }
+            if (_life >= _maxlife / 4 && _life < _maxlife / 2)
+            {
+                _image.color = _colorsBar[1];
+            }
+            if (_life < _maxlife / 4)
+            {
+                _image.color = _colorsBar[2];
+            }
         }
-        if (_life >= _maxlife / 4 && _life < _maxlife/2)
-        {
-            _image.color = _colorsBar[1];
-        }
-        if (_life < _maxlife / 4 )
-        {
-            _image.color = _colorsBar[2];
-        }
+      
 
     }
 

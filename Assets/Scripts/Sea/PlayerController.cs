@@ -12,13 +12,18 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
     private Vector3 velocity;
     public ParticleSystem _smokeParticles;
+    PlayerSwitcher _playerSwitcher;
+    float timerChangePlayer;
+    
     void Start()
     {
+        _playerSwitcher = FindObjectOfType<PlayerSwitcher>();
         controller = GetComponent<CharacterController>();
     }
 
     void Update()
     {
+      
         Vector3 move = new Vector3(moveInput.x, 0f, moveInput.y);
 
         if (move.magnitude > 1f)
@@ -45,6 +50,23 @@ public class PlayerController : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        if (Gamepad.current.buttonSouth.isPressed)
+        {
+            timerChangePlayer -= Time.deltaTime;
+        }
+        else
+        {
+            timerChangePlayer = 1.5f;
+        }
+
+
+        if(timerChangePlayer <= 0)
+        {
+            _playerSwitcher.ChangePlayer();
+            Debug.Log("Change Player");
+            timerChangePlayer = 1.5f;
+        }
     }
 
     // Fonction appelée par l'Input System
