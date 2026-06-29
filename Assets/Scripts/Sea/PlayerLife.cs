@@ -15,7 +15,7 @@ public class PlayerLife : MonoBehaviour
     public Transform _checkpointPosition;
 
     [SerializeField] private Volume volume;
-    public GameObject _deathPanel;
+    
     private Vignette vignette;
     public RectTransform _pivotLife;
     public RectTransform _pivotwLife;
@@ -115,14 +115,17 @@ public class PlayerLife : MonoBehaviour
 
     void Death()
     {
-        _controller.enabled = false;
-        Invoke("DeathPanel", 2);
+        //_controller.enabled = false;
+        FindObjectOfType<PlayerSwitcher>()._deaths += 1;
+        if(_isCurrentPlayer)
+        {
+            FindObjectOfType<PlayerSwitcher>().ChangePlayer();
+        }
+       
+        Destroy(gameObject);
     }
 
-    void DeathPanel()
-    {
-        _deathPanel.SetActive(true);   
-    }
+   
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

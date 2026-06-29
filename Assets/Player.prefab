@@ -83,6 +83,7 @@ MonoBehaviour:
   force: 10
   _viserTarget: {fileID: 3426870984897111474}
   cooldown: 0.1
+  _isCurrentPlayer: 0
 --- !u!1 &972373473871238472
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +295,7 @@ MonoBehaviour:
   speed: 6
   rotationSpeed: 10
   gravity: -9.81
+  _smokeParticles: {fileID: 0}
 --- !u!114 &8249099307650004465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,6 +442,15 @@ MonoBehaviour:
   - {r: 0, g: 0, b: 0, a: 0}
   _hitColor: {r: 1, g: 0, b: 0, a: 1}
   _life: 10
+  _controller: {fileID: 0}
+  _checkpointPosition: {fileID: 0}
+  volume: {fileID: 0}
+  _deathPanel: {fileID: 0}
+  _pivotLife: {fileID: 0}
+  _pivotwLife: {fileID: 0}
+  _image: {fileID: 0}
+  _colorsBar: []
+  _isCurrentPlayer: 0
 --- !u!1 &5948562420563669556
 GameObject:
   m_ObjectHideFlags: 0

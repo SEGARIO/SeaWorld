@@ -14,17 +14,21 @@ public class TriggerShoot : MonoBehaviour
 
     void Update()
     {
-        transform.LookAt(_viserTarget.transform.position);
-        if (Gamepad.current != null && Gamepad.current.rightTrigger.isPressed && _isCurrentPlayer)
+        if(_isCurrentPlayer)
         {
-            Shoot();
+            transform.LookAt(_viserTarget.transform.position);
+            if (Gamepad.current != null && Gamepad.current.rightTrigger.isPressed)
+            {
+                Shoot(cooldown);
+            }
         }
+       
     }
 
-    void Shoot()
+    public void Shoot(float _cooldown)
     {
         // Vérifie le cooldown
-        if (Time.time < lastShootTime + cooldown) return;
+        if (Time.time < lastShootTime + _cooldown) return;
 
         lastShootTime = Time.time;
 

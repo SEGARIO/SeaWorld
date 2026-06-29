@@ -1,14 +1,18 @@
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 
 public class PlayerSwitcher : MonoBehaviour
 {
     public GameObject _currentPlayer;
     
     public GameObject[] _players;
+    public PlayerAI[] _ai;
     public Viser[] _visers;
     public PlayerLife[] _lifes;
     public TriggerShoot[] _shooters;
     public LerpPosition _camPivot;
+    public int _deaths;
+    public GameObject _deathPanel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -39,7 +43,10 @@ public class PlayerSwitcher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(_deaths >= _players.Length)
+        {
+            Death();
+        }
     }
 
     public void ChangePlayer()
@@ -80,6 +87,7 @@ public class PlayerSwitcher : MonoBehaviour
                 PlayerController _controller = _players[i].GetComponent<PlayerController>();
                 _controller.enabled = false;
                 _visers[i].enabled = false;
+                _ai[i].enabled = true;
                 _shooters[i]._isCurrentPlayer = false;
                 _lifes[i]._isCurrentPlayer = false;
             }
@@ -87,6 +95,7 @@ public class PlayerSwitcher : MonoBehaviour
             {
                 PlayerController _controller = _players[i].GetComponent<PlayerController>();
                 _controller.enabled = true;
+                _ai[i].enabled = false;
                 _camPivot.target = _players[i].transform;
                 _visers[i].enabled = true;
                 _shooters[i]._isCurrentPlayer = true;
@@ -96,6 +105,15 @@ public class PlayerSwitcher : MonoBehaviour
         
         }
 
+    }
+    void Death()
+    {
+        
+        Invoke("DeathPanel", 2);
+    }
+    void DeathPanel()
+    {
+        _deathPanel.SetActive(true);
     }
 }
 

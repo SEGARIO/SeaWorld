@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -14,7 +15,8 @@ public class PlayerAI : MonoBehaviour
     public bool playerDetected;
     public bool enemyDetected;
     public NavMeshAgent _agent;
-
+    public TriggerShoot _shooter;
+    Transform _target;
 
     private void Update()
     {
@@ -35,14 +37,21 @@ public class PlayerAI : MonoBehaviour
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
+           
             if (Vector3.Distance(transform.position, enemy.transform.position) <= enemyRadius)
             {
                 enemyDetected = true;
+                _target = enemy.transform;
                 break;
             }
         }
-
-        if(!playerDetected)
+        if (enemyDetected)
+        {
+            _shooter.Shoot(_shooter.cooldown *3);
+            _shooter.transform.LookAt(_target.transform);
+            
+        }
+        if (!playerDetected)
         {
             _agent.SetDestination(playerSwitcher._currentPlayer.transform.position);
         }
@@ -50,6 +59,8 @@ public class PlayerAI : MonoBehaviour
         {
             _agent.SetDestination(this.transform.position);
         }
+
+       
     }
 
    
