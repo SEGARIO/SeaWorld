@@ -1,16 +1,109 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using TMPro;
 
 public class Panel : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private TextMeshProUGUI _text;
+    [SerializeField, TextArea] private string _message;
+    [SerializeField] private float _letterDelay = 0.05f;
+
+    private Coroutine _typingCoroutine;
+    public GameObject _textPanel;
+    public GameObject _pressA;
+    bool isInRange;
+
+    public void StartTyping()
     {
-        
+        if (_typingCoroutine != null)
+            StopCoroutine(_typingCoroutine);
+
+        _typingCoroutine = StartCoroutine(TypeText());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator TypeText()
     {
-        
+        _text.text = "";
+
+        foreach (char letter in _message)
+        {
+            _text.text += letter;
+            yield return new WaitForSeconds(_letterDelay);
+        }
     }
+
+    [SerializeField] private Transform _player;
+    [SerializeField] private float _range = 2f;
+
+    private bool _playerDetected;
+
+    private void Update()
+    {
+        if (_player == null)
+            return;
+
+       
+
+        if (isInRange && !_playerDetected)
+        {
+            _playerDetected = true;
+            PlayerIn();
+        }
+        else if (!isInRange && _playerDetected)
+        {
+            _playerDetected = false;
+        }
+
+        if(isInRange)
+        {
+           
+            if (Gamepad.current.buttonSouth.isPressed)
+            {
+                _pressA.SetActive(false);
+                _textPanel.SetActive(true);
+                StartTyping();
+            }
+            else
+            {
+               
+            }
+        }
+        else
+        {
+           
+           
+        }
+    }
+
+    private void PlayerIn()
+    {
+       
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, _range);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.transform == _player)
+        {
+            _pressA.SetActive(true);
+            Debug.Log("Is in range");
+            isInRange = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.transform == _player)
+        {
+            _textPanel.SetActive(false);
+            _pressA.SetActive(false);
+            isInRange = false;
+        }
 }
+}   
