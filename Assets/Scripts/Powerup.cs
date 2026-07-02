@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
 public class Powerup : MonoBehaviour
@@ -14,7 +15,11 @@ public class Powerup : MonoBehaviour
     [SerializeField] private float _range = 2f;
 
     private bool _playerInside;
-    float timerChangePlayer;
+    public float timerChangePlayer;
+
+    public GameObject Aimage;
+    [SerializeField] private Image _fillImage;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,12 +45,28 @@ public class Powerup : MonoBehaviour
         {
             if (!_playerInside)
             {
-                _playerInside = true;
+                if(!_isActivated)
+                {
+                    
+                }
+                
+                
                 PlayerIn();
+            }
+
+            if (_isActivated)
+            {
+
+                Aimage.SetActive(true);
+            }
+            else
+            {
+                Aimage.SetActive(false);
             }
         }
         else
         {
+            Aimage.SetActive(false);
             _playerInside = false;
         }
         if (Gamepad.current.buttonSouth.isPressed)
@@ -57,12 +78,17 @@ public class Powerup : MonoBehaviour
             timerChangePlayer = 1.5f;
         }
 
+        if(timerChangePlayer <= 1)
+        {
+            _fillImage.fillAmount = 1 - timerChangePlayer;
+        }
+
         if (_playerInside && _isActivated)
         {
+
           
 
-
-          if(timerChangePlayer <= 0)
+            if (timerChangePlayer <= 0)
           {
 
                 ActivatePowerUp();
@@ -70,10 +96,15 @@ public class Powerup : MonoBehaviour
 
           }
         }
+        else
+        {
+            
+        }
     }
 
     private void PlayerIn()
     {
+        _playerInside = true;
         Debug.Log("Le joueur est entré dans la zone !");
     }
 
@@ -85,6 +116,8 @@ public class Powerup : MonoBehaviour
 
     void ActivatePowerUp()
     {
+        Debug.Log("Activate");
+        Aimage.SetActive(false);
         _canPlay = true;
         _timer = 0;
         _isActivated = false;

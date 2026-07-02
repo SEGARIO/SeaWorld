@@ -9,6 +9,7 @@ public class PlayerPowerUps : MonoBehaviour
     public float _timeOfPowerUp;
     float _timer;
     public ParticleSystem _system;
+    public ParticleSystem _lightSystem;
     bool _canPlay;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,6 +26,7 @@ public class PlayerPowerUps : MonoBehaviour
             if(_canPlay)
             {
                 _system.Play();
+                _lightSystem.Play();
                 _canPlay = false;
             }
             if (Gamepad.current != null && Gamepad.current.leftTrigger.isPressed)
