@@ -101,6 +101,7 @@ public class PlayerLife : MonoBehaviour
 
             if(_life <= 0)
             {
+                _life = 0;
                 Death();
                 
             }

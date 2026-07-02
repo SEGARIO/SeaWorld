@@ -76,12 +76,10 @@ public class Powerup : MonoBehaviour
         else
         {
             timerChangePlayer = 1.5f;
+           // _fillImage.fillAmount = 0;
         }
 
-        if(timerChangePlayer <= 1)
-        {
-            _fillImage.fillAmount = 1 - timerChangePlayer;
-        }
+        _fillImage.fillAmount = (timerChangePlayer/1.5f);
 
         if (_playerInside && _isActivated)
         {
