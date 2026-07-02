@@ -24,6 +24,8 @@ public class PlayerLife : MonoBehaviour
     public Image _image;
     public Color[] _colorsBar;
     public bool _isCurrentPlayer;
+    public GameObject _deathPart;
+    public bool _isMainChar;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -115,14 +117,17 @@ public class PlayerLife : MonoBehaviour
 
     void Death()
     {
-        //_controller.enabled = false;
-        FindObjectOfType<PlayerSwitcher>()._deaths += 1;
-        if(_isCurrentPlayer)
-        {
-            FindObjectOfType<PlayerSwitcher>().ChangePlayer();
-        }
        
-        Destroy(gameObject);
+
+        if(_isMainChar)
+        {
+            FindObjectOfType<PlayerSwitcher>().Death();
+        }
+        else
+        {
+            Instantiate(_deathPart, this.transform.position, Quaternion.identity);
+             Destroy(gameObject);
+        }
     }
 
    

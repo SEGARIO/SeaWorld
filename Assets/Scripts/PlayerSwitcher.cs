@@ -13,8 +13,11 @@ public class PlayerSwitcher : MonoBehaviour
     public LerpPosition _camPivot;
     public int _deaths;
     public GameObject _deathPanel;
+
+    public PlayerController _controller;
+    public GameObject _visual;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    /*void Start()
     {
         for (int i = 0; i < _players.Length; i++)
         {
@@ -38,6 +41,7 @@ public class PlayerSwitcher : MonoBehaviour
 
 
         }
+        ChangePlayer();
     }
 
     // Update is called once per frame
@@ -105,10 +109,11 @@ public class PlayerSwitcher : MonoBehaviour
         
         }
 
-    }
-    void Death()
+    }*/
+    public void Death()
     {
-        
+        _controller.enabled = false;
+        _visual.SetActive(false);
         Invoke("DeathPanel", 2);
     }
     void DeathPanel()

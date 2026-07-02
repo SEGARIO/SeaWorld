@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-      
+        Debug.Log(timerChangePlayer);
         Vector3 move = new Vector3(moveInput.x, 0f, moveInput.y);
 
         if (move.magnitude > 1f)
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        if (Gamepad.current.buttonSouth.isPressed)
+       /* if (Gamepad.current.buttonSouth.isPressed)
         {
             timerChangePlayer -= Time.deltaTime;
         }
@@ -63,10 +63,11 @@ public class PlayerController : MonoBehaviour
 
         if(timerChangePlayer <= 0)
         {
-            _playerSwitcher.ChangePlayer();
-            Debug.Log("Change Player");
+            //_playerSwitcher.ChangePlayer();
+            //Debug.Log(timerChangePlayer);
             timerChangePlayer = 1.5f;
-        }
+
+        }*/
     }
 
     // Fonction appelée par l'Input System
