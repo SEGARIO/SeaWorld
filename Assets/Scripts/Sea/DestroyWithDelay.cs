@@ -13,6 +13,7 @@ public class DestroyWithDelay : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
         Instantiate(_particl, this.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

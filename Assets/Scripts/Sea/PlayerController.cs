@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(timerChangePlayer);
+        //Debug.Log(timerChangePlayer);
         Vector3 move = new Vector3(moveInput.x, 0f, moveInput.y);
 
         if (move.magnitude > 1f)

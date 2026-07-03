@@ -88,6 +88,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            Debug.Log("TouchEnemy");
             for (int i = 0; i < _renderers.Length; i++)
             {
                 _renderers[i].material.color = _hitColor;
@@ -104,6 +105,31 @@ public class PlayerLife : MonoBehaviour
                 _life = 0;
                 Death();
                 
+            }
+        }
+    }
+
+    private void OnTriggerStay(Collider collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("TouchEnemy");
+            for (int i = 0; i < _renderers.Length; i++)
+            {
+                _renderers[i].material.color = _hitColor;
+
+                Invoke("OriginalColors", 0.1f);
+            }
+            _life -= 0.01f;
+            SetVignette(0.4f);
+            GameFeel.Instance.PlayJuice(1.5f, 0.3f);
+            GameFeel.Instance.Flash(0.1f);
+
+            if (_life <= 0)
+            {
+                _life = 0;
+                Death();
+
             }
         }
     }
