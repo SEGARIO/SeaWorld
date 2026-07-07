@@ -7141,7 +7141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &403548111
 Transform:
   m_ObjectHideFlags: 0
@@ -15119,7 +15119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1132367849
 Transform:
   m_ObjectHideFlags: 0
@@ -15135,6 +15135,71 @@ Transform:
   m_Children:
   - {fileID: 1327479378}
   - {fileID: 1613550605}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1134400298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1134400300}
+  - component: {fileID: 1134400299}
+  m_Layer: 0
+  m_Name: Dialogues
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1134400299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134400298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef99e79683bc6a74ebbe44f3a005ae0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entries:
+  - _text: Hmmm...
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: "O\xF9 est ce que je suis, d\xE9j\xE0?"
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: "Ah oui, je suis \xE0 bord de ce vaisseau..."
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: "Je vais d\xE9couvrir une autre plan\xE8te que la mienne!"
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: "Je vais d\xE9couvrir une autre plan\xE8te que la mienne!"
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+--- !u!4 &1134400300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134400298}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.62745, y: -28.148956, z: -17.772663}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1153924903
@@ -20737,7 +20802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1063912639572846633, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -121.2
+      value: -48.2
       objectReference: {fileID: 0}
     - target: {fileID: 1063912639572846633, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20745,7 +20810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1063912639572846633, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.1
+      value: -14.6
       objectReference: {fileID: 0}
     - target: {fileID: 1063912639572846633, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20897,7 +20962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9125695383498098197, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34111,7 +34176,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050450521}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d4412e188c524244a80deff55f8e775, type: 3}
   m_Name: 
@@ -35106,3 +35171,4 @@ SceneRoots:
   - {fileID: 4431533992512346587}
   - {fileID: 1627359339}
   - {fileID: 1132367849}
+  - {fileID: 1134400300}
