@@ -24,6 +24,7 @@ public class DialogueScript : MonoBehaviour
     {
         _index += 1;
         _text.text = entries[_index]._text;
+        _text.color = entries[_index]._textColor;
         Invoke("NextDialogue", entries[_index]._time);
     }
 
@@ -45,6 +46,7 @@ public class DialogueScript : MonoBehaviour
 public class Dial
 {
     public string _text;
+    public Color _textColor;
     public Sprite _characterSprite;
     public AudioClip _voice;
     public int _time;

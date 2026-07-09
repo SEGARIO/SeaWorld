@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 707053929979219757}
   - component: {fileID: 767881740611474320}
   - component: {fileID: 2067207842976549832}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PNJ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,19 +95,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9120656213edeb46ac503429c757394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _npcName: 
   _isInRange: 0
   _player: {fileID: 0}
   _isTalking: 0
   _dialoguePanel: {fileID: 0}
   _pressA: {fileID: 0}
   _text: {fileID: 0}
+  _canActivateSomething: 0
+  _canActivateAnimation: 0
+  _thingToActivate: []
   _dialogues:
   - ' '
-  - Salut toi
-  - "Comment \xE7a va?"
-  - Dernier message.
+  - Bonjour, Monsieur, je vous sers quelque chose?
+  - "Oui, je voudrais un M\xE9gadrink, s'il vous pla\xEEt!"
+  - Malheuresement, nous n'avons plus.
+  - "Toutes les caisses de M\xE9gadrink se sont renvers\xE9es dans le train."
+  - "Et un idiot s'est amus\xE9 \xE0 toutes les briser."
+  - Oh, euh... C'est bien dommage...
+  - Donnez-moi de l'eau alors.
+  - "Tr\xE8s bien. O\xF9 est ce que vous vous arr\xEAtez?"
+  - A Igara, pour l'instant, mais mon objectif est d'aller sur le Soleil.
+  - Hmmm... Vous voulez dire la station solaire?
+  - Non, non, sur le Soleil!
+  - "Le gros l\xE0?"
+  - Oui.
+  - ...
+  - "Je serais la premi\xE8re personne \xE0 poser le pied dessus."
+  - Mais c'est impossible! Personne ne peut marcher sur le Soleil!
+  - "Et bien moi, je dis qu'on ne peut pas dire qu'on y arrive pas tant qu'on a pas
+    essay\xE9!"
+  - ...
+  - On parle bien du Soleil, le gros truc dans le ciel?
+  - Oui!
+  - Chers voyageurs, nous arrivons en gare d'Igara.
+  - "Ah enfin! On est arriv\xE9s!"
+  _audios:
+  - {fileID: 8300000, guid: 9f5b6c2d003f947489bef7b58e607af2, type: 3}
+  - {fileID: 8300000, guid: f358399d270e968458648e664acce7ef, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: c1c0cd84f84404b4fa2079066baa248d, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+  - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
   _index: 0
   _canPress: 1
+  _anim: {fileID: 0}
 --- !u!1 &8062602008786069744
 GameObject:
   m_ObjectHideFlags: 0

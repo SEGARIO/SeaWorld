@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 using static UnityEditor.Experimental.GraphView.GraphView;
 using TMPro;
 
+
 public class NOCs : MonoBehaviour
 {
 
@@ -19,6 +20,7 @@ public class NOCs : MonoBehaviour
     public GameObject[] _thingToActivate;
 
     public string[] _dialogues;
+    public Color[] _textColors;
     public AudioClip[] _audios;
     public int _index;
     public bool _canPress = true;
@@ -41,6 +43,7 @@ public class NOCs : MonoBehaviour
         if(_isInRange)
         {
             _text.text = _dialogues[_index];
+            _text.color = _textColors[_index];
             _audioSource.clip = _audios[_index];
             
             if (Gamepad.current.buttonSouth.isPressed && _canPress)
