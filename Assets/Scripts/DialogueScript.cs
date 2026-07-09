@@ -1,10 +1,44 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DialogueScript : MonoBehaviour
 {
     [SerializeField] private List<Dial> entries = new List<Dial>();
+    public TextMeshProUGUI _text;
+    public int _index = -1;
+    public bool _imobilisePlayer;
+    public PlayerController _controller;
+
+    private void Start()
+    {
+        NextDialogue();
+
+        if(_imobilisePlayer)
+        {
+            _controller.enabled = false;
+        }
+    }
+    void NextDialogue()
+    {
+        _index += 1;
+        _text.text = entries[_index]._text;
+        Invoke("NextDialogue", entries[_index]._time);
+    }
+
+    private void Update()
+    {
+        if(_index >= entries.Count)
+        {
+            if(_imobilisePlayer)
+            {
+                _controller.enabled = true;
+            }
+            _text.gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+    }
 }
 
 [Serializable]
