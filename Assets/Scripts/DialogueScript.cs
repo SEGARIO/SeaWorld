@@ -10,6 +10,8 @@ public class DialogueScript : MonoBehaviour
     public int _index = -1;
     public bool _imobilisePlayer;
     public PlayerController _controller;
+    public bool _canActivateSomething;
+    public GameObject _objectToActivate;
 
     private void Start()
     {
@@ -35,6 +37,10 @@ public class DialogueScript : MonoBehaviour
             if(_imobilisePlayer)
             {
                 _controller.enabled = true;
+            }
+            if(_canActivateSomething)
+            {
+                _objectToActivate.SetActive(true);
             }
             _text.gameObject.SetActive(false);
             Destroy(gameObject);
