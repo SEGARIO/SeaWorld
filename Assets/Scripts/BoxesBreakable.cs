@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class BoxesBreakable : MonoBehaviour
 {
+    public bool _canGiveSomething;
+    public GameObject[] _objectToGive;
     float _life;
     public float _maxLife;
     public Renderer _rend;
@@ -36,6 +38,13 @@ public class BoxesBreakable : MonoBehaviour
     {
         Instantiate(_particle, this.transform.position, Quaternion.identity);
         GameFeel.Instance.PlayJuice(1.5f, 0.3f);
+        if (_canGiveSomething)
+        {
+            for (int i = 0; i < _objectToGive.Length; i++)
+            {
+                Instantiate(_objectToGive[i], this.transform.position, Quaternion.identity);
+            } 
+        }
         Destroy(this.gameObject);
     }
 

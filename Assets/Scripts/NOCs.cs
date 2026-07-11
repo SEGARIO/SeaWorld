@@ -1,8 +1,9 @@
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.InputSystem;
-using static UnityEditor.Experimental.GraphView.GraphView;
+using System;
 using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 
 public class NOCs : MonoBehaviour
@@ -18,6 +19,8 @@ public class NOCs : MonoBehaviour
     public bool _canActivateSomething;
     public bool _canActivateAnimation;
     public GameObject[] _thingToActivate;
+    public bool _isGivingMission;
+    public GameObject _exclamationMark;
 
     public string[] _dialogues;
     public Color[] _textColors;
@@ -27,6 +30,11 @@ public class NOCs : MonoBehaviour
     AudioSource _audioSource;
     bool _isPlayingSound;
     public Animator _anim;
+
+    public bool _hasAnotherDialogue;
+    public string[] _otherDialogues;
+    public Color[] _otherTextColors;
+    bool _hasFinishedTalkingDialogue;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +42,11 @@ public class NOCs : MonoBehaviour
         for (int i = 0; i < _thingToActivate.Length; i++)
         {
             _thingToActivate[i].SetActive(false);
+        }
+
+        if(_isGivingMission)
+        {
+            _exclamationMark.SetActive(true);
         }
     }
 
@@ -49,6 +62,12 @@ public class NOCs : MonoBehaviour
             if (Gamepad.current.buttonSouth.isPressed && _canPress)
             {
                 _isTalking = true ;
+                if(_exclamationMark != null)
+                {
+                    _exclamationMark.GetComponent<Animator>().SetTrigger("Play");
+                    Invoke("Destroyer", 0.5f);
+                }
+              
                 _audioSource.PlayOneShot(_audios[_index]);
                 NextDialogue();
                 _canPress = false;
@@ -82,9 +101,14 @@ public class NOCs : MonoBehaviour
     }
 
 
+    void Destroyer()
+    {
+        Destroy(_exclamationMark);
+    }
+
     void PlayVoice()
     {
-       
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -103,7 +127,7 @@ public class NOCs : MonoBehaviour
     {
         _index += 1;
 
-        if(_index >= _dialogues.Length)
+        if(!_hasFinishedTalkingDialogue && _index >= _dialogues.Length)
         {
             _isTalking = false;
             _dialoguePanel.SetActive(false);
@@ -115,13 +139,38 @@ public class NOCs : MonoBehaviour
                 }
                 
             }
+
             if(_canActivateAnimation)
             {
                 _anim.SetTrigger("Go");
             }
             _player.GetComponent<PlayerController>().enabled = true;
+            if(_hasAnotherDialogue)
+            {
+                _dialogues = _otherDialogues;
+                _textColors = _otherTextColors;
+            }
         }
+        if (_hasFinishedTalkingDialogue && _index >= _otherDialogues.Length)
+        {
+            _isTalking = false;
+            _dialoguePanel.SetActive(false);
+            if (_canActivateSomething)
+            {
+                for (int i = 0; i < _thingToActivate.Length; i++)
+                {
+                    _thingToActivate[i].SetActive(true);
+                }
+
+            }
+
+            if (_canActivateAnimation)
+            {
+                _anim.SetTrigger("Go");
+            }
+            _player.GetComponent<PlayerController>().enabled = true;
             
+        }
     }
 
 

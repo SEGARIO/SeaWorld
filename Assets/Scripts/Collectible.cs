@@ -6,6 +6,7 @@ public class Collectible : MonoBehaviour
 
     public float _lifeToHeal;
     public static int _numberCollectibles;
+    public GameObject _particle;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,7 +24,7 @@ public class Collectible : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             _life = other.GetComponent<PlayerLife>();
-
+            Instantiate(_particle, this.transform.position, Quaternion.identity);
             _numberCollectibles += 1;
             
             _life._life += _lifeToHeal;
