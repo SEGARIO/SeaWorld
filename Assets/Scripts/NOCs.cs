@@ -27,7 +27,7 @@ public class NOCs : MonoBehaviour
     public AudioClip[] _audios;
     public int _index;
     public bool _canPress = true;
-    AudioSource _audioSource;
+    public AudioSource _audioSource;
     bool _isPlayingSound;
     public Animator _anim;
 
@@ -38,7 +38,7 @@ public class NOCs : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _audioSource = FindObjectOfType<AudioSource>();
+        //_audioSource = FindObjectOfType<AudioSource>();
         for (int i = 0; i < _thingToActivate.Length; i++)
         {
             _thingToActivate[i].SetActive(false);
