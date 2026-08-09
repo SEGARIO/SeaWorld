@@ -95,7 +95,8 @@ public class PlayerLife : MonoBehaviour
 
                 Invoke("OriginalColors", 0.1f);
             }
-            _life -= 1;
+            Debug.Log(collision.gameObject.GetComponentInParent<EnemyScript>()._enemy._attack);
+            _life -= collision.gameObject.GetComponentInParent<EnemyScript>()._enemy._attack;
             SetVignette(0.4f);
             GameFeel.Instance.PlayJuice(1.5f, 0.3f);
             GameFeel.Instance.Flash(0.1f);
