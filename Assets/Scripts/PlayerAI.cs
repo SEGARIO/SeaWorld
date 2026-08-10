@@ -6,6 +6,8 @@ public class PlayerAI : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private PlayerSwitcher playerSwitcher;
+    [SerializeField] private GameObject factice;
+
 
     [Header("Detection Radius")]
     [SerializeField] private float playerRadius = 5f;
@@ -18,6 +20,10 @@ public class PlayerAI : MonoBehaviour
     public TriggerShoot _shooter;
     Transform _target;
 
+    private void Start()
+    {
+        Destroy(factice);
+    }
     private void Update()
     {
         // Détection du joueur actuel

@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Teleporter : MonoBehaviour
 {
 
     public Transform _position;
     public GameObject player;
+    public GameObject Acolyt;
+    NavMeshAgent agent;
    public GameObject _cam;
 
     public GameObject _circleIn;
@@ -18,6 +21,8 @@ public class Teleporter : MonoBehaviour
             Debug.Log("Trigger touché par : " + other.name);
             Debug.Log("Référence player : " + player.name);
             playerController.enabled = false;
+            agent = Acolyt.GetComponent<NavMeshAgent>();
+            agent.enabled = false;
             _ch.enabled = false;
             _circleOut.SetActive(false);
             _circleIn.SetActive(true);
@@ -33,8 +38,10 @@ public class Teleporter : MonoBehaviour
         _circleOut.SetActive(true);
         _circleIn.SetActive(false);
         player.transform.position = _position.position;
+        Acolyt.transform.position = _position.position;
          _cam.gameObject.transform.position = _position.position;
         playerController.enabled = true;
+        agent.enabled = true;
         _ch.enabled = true;
 
     }
