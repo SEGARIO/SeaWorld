@@ -9,7 +9,8 @@ public class Teleporter : MonoBehaviour
     public GameObject Acolyt;
     NavMeshAgent agent;
    public GameObject _cam;
-
+    public Light _light;
+    public Color _lightColor;
     public GameObject _circleIn;
     public GameObject _circleOut;
     public PlayerController playerController;
@@ -38,7 +39,11 @@ public class Teleporter : MonoBehaviour
         _circleOut.SetActive(true);
         _circleIn.SetActive(false);
         player.transform.position = _position.position;
-        Acolyt.transform.position = _position.position;
+        if(Acolyt != null)
+        {
+            Acolyt.transform.position = _position.position;
+        }
+        _light.color = _lightColor;
          _cam.gameObject.transform.position = _position.position;
         playerController.enabled = true;
         agent.enabled = true;

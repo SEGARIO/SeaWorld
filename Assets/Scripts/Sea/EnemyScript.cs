@@ -9,6 +9,7 @@ public class EnemyScript : MonoBehaviour
     NavMeshAgent _agent;
     bool _followplayer;
     Animator _anim;
+
    Transform player;
     public ParticleSystem _smokePart;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
