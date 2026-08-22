@@ -1215,6 +1215,37 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2383326625463138717, guid: 988b8b3b52b09a74f9db9350c61edbc2, type: 3}
+--- !u!1 &59857552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 59857553}
+  m_Layer: 0
+  m_Name: Map Space
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &59857553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59857552}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &65281659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,6 +2094,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83087206}
   m_CullTransparentMesh: 1
+--- !u!1001 &86285665
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 565661925}
+    m_Modifications:
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 444.83945
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 633.817
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 633.817
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -531
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 386
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2629
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.28650331
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.23825519
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5882801
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7176886
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -45.063
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 794.031
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -258.263
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423071090435520619, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_Name
+      value: ST_Stone4 (174)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423071090435520619, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+--- !u!4 &86285666 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+  m_PrefabInstance: {fileID: 86285665}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &86660583
 GameObject:
   m_ObjectHideFlags: 0
@@ -5291,6 +5400,7 @@ Transform:
   - {fileID: 1513449545}
   - {fileID: 661878380}
   - {fileID: 607187452}
+  - {fileID: 935503725}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &189583209
@@ -16114,6 +16224,9 @@ Transform:
   - {fileID: 1360259781}
   - {fileID: 1623536272}
   - {fileID: 829757205}
+  - {fileID: 86285666}
+  - {fileID: 2089334538}
+  - {fileID: 1265296341}
   - {fileID: 579075438}
   - {fileID: 1008988112}
   - {fileID: 1869448307}
@@ -27028,6 +27141,108 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &935503724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935503725}
+  - component: {fileID: 935503728}
+  - component: {fileID: 935503727}
+  - component: {fileID: 935503726}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &935503725
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935503724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1282667312}
+  m_Father: {fileID: 189583208}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &935503726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935503724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &935503727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935503724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &935503728
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935503724}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!4 &935592419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
@@ -32649,7 +32864,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1134400299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32663,41 +32878,306 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entries:
-  - _text: 
-    _textColor: {r: 1, g: 0.3686279, b: 0, a: 1}
+  - _text: "Je dois r\xE9parer le turbo, prends les commandes le temps que je finisse. "
+    _textColor: {r: 0.4528302, g: 0.16692564, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: Quoi?! Mais j'ai pas mon permis de piloter, moi!
+    _textColor: {r: 1, g: 0.36862746, b: 0, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 3
-  - _text: Hmmm?
+  - _text: "Ne t'inqui\xE8te pas! Garde le cap et \xE7a devrait aller"
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: Je t'ai mis la vitesse la plus lente.
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Si besoin, tu peux te d\xE9placer avec le joystick gauche."
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: S'il y a des obstacles, tu peux les viser avec le joystick droit, et tirer
+      avec la gachette.
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: "Pratique, ces commandes, on dirait une manette de jeu vid\xE9o. "
+    _textColor: {r: 1, g: 0.36862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: ' '
+    _textColor: {r: 1, g: 1, b: 1, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: Ca y est, on est enfin sortis des grottes!
+    _textColor: {r: 1, g: 0.36862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Tant mieux. Mais reste vigilant, il y a toujours des obstacles \xE0 \xE9viter. "
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: "Euh\u2026 Je pr\xE9fererai quand m\xEAme que ce soit toi qui pilotes."
+    _textColor: {r: 1, g: 0.36862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: Tu en as encore pour longtemps?
     _textColor: {r: 1, g: 0.36862746, b: 0, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
-  - _text: Ouaaaah! J'ai bien dormi!
+  - _text: 'Un peu de patience, il me faut trois minutes en tout. '
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Mais si je ne le r\xE9pare pas maintenant, on ne pourra jamais partir
+      de cette plan\xE8te."
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 5
+  - _text: "Sans le turbo, on mettrait des semaines \xE0 atteindre une autre plan\xE8te."
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: "Je commence \xE0 me dire que j'aurais mieux fait de rester dans le train
+      spatial\u2026"
+    _textColor: {r: 1, g: 0.36862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Eh! C'est quoi cette mentalit\xE9, d'un coup?"
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: Tu veux marcher sur le Soleil, oui ou non?
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Euh\u2026 oui..."
     _textColor: {r: 1, g: 0.36862746, b: 0, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
-  - _text: "Est ce qu'on est arriv\xE9s \xE0 Igara?"
-    _textColor: {r: 1, g: 0.36862746, b: 0, a: 1}
+  - _text: "Gr\xE2ce \xE0 toi, j'ai pu r\xE9cup\xE9rer mon vaisseau."
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Je t'ai vu battre le L\xE9vierthan alors que tout le monde disait que
+      c'\xE9tait impossible."
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: "Alors si tu es certain de pouvoir \xEAtre la premi\xE8re personne \xE0
+      poser le pied sur le Soleil."
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 5
+  - _text: 'Je pense que tu peux y arriver.    '
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: ...
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: Alors reprends un peu confiance en toi!
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
-  - _text: Hmmm... On dirait que non. Le train spatial est encore en marche.
-    _textColor: {r: 1, g: 0.36862746, b: 0, a: 1}
+  - _text: "Si tu n'arrives m\xEAme pas \xE0 piloter un vaisseau sur quelques m\xE8tres"
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: "Alors autant qu'on arr\xEAte tout maintenant et que tu retournes dans
+      le train."
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 5
+  - _text: ' '
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "C'\xE9tait le train?"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
-  - _text: "Pah! J'ai la bouche toute s\xE8che!"
-    _textColor: {r: 1, g: 0.36862746, b: 0, a: 1}
+  - _text: Tu veux toujours monter dedans? C'est l'occasion.
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Non, c'est bon, tu m'as remotiv\xE9!"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Si je garde mon objectif en t\xEAte, je peux tout faire!"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Moi, Cosmo, je serais la premi\xE8re personne \xE0 marcher sur le Soleil!"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 5
+  - _text: "Je sais toujours pas comment tu comptes t'y prendre, mais je pr\xE9f\xE8re
+      cet \xE9tat d'esprit l\xE0!"
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 5
+  - _text: "Ne t'inqui\xE8te pas, j'ai un plan!"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Mais tu le verras en temps voulu! Vu que tu seras l\xE0 pendant que je
+      marcherai sur le Soleil!"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 5
+  - _text: "Ah euh\u2026 "
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Je crois qu'on s'est mal compris\u2026"
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Comment \xE7a?"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: "Je n'ai jamais dit que je t'accompagnerai jusqu'au Soleil\u2026"
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Moi, ma destination c'est Gorgon, la plan\xE8te de lave."
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: "J'ai seulement accept\xE9 de t'aider \xE0 partir d'Igara et te rapprocher
+      le plus possible pour que \xE7a t'arrange, c'est tout. "
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 5
+  - _text: "Oh, euh\u2026 C'est un peu g\xE9nant du coup\u2026"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: ' '
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: Bon, et ben c'est pas grave!
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Ca me rapproche d\xE9j\xE0 pas mal de mon objectif, merci."
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: "A partir de Gorgon, je me d\xE9brouillerai."
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
-  - _text: "Je devrais aller au wagon-bar me prendre un M\xE9gadrink!"
-    _textColor: {r: 1, g: 0.36862746, b: 0, a: 1}
+  - _text: "Dans tous les cas, tu me verras marcher sur le Soleil, j'en suis s\xFBr!"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: "Si tu n'est pas avec moi \xE0 ce moment l\xE0, tu me verras s\xFBrement
+      \xE0 la t\xE9l\xE9!"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: ' '
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
+  - _text: "Tiens, le train! Il n'\xE9tait pas devant nous?"
+    _textColor: {r: 0.4509804, g: 0.16862746, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: ' '
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: "Euh... Dis, tu pourrais te d\xE9pecher avec le turbo?"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: "Parce que l\xE0, on fonce droit dans le mur..."
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: Encore une petite modification et...
+    _textColor: {r: 0.3962264, g: 0.14761376, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 4
+  - _text: C'EST PARTI!!!
+    _textColor: {r: 0.3962264, g: 0.14761376, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: Woohooo!!!
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: "Accroche-toi, on va traverser l'atmosph\xE8re!"
+    _textColor: {r: 1, g: 0.37391305, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
   _text: {fileID: 1672512379}
   _index: -1
   _imobilisePlayer: 1
@@ -35746,7 +36226,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 3524.5
-  field of view: 75.3
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -36253,6 +36733,84 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265109201}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1265296340
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 565661925}
+    m_Modifications:
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 444.83945
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 633.817
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 633.817
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 490
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2629
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7192577
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.59190226
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.22910826
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.2825411
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 46.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 793.689
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -281.64398
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423071090435520619, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_Name
+      value: ST_Stone4 (176)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423071090435520619, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+--- !u!4 &1265296341 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+  m_PrefabInstance: {fileID: 1265296340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1265483043
 GameObject:
   m_ObjectHideFlags: 0
@@ -36968,6 +37526,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1282667311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282667312}
+  - component: {fileID: 1282667314}
+  - component: {fileID: 1282667313}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1282667312
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282667311}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 935503725}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1282667313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282667311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1282667314
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282667311}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1289450683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64027,6 +64660,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
   m_PrefabInstance: {fileID: 233708091}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2089334537
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 565661925}
+    m_Modifications:
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 444.83945
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 633.817
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 633.817
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 490
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 386
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2629
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7192577
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.59190226
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.22910826
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.2825411
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 46.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 793.689
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -281.64398
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423071090435520619, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_Name
+      value: ST_Stone4 (175)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423071090435520619, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+--- !u!4 &2089334538 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3902992588038546129, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
+  m_PrefabInstance: {fileID: 2089334537}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2091426215
 GameObject:
   m_ObjectHideFlags: 0
@@ -66312,3 +67023,4 @@ SceneRoots:
   - {fileID: 1049195904}
   - {fileID: 1692670403}
   - {fileID: 832274960}
+  - {fileID: 59857553}
