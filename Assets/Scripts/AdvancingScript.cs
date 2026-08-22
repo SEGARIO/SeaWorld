@@ -25,6 +25,12 @@ public class AdvancingScript : MonoBehaviour
             _anim.SetTrigger("Up");
             Invoke("Space", 9);
         }
+        if (this.transform.position.z >= 6000)
+        {
+            _anim.enabled = true;
+            _anim.SetTrigger("Right");
+            
+        }
     }
 
     void Space()
