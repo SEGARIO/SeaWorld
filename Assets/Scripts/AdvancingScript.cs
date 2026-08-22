@@ -3,7 +3,11 @@ using UnityEngine;
 public class AdvancingScript : MonoBehaviour
 {
     public float _speed;
+    public float _spaceSpeed;
     public Animator _anim;
+    public Animator _fadeout;
+    public Camera _cam;
+    public AdvancingScript _trainSpaceScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,10 +19,20 @@ public class AdvancingScript : MonoBehaviour
     {
         this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + Time.deltaTime * _speed);
 
-        if(this.transform.position.z >= 2367)
+        if(this.transform.position.z >= 2367 && this.transform.position.x == 0)
         {
             _anim.enabled = true;
             _anim.SetTrigger("Up");
+            Invoke("Space", 9);
         }
+    }
+
+    void Space()
+    {
+        _cam.backgroundColor = Color.black;
+        _fadeout.SetTrigger("Y");
+        _anim.enabled = false;
+        _speed = _spaceSpeed;
+        _trainSpaceScript.enabled = true;
     }
 }
