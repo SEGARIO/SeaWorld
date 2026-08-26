@@ -8,6 +8,7 @@ public class AdvancingScript : MonoBehaviour
     public Animator _fadeout;
     public Camera _cam;
     public AdvancingScript _trainSpaceScript;
+    public Advance advanceStar;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,5 +41,6 @@ public class AdvancingScript : MonoBehaviour
         _anim.enabled = false;
         _speed = _spaceSpeed;
         _trainSpaceScript.enabled = true;
+        advanceStar.enabled = true;
     }
 }
