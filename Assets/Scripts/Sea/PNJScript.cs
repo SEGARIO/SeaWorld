@@ -15,6 +15,7 @@ public class PNJScript : MonoBehaviour
     Quaternion initialRotation;
     private void Start()
     {
+        Debug.Log("Start");
         _animator = GetComponentInChildren<Animator>();
         if(_canRotate)
         {
@@ -43,6 +44,7 @@ public class PNJScript : MonoBehaviour
 
         if (distance <= range)
         {
+            Debug.Log("Range");
             if (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
             {
                 if(_canStart)
@@ -50,6 +52,8 @@ public class PNJScript : MonoBehaviour
                     _dialogueSystem.StartDialogue();
                     _canStart = false;
                 }
+
+                Debug.Log("Pressed");
                 
                 Interact();
                
@@ -70,6 +74,7 @@ public class PNJScript : MonoBehaviour
 
     void Interact()
     {
+        Debug.Log("Interact");
         if(_canRotate)
         {
             transform.rotation = Quaternion.Euler(0f, Quaternion.LookRotation(player.position - transform.position).eulerAngles.y, 0f);

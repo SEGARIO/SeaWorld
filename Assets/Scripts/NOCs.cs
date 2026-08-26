@@ -35,6 +35,11 @@ public class NOCs : MonoBehaviour
     public string[] _otherDialogues;
     public Color[] _otherTextColors;
     bool _hasFinishedTalkingDialogue;
+
+    public Transform _target;
+    public bool _canTurnWhenTalking;
+    public bool _haveMultipleIdles;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -53,7 +58,12 @@ public class NOCs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_isInRange)
+        if(_haveMultipleIdles)
+        {
+            _anim.SetInteger("Random", UnityEngine.Random.Range(0, 4));
+        }
+        
+        if (_isInRange)
         {
             _text.text = _dialogues[_index];
             _text.color = _textColors[_index];
@@ -62,6 +72,7 @@ public class NOCs : MonoBehaviour
             if (Gamepad.current.buttonSouth.isPressed && _canPress)
             {
                 _isTalking = true ;
+                _anim.SetBool("IsTalking", true);
                 if(_exclamationMark != null)
                 {
                     _exclamationMark.GetComponent<Animator>().SetTrigger("Play");
@@ -94,6 +105,12 @@ public class NOCs : MonoBehaviour
         if(_isTalking)
         {
             _pressA.SetActive(false);
+
+            if(_canTurnWhenTalking)
+            {
+                transform.LookAt(new Vector3(_target.transform.position.x, _target.transform.position.y - 1, _target.transform.position.z));
+
+            }
             _player.GetComponent<PlayerController>().enabled = false;
             _dialoguePanel.SetActive(true);
         }
@@ -130,6 +147,7 @@ public class NOCs : MonoBehaviour
         if(!_hasFinishedTalkingDialogue && _index >= _dialogues.Length)
         {
             _isTalking = false;
+            _anim.SetBool("IsTalking", false);
             _dialoguePanel.SetActive(false);
             if(_canActivateSomething)
             {
