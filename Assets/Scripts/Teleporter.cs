@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class Teleporter : MonoBehaviour
 {
@@ -15,6 +16,11 @@ public class Teleporter : MonoBehaviour
     public GameObject _circleOut;
     public PlayerController playerController;
     public CharacterController _ch;
+
+    private void Start()
+    {
+        _light = GameObject.Find("Sun Light").GetComponent<Light>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
@@ -39,15 +45,15 @@ public class Teleporter : MonoBehaviour
         _circleOut.SetActive(true);
         _circleIn.SetActive(false);
         player.transform.position = _position.position;
-        if(Acolyt != null)
-        {
-            Acolyt.transform.position = _position.position;
-        }
+       
         _light.color = _lightColor;
          _cam.gameObject.transform.position = _position.position;
         playerController.enabled = true;
         agent.enabled = true;
         _ch.enabled = true;
-
+        if (Acolyt != null)
+        {
+            Acolyt.transform.position = _position.position;
+        }
     }
 }

@@ -108,10 +108,18 @@ public class PlayerLife : MonoBehaviour
                 
             }
         }
+
+      
     }
 
     private void OnTriggerStay(Collider collision)
     {
+        if (collision.gameObject.tag == "Water")
+        {
+            _life = 0;
+            Death();
+
+        }
         if (collision.gameObject.tag == "Enemy")
         {
             Debug.Log("TouchEnemy");
