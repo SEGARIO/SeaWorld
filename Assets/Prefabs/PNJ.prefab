@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2099719333252345038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6349966705830778109}
+  - component: {fileID: 3185491541502829355}
+  m_Layer: 2
+  m_Name: LookAtPressA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6349966705830778109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099719333252345038}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4219750200953209086}
+  m_Father: {fileID: 1131282136322708919}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3185491541502829355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099719333252345038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7bccb00c9eaf33438c5020373d70050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3735687216003641097
 GameObject:
   m_ObjectHideFlags: 0
@@ -26,12 +71,12 @@ Transform:
   m_GameObject: {fileID: 3735687216003641097}
   serializedVersion: 2
   m_LocalRotation: {x: -0.2305895, y: -0, z: -0, w: 0.97305113}
-  m_LocalPosition: {x: -0.344, y: 2.041, z: 0.187}
+  m_LocalPosition: {x: -0.34400177, y: 2.041, z: 0.18700027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8567879018944482246}
-  m_Father: {fileID: 1131282136322708919}
+  m_Father: {fileID: 6349966705830778109}
   m_LocalEulerAnglesHint: {x: -26.664, y: 0, z: 0}
 --- !u!114 &6897157001225615235
 MonoBehaviour:
@@ -80,7 +125,7 @@ Transform:
   m_Children:
   - {fileID: 2752501567615372306}
   - {fileID: 7195930665758286006}
-  - {fileID: 4219750200953209086}
+  - {fileID: 6349966705830778109}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &707053929979219757
@@ -207,7 +252,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
   _index: 0
   _canPress: 1
+  _audioSource: {fileID: 0}
   _anim: {fileID: 0}
+  _hasAnotherDialogue: 0
+  _otherDialogues: []
+  _otherTextColors: []
+  _target: {fileID: 0}
+  _canTurnWhenTalking: 0
+  _haveMultipleIdles: 0
 --- !u!1 &4887184528218580582
 GameObject:
   m_ObjectHideFlags: 0
