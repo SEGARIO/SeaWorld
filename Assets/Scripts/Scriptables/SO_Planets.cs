@@ -7,6 +7,7 @@ public class SO_Planets : ScriptableObject
     public string _description;
 
     public int _position;
+    public int _size;
     public int _temperatureMoyenne;
     public int _nightDayCycle;
     public string _population;
