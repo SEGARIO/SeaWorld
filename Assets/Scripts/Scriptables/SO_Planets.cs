@@ -9,9 +9,10 @@ public class SO_Planets : ScriptableObject
     public int _position;
     public int _temperatureMoyenne;
     public int _nightDayCycle;
-    public int _population;
+    public string _population;
     public string _gouvernement;
     public int _moons;
     public string _activities;
     public string _money;
+    public Color _color;
 }
