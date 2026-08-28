@@ -46,6 +46,15 @@ public class JoystickInt : MonoBehaviour
             enabled = false;
             StartCoroutine(WaitForJoystickRelease());
         }
+        if(value == 15)
+        {
+            value = 0;
+        }
+
+        if(value == -1)
+        {
+            value = 14;
+        }
 
         _currentPlanet = _planets[value];
         _planetImage.color = _currentPlanet._color;

@@ -13,6 +13,8 @@ public class Panel : MonoBehaviour
     public GameObject _textPanel;
     public GameObject _pressA;
     bool isInRange;
+    public bool _canActivateSomething;
+    public GameObject _objectToActivate;
 
     public void StartTyping()
     {
@@ -63,6 +65,7 @@ public class Panel : MonoBehaviour
                 _pressA.SetActive(false);
                 _textPanel.SetActive(true);
                 StartTyping();
+                Invoke("Activate", 1);
             }
             else
             {
@@ -79,6 +82,14 @@ public class Panel : MonoBehaviour
     private void PlayerIn()
     {
        
+    }
+
+    void Activate()
+    {
+        if(_canActivateSomething)
+        {
+            _objectToActivate.SetActive(true);
+        }
     }
 
     private void OnDrawGizmosSelected()

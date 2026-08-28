@@ -58,7 +58,7 @@ public class NOCs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_haveMultipleIdles)
+        if(_anim != null && _haveMultipleIdles)
         {
             _anim.SetInteger("Random", UnityEngine.Random.Range(0, 4));
         }
@@ -72,7 +72,12 @@ public class NOCs : MonoBehaviour
             if (Gamepad.current.buttonSouth.isPressed && _canPress)
             {
                 _isTalking = true ;
-                _anim.SetBool("IsTalking", true);
+
+                if(_anim != null)
+                {
+                    _anim.SetBool("IsTalking", true);
+                }
+                
                 if(_exclamationMark != null)
                 {
                     _exclamationMark.GetComponent<Animator>().SetTrigger("Play");
@@ -147,7 +152,12 @@ public class NOCs : MonoBehaviour
         if(!_hasFinishedTalkingDialogue && _index >= _dialogues.Length)
         {
             _isTalking = false;
-            _anim.SetBool("IsTalking", false);
+
+            if(_anim != null)
+            {
+                _anim.SetBool("IsTalking", false);
+            }
+            
             _dialoguePanel.SetActive(false);
             if(_canActivateSomething)
             {
@@ -158,7 +168,7 @@ public class NOCs : MonoBehaviour
                 
             }
 
-            if(_canActivateAnimation)
+            if(_canActivateAnimation && _anim != null)
             {
                 _anim.SetTrigger("Go");
             }
@@ -182,7 +192,7 @@ public class NOCs : MonoBehaviour
 
             }
 
-            if (_canActivateAnimation)
+            if (_canActivateAnimation && _anim != null)
             {
                 _anim.SetTrigger("Go");
             }
