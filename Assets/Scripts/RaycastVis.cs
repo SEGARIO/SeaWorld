@@ -13,6 +13,8 @@ public class RaycastVis : MonoBehaviour
     public Vector3 HitPoint { get; private set; }
     Vector3 endPoint;
 
+
+
     private void Update()
     {
         Vector3 direction = (_viser.position - _player.position).normalized;
