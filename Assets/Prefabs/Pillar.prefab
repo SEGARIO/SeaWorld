@@ -4909,9 +4909,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c4b6f445f1900d46b60715231c75f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pillar: {fileID: 0}
+  _pillar: {fileID: 1182674610201287329}
   _s: {fileID: 2800448071967991440}
-  _parent: {fileID: 7033827492827816992}
+  _parent: {fileID: 8872305939087587742}
 --- !u!54 &6230185163283088017
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4969,7 +4969,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1196215249518494777}
-  - {fileID: 7328720964490481023}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8872305939087587742
@@ -5005,6 +5004,7 @@ Transform:
   m_Children:
   - {fileID: 8826243335208711959}
   - {fileID: 4302880703671872772}
+  - {fileID: 7328720964490481023}
   m_Father: {fileID: 7872321175967476254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &265855292076274587
@@ -5061,7 +5061,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 7872321175967476254}
+    m_TransformParent: {fileID: 1196215249518494777}
     m_Modifications:
     - target: {fileID: 1383618565021415197, guid: b2a54a4c26ebb0245849fb461a03e744, type: 3}
       propertyPath: m_Name
@@ -5141,6 +5141,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2a54a4c26ebb0245849fb461a03e744, type: 3}
+--- !u!1 &1182674610201287329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1383618565021415197, guid: b2a54a4c26ebb0245849fb461a03e744, type: 3}
+  m_PrefabInstance: {fileID: 241555607882526140}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7328720964490481023 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7417135467566375107, guid: b2a54a4c26ebb0245849fb461a03e744, type: 3}
