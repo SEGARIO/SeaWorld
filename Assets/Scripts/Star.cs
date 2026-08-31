@@ -13,6 +13,11 @@ public class Star : MonoBehaviour
     [Header("Animation")]
     public Animator animator;
     public string animationTrigger = "Activate";
+    public static int _starNumber;
+
+    public bool _canChangeSomething;
+    public GameObject _objectToDisactivate;
+    public GameObject _objectToActivate;
 
     void Update()
     {
@@ -27,6 +32,13 @@ public class Star : MonoBehaviour
             if (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
             {
                 animator.SetTrigger(animationTrigger);
+                _starNumber += 1;
+                Debug.Log("Star Number"+_starNumber);
+                if(_canChangeSomething)
+                {
+                    Destroy(_objectToDisactivate);
+                    _objectToActivate.SetActive(true);
+                }
                 Invoke("Destroyer", 1);
             }
         }
