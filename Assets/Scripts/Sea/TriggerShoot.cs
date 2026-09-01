@@ -11,6 +11,7 @@ public class TriggerShoot : MonoBehaviour
     public float cooldown = 1f;
     public bool _isCurrentPlayer;
     private float lastShootTime;
+    public Transform _reference;
 
     void Update()
     {
@@ -22,7 +23,7 @@ public class TriggerShoot : MonoBehaviour
                 Shoot(cooldown);
             }
         }
-       
+        this.transform.position = _reference.position;
     }
 
     public void Shoot(float _cooldown)

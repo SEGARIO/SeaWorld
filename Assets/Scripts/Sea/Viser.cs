@@ -39,7 +39,11 @@ public class Viser : MonoBehaviour
         Vector3 targetPosition = center.position + currentOffset + Vector3.up * height;
         transform.position = targetPosition;
 
-        transform.LookAt(center);
+        if(this.transform.rotation.y < 90 && this.transform.rotation.y > -90)
+        {
+            transform.LookAt(center);
+        }
+        
 
         // 🔥 SCALE basé sur la distance
         float distance = currentOffset.magnitude;

@@ -53,7 +53,11 @@ public class PlayerController : MonoBehaviour
 
             if(move.magnitude < 0.8f)
             {
-                _animator.speed = move.magnitude*2;
+                _animator.speed = move.magnitude*3;
+            }
+            else
+            {
+                _animator.speed = 1;
             }
           
         }
