@@ -15,7 +15,7 @@ public class MenuEvents : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        _CosmoAnim.SetBool("Space", true);
     }
 
     // Update is called once per frame
@@ -45,8 +45,8 @@ public class MenuEvents : MonoBehaviour
         SceneManager.LoadScene(_sceneName);
     }
 
-    void Finger()
+    public void Finger()
     {
-        _CosmoAnim
+        _CosmoAnim.SetTrigger("Finger");
     }
 }
