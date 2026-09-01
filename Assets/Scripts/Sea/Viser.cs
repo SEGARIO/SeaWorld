@@ -48,6 +48,8 @@ public class Viser : MonoBehaviour
         float scaleValue = t * maxScale;
 
         transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
+
+
     }
 
     public void OnLook(InputValue value)

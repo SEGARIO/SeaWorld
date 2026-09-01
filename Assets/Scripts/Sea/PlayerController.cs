@@ -45,7 +45,17 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
             controller.Move(move * speed * Time.deltaTime);
-            _smokeParticles.startLifetime = 1;
+
+            if(move.magnitude > 0.7f)
+            {
+                _smokeParticles.startLifetime = move.magnitude;
+            }
+
+            if(move.magnitude < 0.8f)
+            {
+                _animator.speed = move.magnitude*2;
+            }
+          
         }
         else
         {
@@ -61,23 +71,40 @@ public class PlayerController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-       /* if (Gamepad.current.buttonSouth.isPressed)
+        /* if (Gamepad.current.buttonSouth.isPressed)
+         {
+             timerChangePlayer -= Time.deltaTime;
+         }
+         else
+         {
+             timerChangePlayer = 1.5f;
+         }
+
+
+         if(timerChangePlayer <= 0)
+         {
+             //_playerSwitcher.ChangePlayer();
+             //Debug.Log(timerChangePlayer);
+             timerChangePlayer = 1.5f;
+
+         }*/
+
+        if (move.magnitude == 0)
         {
-            timerChangePlayer -= Time.deltaTime;
+            _animator.SetBool("IsRunning", false);
+            _animator.SetBool("IsWalking", false);
         }
-        else
-        {
-            timerChangePlayer = 1.5f;
+            if (move.magnitude >= 0.9f)
+            {
+            _animator.SetBool("IsRunning", true);
+            _animator.SetBool("IsWalking", false);
         }
-
-
-        if(timerChangePlayer <= 0)
+               
+        if (move.magnitude > 0f && move.magnitude < 0.9f)
         {
-            //_playerSwitcher.ChangePlayer();
-            //Debug.Log(timerChangePlayer);
-            timerChangePlayer = 1.5f;
-
-        }*/
+            _animator.SetBool("IsRunning", false);
+            _animator.SetBool("IsWalking", true);
+        }
     }
 
     // Fonction appelée par l'Input System
