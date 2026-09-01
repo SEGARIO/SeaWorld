@@ -7,12 +7,18 @@ public class Viser : MonoBehaviour
     public float maxDistance = 5f;
     public float height = 1.5f;
     public float smoothSpeed = 10f;
+    public Transform _gun;
 
     [Header("Scale")]
     public float maxScale = 1f; // taille max quand joystick à fond
 
     private Vector2 lookInput;
     private Vector3 currentOffset;
+
+    private void Start()
+    {
+        _gun.transform.localScale = new Vector3(1, 1, 1);
+    }
 
     void Update()
     {

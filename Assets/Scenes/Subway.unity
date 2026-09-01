@@ -644,6 +644,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.206727, y: 1.5038971, z: 5.883926}
   m_Center: {x: 1.9897475, y: 0.7429252, z: -0.051681757}
+--- !u!95 &20647332 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4926301712774649369, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
+  m_PrefabInstance: {fileID: 1230078134}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &21665469
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,7 +2210,7 @@ MonoBehaviour:
   _deaths: 0
   _deathPanel: {fileID: 823681481}
   _controller: {fileID: 1969705269}
-  _visual: {fileID: 1987119861}
+  _visual: {fileID: 0}
 --- !u!82 &73226433
 AudioSource:
   m_ObjectHideFlags: 0
@@ -43287,6 +43292,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1861682024}
     m_Modifications:
     - target: {fileID: 48429635477221067, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 20647332}
+    - target: {fileID: 48429635477221067, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
       propertyPath: _smokeParticles
       value: 
       objectReference: {fileID: 1795535039}
@@ -43342,6 +43351,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -5.8
       objectReference: {fileID: 0}
+    - target: {fileID: 2201773123156568993, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
+      propertyPath: _gun
+      value: 
+      objectReference: {fileID: 1472538282}
     - target: {fileID: 2201773123156568993, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
       propertyPath: center
       value: 
@@ -43475,7 +43488,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5948562420563669556, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
+    - {fileID: 7835158872868879008, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2770376987907073846, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
       insertIndex: -1
@@ -51391,6 +51406,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470816467}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1472538282 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7359229642425901195, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
+  m_PrefabInstance: {fileID: 1230078134}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1473810017
 GameObject:
   m_ObjectHideFlags: 0
@@ -79876,11 +79896,6 @@ MonoBehaviour:
   _speed: 0.03
   _max: -2.2
   _min: -2.2
---- !u!1 &1987119861 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7835158872868879008, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
-  m_PrefabInstance: {fileID: 1230078134}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1989831357
 PrefabInstance:
   m_ObjectHideFlags: 0

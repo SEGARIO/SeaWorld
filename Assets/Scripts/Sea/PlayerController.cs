@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
@@ -14,15 +15,24 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem _smokeParticles;
     PlayerSwitcher _playerSwitcher;
     float timerChangePlayer;
+    public Animator _animator;
+    int _randomIdle;
     
     void Start()
     {
         _playerSwitcher = FindObjectOfType<PlayerSwitcher>();
         controller = GetComponent<CharacterController>();
+        if (SceneManager.GetActiveScene().name != "Subway")
+        {
+            _animator.SetBool("Subway", false);
+            Debug.Log("Subway");
+        }
     }
 
     void Update()
     {
+        _randomIdle = Random.Range(0, 3);
+        _animator.SetInteger("RandomIdle", _randomIdle);
         //Debug.Log(timerChangePlayer);
         Vector3 move = new Vector3(moveInput.x, 0f, moveInput.y);
 
