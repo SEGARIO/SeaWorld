@@ -25,4 +25,6 @@ public class SO_Planets : ScriptableObject
         IDK,
     }
     public LevelOfApparition _levelOfApparition;
+
+    public string _sceneName;
 }

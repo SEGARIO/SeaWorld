@@ -10,6 +10,8 @@ public class MenuEvents : MonoBehaviour
     public GameObject _camera;
     public float speed;
     bool _isTurning;
+    public Animator _animatorFade;
+    public Animator _CosmoAnim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,11 +30,23 @@ public class MenuEvents : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene(_sceneName);
+        _animatorFade.SetTrigger("Fade");
+        Invoke("Scenee", 1);
     }
 
     public void LevelSelection()
     {
+       
         _isTurning = true;
+    }
+
+    void Scenee()
+    {
+        SceneManager.LoadScene(_sceneName);
+    }
+
+    void Finger()
+    {
+        _CosmoAnim
     }
 }

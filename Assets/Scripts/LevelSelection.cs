@@ -13,6 +13,7 @@ public class LevelSelection : MonoBehaviour
     public GameObject[] _moons;
     public TextMeshProUGUI _availableText;
     public TextMeshProUGUI _planetName;
+    public MenuEvents _events;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -98,6 +99,12 @@ public class LevelSelection : MonoBehaviour
             _availableText.color = Color.white;
             _rend.material.color = Color.black;
             _planetName.text = "";
+        }
+
+        if (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame && _currentPlanet._levelOfApparition == SO_Planets.LevelOfApparition.Available)
+        {
+            _events._sceneName = _currentPlanet._sceneName;
+            _events.ChangeScene();
         }
     }
 
