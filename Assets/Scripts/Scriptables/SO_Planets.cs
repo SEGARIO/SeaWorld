@@ -16,4 +16,13 @@ public class SO_Planets : ScriptableObject
     public string _activities;
     public string _money;
     public Color _color;
+
+    public enum LevelOfApparition
+    {
+        Available,
+        Locked,
+        ComingSoon,
+        IDK,
+    }
+    public LevelOfApparition _levelOfApparition;
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 using UnityEngine.InputSystem;
 
 public class LevelSelection : MonoBehaviour
@@ -10,6 +11,8 @@ public class LevelSelection : MonoBehaviour
     public Transform _planetTransform;
     public AutoRotate _rotationScript;
     public GameObject[] _moons;
+    public TextMeshProUGUI _availableText;
+    public TextMeshProUGUI _planetName;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -70,6 +73,31 @@ public class LevelSelection : MonoBehaviour
             {
                 _moons[i].SetActive(false);
             }
+        }
+
+        if(_currentPlanet._levelOfApparition == SO_Planets.LevelOfApparition.Locked)
+        {
+            _availableText.text = "Locked";
+            _availableText.color = Color.red;
+            _planetName.text = "";
+        }
+        if (_currentPlanet._levelOfApparition == SO_Planets.LevelOfApparition.Available)
+        {
+            _availableText.text = " ";
+            _planetName.text = _currentPlanet._name;
+        }
+        if (_currentPlanet._levelOfApparition == SO_Planets.LevelOfApparition.ComingSoon)
+        {
+            _availableText.text = "COMING SOON";
+            _availableText.color = Color.blue;
+            _planetName.text = "";
+        }
+        if (_currentPlanet._levelOfApparition == SO_Planets.LevelOfApparition.IDK)
+        {
+            _availableText.text = "?";
+            _availableText.color = Color.white;
+            _rend.material.color = Color.black;
+            _planetName.text = "";
         }
     }
 
