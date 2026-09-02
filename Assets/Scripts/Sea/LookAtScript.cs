@@ -11,10 +11,15 @@ public class LookAtScript : MonoBehaviour
     [Header("Arms")]
     public Transform _arm1;
     public Transform _arm2;
+
+    public Transform _refForward;
+    public Transform _gun;
+    public float _distance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        _arm2.transform.localRotation = Quaternion.Euler(-10.801f, 87.681f, 10.33f);
+        _arm1.transform.localRotation = Quaternion.Euler(37.822f, 37.822f, 576.116f);
     }
 
     // Update is called once per frame
@@ -26,7 +31,8 @@ public class LookAtScript : MonoBehaviour
         }
         else
         {
-            if (Vector3.Distance(transform.position, _target.transform.position) > 2)
+
+            if (Vector3.Distance(transform.position, _target.transform.position) > 2 && Vector3.Distance(_gun.position, _refForward.transform.position) < _distance)
             {
                 transform.LookAt(_target.transform);
                 _canShoot = true;
@@ -42,6 +48,8 @@ public class LookAtScript : MonoBehaviour
                 Debug.Log("Loins");
                 _canShoot = false;
             }
+
+            Debug.Log(_distance);
         }
        
     }

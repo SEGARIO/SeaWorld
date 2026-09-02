@@ -8,7 +8,7 @@ public class Viser : MonoBehaviour
     public float height = 1.5f;
     public float smoothSpeed = 10f;
     public Transform _gun;
-
+    public LookAtScript _looka;
     [Header("Scale")]
     public float maxScale = 1f; // taille max quand joystick à fond
 
@@ -18,6 +18,7 @@ public class Viser : MonoBehaviour
     private void Start()
     {
         _gun.transform.localScale = new Vector3(1, 1, 1);
+        _looka.enabled = true;
     }
 
     void Update()

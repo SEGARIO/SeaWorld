@@ -54,8 +54,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.9969825, z: 1}
+  m_Center: {x: 0, y: 0.49849123, z: 0}
 --- !u!54 &5988524377182133950
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -96,7 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canGiveSomething: 0
-  _objectToGive: {fileID: 0}
+  _objectToGive:
+  - {fileID: 0}
   _maxLife: 10
   _rend: {fileID: 6659114295703019555}
   _materials:
