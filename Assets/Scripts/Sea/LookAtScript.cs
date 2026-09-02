@@ -15,7 +15,8 @@ public class LookAtScript : MonoBehaviour
     public Transform _refForward;
     public Transform _gun;
     public float _distance;
-    public GameObject _viserRenderer;
+    public Renderer _viserRenderer;
+    public Color _color;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,7 +41,7 @@ public class LookAtScript : MonoBehaviour
                 _arm2.transform.localRotation = Quaternion.Euler(-29.828f, -20.904f, 18.874f);
                 _shoot.enabled = true;
                 Debug.Log("Proche");
-                _viserRenderer.SetActive(true);
+                _viserRenderer.material.color = Color.red;
             }
             else
             {
@@ -49,7 +50,7 @@ public class LookAtScript : MonoBehaviour
                 _arm1.transform.localRotation = Quaternion.Euler(37.822f, 37.822f, 576.116f);
                 Debug.Log("Loins");
                 _canShoot = false;
-                _viserRenderer.SetActive(false);
+                _viserRenderer.material.color = Color.black;
             }
 
             Debug.Log(_distance);
