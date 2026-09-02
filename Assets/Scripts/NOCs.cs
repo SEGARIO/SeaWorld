@@ -116,6 +116,8 @@ public class NOCs : MonoBehaviour
                 transform.LookAt(new Vector3(_target.transform.position.x, _target.transform.position.y - 1, _target.transform.position.z));
 
             }
+            _player.GetComponent<PlayerController>()._objectToTurnWhenTalking.transform.LookAt(new Vector3(this.gameObject.transform.position.x, _player.transform.position.y, this.gameObject.transform.position.z));
+            _player.GetComponent<PlayerController>()._animator.SetBool("IsTalking", true);
             _player.GetComponent<PlayerController>().enabled = false;
             _dialoguePanel.SetActive(true);
         }
@@ -152,9 +154,10 @@ public class NOCs : MonoBehaviour
         if(!_hasFinishedTalkingDialogue && _index >= _dialogues.Length)
         {
             _isTalking = false;
-
-            if(_anim != null)
+            _player.GetComponent<PlayerController>()._animator.SetBool("IsTalking", false);
+            if (_anim != null)
             {
+                _player.GetComponent<PlayerController>()._animator.SetBool("IsTalking", false);
                 _anim.SetBool("IsTalking", false);
             }
             
@@ -182,6 +185,7 @@ public class NOCs : MonoBehaviour
         if (_hasFinishedTalkingDialogue && _index >= _otherDialogues.Length)
         {
             _isTalking = false;
+            _player.GetComponent<PlayerController>()._animator.SetBool("IsTalking", false);
             _dialoguePanel.SetActive(false);
             if (_canActivateSomething)
             {

@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     float timerChangePlayer;
     public Animator _animator;
     int _randomIdle;
+    public GameObject _objectToTurnWhenTalking;
     
     void Start()
     {
