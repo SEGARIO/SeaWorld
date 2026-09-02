@@ -44,7 +44,7 @@ public class Teleporter : MonoBehaviour
       
         _circleOut.SetActive(true);
         _circleIn.SetActive(false);
-        player.transform.position = _position.position;
+        player.transform.position = new Vector3(_position.position.x, _position.position.y +1, _position.position.z);
        
         _light.color = _lightColor;
          _cam.gameObject.transform.position = _position.position;
