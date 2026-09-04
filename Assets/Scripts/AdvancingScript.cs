@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AdvancingScript : MonoBehaviour
 {
@@ -31,6 +32,11 @@ public class AdvancingScript : MonoBehaviour
             _anim.enabled = true;
             _anim.SetTrigger("Right");
             
+        }
+
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("SpaceshipRight") && _anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+        {
+            SceneManager.LoadScene("Credits");
         }
     }
 

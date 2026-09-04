@@ -16244,7 +16244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa30ce7a1314a16478e2accd63473d8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1
+  _speed: 8
   _spaceSpeed: 100
   _anim: {fileID: 189583210}
   _fadeout: {fileID: 1282667315}
@@ -56458,6 +56458,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 1243077627}
+  _followsGun: 0
+  _shoot: {fileID: 0}
+  _arm1: {fileID: 0}
+  _arm2: {fileID: 0}
+  _refForward: {fileID: 0}
+  _gun: {fileID: 0}
+  _distance: 0
+  _viserRenderer: {fileID: 0}
+  _color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &622967451
 MonoBehaviour:
   m_ObjectHideFlags: 0
