@@ -29,6 +29,27 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_enemy._isAgressive)
+        {
+            if (_enemy._detectsWithSight)
+            {
+                CheckForPlayer();
+            }
+            else
+            {
+                if (player == null) return;
+
+                float distance = Vector3.Distance(transform.position, player.position);
+
+                //Debug.Log("Distance au player : " + distance);
+
+                if (distance <= _enemy._detectionRange)
+                {
+                    DetectPlayer();
+                }
+            }
+
+        }
         _anim.SetInteger("Random", Random.Range(0, 3));
         if(_life <= 0)
         {
@@ -45,22 +66,22 @@ public class EnemyScript : MonoBehaviour
         {
             _smokePart.startLifetime = 0;
         }
+      
        
-        if(_enemy._isAgressive)
+       
+    }
+    public void CheckForPlayer()
+    {
+        Debug.DrawRay(transform.position, transform.forward * _enemy._detectionRange, Color.red, 1f);
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, _enemy._detectionRange))
         {
-            if (player == null) return;
-
-            float distance = Vector3.Distance(transform.position, player.position);
-
-            //Debug.Log("Distance au player : " + distance);
-
-            if(distance <= _enemy._detectionRange)
+            if (hit.collider.CompareTag("Player"))
             {
                 DetectPlayer();
             }
         }
+       
     }
-
     public void DetectPlayer()
     {
         _followplayer = true;

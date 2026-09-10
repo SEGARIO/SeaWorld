@@ -52,6 +52,7 @@ public class SO_Enemy : ScriptableObject
 
     [Header("Stats")]
     public bool _isAgressive;
+    public bool _detectsWithSight;
     public float _detectionRange;
     [Range(1, 100)] public int _life;
     [Range(0, 10)] public int _attack;
