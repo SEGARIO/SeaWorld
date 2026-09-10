@@ -29,6 +29,7 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _anim.SetInteger("Random", Random.Range(0, 3));
         if(_life <= 0)
         {
             Death();
@@ -67,6 +68,7 @@ public class EnemyScript : MonoBehaviour
 
     void Death()
     {
+        _enemy._hasBeenMet = true;
         GameFeel.Instance.PlayJuice(1.5f, 0.3f);
 
         //GameFeel.Instance.Flash(0.1f);
