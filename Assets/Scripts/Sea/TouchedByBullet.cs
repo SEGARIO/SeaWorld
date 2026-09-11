@@ -39,6 +39,12 @@ public class TouchedByBullet : MonoBehaviour
             _enemyScript.DetectPlayer();
            Destroy(collision.gameObject);
         }
+        if (collision.gameObject.tag == "Water")
+        {
+           
+            _enemyScript._life = 0;
+
+        }
     }
 
     void OriginalColors()
