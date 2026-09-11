@@ -59,4 +59,5 @@ public class SO_Enemy : ScriptableObject
     [Range(0, 10)] public int _speed;
 
     public bool _hasBeenMet;
+    public bool _isNautilus;
 }

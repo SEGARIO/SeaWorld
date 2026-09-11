@@ -12,9 +12,14 @@ public class EnemyScript : MonoBehaviour
 
    Transform player;
     public ParticleSystem _smokePart;
+
+    public GameObject[] _objectToActivateAndDisactivate;
+    bool _canPlayPart;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _canPlayPart = true;
         _anim = GetComponentInChildren<Animator>();
         _agent = GetComponent<NavMeshAgent>();
         _agent.speed = _enemy._speed;
@@ -49,6 +54,21 @@ public class EnemyScript : MonoBehaviour
                 }
             }
 
+        }
+
+        if(_enemy._isNautilus)
+        {
+
+            if(_life <= _enemy._life/3 && _canPlayPart)
+            {
+                _objectToActivateAndDisactivate[0].SetActive(false);
+                _objectToActivateAndDisactivate[1].SetActive(true);
+                _smokePart.Play();
+                GameFeel.Instance.PlayJuice(1.5f, 0.3f);
+                _agent.speed = _enemy._speed * 2;
+                _canPlayPart = false;
+
+            }
         }
         _anim.SetInteger("Random", Random.Range(0, 3));
         if(_life <= 0)
