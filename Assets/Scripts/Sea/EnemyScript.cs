@@ -9,6 +9,7 @@ public class EnemyScript : MonoBehaviour
     NavMeshAgent _agent;
     bool _followplayer;
     Animator _anim;
+   public Animator _otherAnimator;
 
    Transform player;
     public ParticleSystem _smokePart;
@@ -111,6 +112,19 @@ public class EnemyScript : MonoBehaviour
     {
         _enemy._hasBeenMet = true;
         GameFeel.Instance.PlayJuice(1.5f, 0.3f);
+
+        if(_enemy._canInstantiateOther)
+        {
+            for(int i = 0; i < _enemy._otherToInstantiate.Length; i++)
+            {
+                Instantiate(_enemy._otherToInstantiate[i], this.transform.position, Quaternion.identity);
+            }
+           
+        }
+        if(_enemy._activatesAnimationWhenDead)
+        {
+            _otherAnimator.SetTrigger("Activate");
+        }
 
         //GameFeel.Instance.Flash(0.1f);
         Instantiate(_deathParticle, this.transform.position, Quaternion.identity);

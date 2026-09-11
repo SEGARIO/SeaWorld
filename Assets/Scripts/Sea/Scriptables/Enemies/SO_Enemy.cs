@@ -60,4 +60,7 @@ public class SO_Enemy : ScriptableObject
 
     public bool _hasBeenMet;
     public bool _isNautilus;
+    public bool _activatesAnimationWhenDead;
+    public bool _canInstantiateOther;
+    public GameObject[] _otherToInstantiate;
 }
