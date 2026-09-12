@@ -6,7 +6,7 @@ public class EnemyScript : MonoBehaviour
     public GameObject _deathParticle;
     public SO_Enemy _enemy;
     public int _life;
-    NavMeshAgent _agent;
+   public NavMeshAgent _agent;
     bool _followplayer;
     Animator _anim;
    public Animator _otherAnimator;
@@ -81,11 +81,11 @@ public class EnemyScript : MonoBehaviour
         {
             _anim.SetBool("IsWalking", true);
             _agent.SetDestination(FindObjectOfType<PlayerController>().gameObject.transform.position);
-            _smokePart.startLifetime = 2;
+            //_smokePart.startLifetime = 2;
         }
         else
         {
-            _smokePart.startLifetime = 0;
+            //_smokePart.startLifetime = 0;
         }
       
        

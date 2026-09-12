@@ -7,7 +7,7 @@ public class DelayedPlayerFollower : MonoBehaviour
 
     public float distanceTrigger = 3f;
     public float delay = 2f;
-
+    public GameObject _talkingNpc;
     private struct PlayerState
     {
         public Vector3 position;
@@ -26,6 +26,12 @@ public class DelayedPlayerFollower : MonoBehaviour
 
     private bool wasFollowing = false;
 
+    private void Start()
+    {
+        player = FindObjectOfType<PlayerController>().gameObject.transform;
+        this.transform.position = _talkingNpc.transform.position;
+        Destroy(_talkingNpc);
+    }
     void Update()
     {
         // Enregistre la position du joueur

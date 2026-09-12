@@ -8,6 +8,7 @@ public class TouchedByBullet : MonoBehaviour
     public Color _hitColor;
     public EnemyScript _enemyScript;
     public GameObject _particl;
+   
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,13 +29,20 @@ public class TouchedByBullet : MonoBehaviour
     {
         if(collision.gameObject.tag ==  "Bullet")
         {
+
             for (int i = 0; i < _renderers.Length; i++)
             {
                 _renderers[i].material.color = _hitColor;
                 
                 Invoke("OriginalColors", 0.1f);
             }
-            _enemyScript._life -= 1;
+            _enemyScript._life -= collision.gameObject.GetComponent<ElectricBullet>()._attack;
+
+            if(collision.gameObject.GetComponent<ElectricBullet>()._isElectric)
+            {
+                _enemyScript._agent.speed = _enemyScript._agent.speed / 1.5f;
+                
+            }
            
             _enemyScript.DetectPlayer();
            Destroy(collision.gameObject);
