@@ -28,8 +28,8 @@ public class Teleporter : MonoBehaviour
             Debug.Log("Trigger touché par : " + other.name);
             Debug.Log("Référence player : " + player.name);
             playerController.enabled = false;
-            agent = Acolyt.GetComponent<NavMeshAgent>();
-            agent.enabled = false;
+            //agent = Acolyt.GetComponent<NavMeshAgent>();
+            //agent.enabled = false;
             _ch.enabled = false;
             _circleOut.SetActive(false);
             _circleIn.SetActive(true);
@@ -49,7 +49,7 @@ public class Teleporter : MonoBehaviour
         _light.color = _lightColor;
          _cam.gameObject.transform.position = _position.position;
         playerController.enabled = true;
-        agent.enabled = true;
+        //agent.enabled = true;
         _ch.enabled = true;
         if (Acolyt != null)
         {

@@ -11,10 +11,17 @@ public class PlayerPowerUps : MonoBehaviour
     public ParticleSystem _system;
     public ParticleSystem _lightSystem;
     bool _canPlay;
+
+    public GameObject _originalBullet;
+    public GameObject _bigBullet;
+    public float _originalCooldown;
+    public float _bigCooldown;
+    public TriggerShoot _shooter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _timer = _timeOfPowerUp;
+        _shooter = FindObjectOfType<TriggerShoot>();
         _canPlay = true;    
     }
 
@@ -34,6 +41,13 @@ public class PlayerPowerUps : MonoBehaviour
                 Debug.Log("New shoot");
             }
             _timer -= Time.deltaTime;
+            _shooter.prefab = _bigBullet;
+            _shooter.cooldown = _bigCooldown;
+        }
+        else
+        {
+            _shooter.prefab = _originalBullet;
+            _shooter.cooldown = _originalCooldown;
         }
 
         if(_timer <= 0)
