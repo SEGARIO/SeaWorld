@@ -17,6 +17,7 @@ public class GameFeel : MonoBehaviour
 
     void Awake()
     {
+        Application.targetFrameRate = 60;
         Instance = this;
 
         if (cam != null)

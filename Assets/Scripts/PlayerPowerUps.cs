@@ -22,7 +22,9 @@ public class PlayerPowerUps : MonoBehaviour
     {
         _timer = _timeOfPowerUp;
         _shooter = FindObjectOfType<TriggerShoot>();
-        _canPlay = true;    
+        _canPlay = true;
+        _shooter.prefab = _originalBullet;
+
     }
 
     // Update is called once per frame

@@ -13,7 +13,7 @@ public class EnemyWater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(this.transform.position.y < _water.transform.position.y)
+        if(this.transform.position.y < _water.transform.position.y +0.5)
         {
             _script._life = 0;
         }

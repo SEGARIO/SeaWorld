@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UIElements;
-using static UnityEditor.FilePathAttribute;
+
 
 public class Vising : MonoBehaviour
 {

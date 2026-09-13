@@ -16,6 +16,7 @@ public class PlayerSwitcher : MonoBehaviour
 
     public PlayerController _controller;
     public GameObject _visual;
+    public GameObject _bullet;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     /*void Start()
     {

@@ -2211,6 +2211,7 @@ MonoBehaviour:
   _deathPanel: {fileID: 823681481}
   _controller: {fileID: 1969705269}
   _visual: {fileID: 0}
+  _bullet: {fileID: 2530092473437853594, guid: cdfcbc39b515d5f4f981e860b50ae1a5, type: 3}
 --- !u!82 &73226433
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12155,11 +12156,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2275721571885089005, guid: acdb90624a404aa438447006f1026065, type: 3}
   m_PrefabInstance: {fileID: 877313426}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &345669365 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 9186446616439801708, guid: acdb90624a404aa438447006f1026065, type: 3}
-  m_PrefabInstance: {fileID: 877313426}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &348727710
 GameObject:
   m_ObjectHideFlags: 0
@@ -18276,11 +18272,6 @@ PrefabInstance:
 --- !u!4 &502761596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8771972552311404736, guid: bbf9e36a48d6c5648a13889afab076fd, type: 3}
-  m_PrefabInstance: {fileID: 502761595}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &502761597 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8771972552311404798, guid: bbf9e36a48d6c5648a13889afab076fd, type: 3}
   m_PrefabInstance: {fileID: 502761595}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &503756126
@@ -43620,9 +43611,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4438725188809801613, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
       insertIndex: 5
       addedObject: {fileID: 1969705273}
-    - targetCorrespondingSourceObject: {fileID: 4438725188809801613, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 1969705277}
     - targetCorrespondingSourceObject: {fileID: 972373473871238472, guid: 294f617d7b858c04e939e42601f82c13, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2050450523}
@@ -79056,22 +79044,6 @@ MonoBehaviour:
   enemyDetected: 0
   _agent: {fileID: 0}
   _shooter: {fileID: 449399014}
---- !u!114 &1969705277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1802144519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e7ae43ebf5c1f345bd55cb77556892c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isInPowerUpMode: 0
-  _timeOfPowerUp: 10
-  _system: {fileID: 345669365}
-  _lightSystem: {fileID: 502761597}
 --- !u!1 &1969802569
 GameObject:
   m_ObjectHideFlags: 0
