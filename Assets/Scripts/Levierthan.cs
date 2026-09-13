@@ -3,6 +3,7 @@ using UnityEngine;
 public class Levierthan : MonoBehaviour
 {
     public SO_Enemy _scriptable;
+    public int _life;
     public GameObject _playerTransform;
     public float _timer;
     int _randomAttack;
@@ -41,6 +42,7 @@ public class Levierthan : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _life = _scriptable._life;
         _timer = _introDuration;
     }
 
@@ -120,7 +122,7 @@ public class Levierthan : MonoBehaviour
     {
         if (_timerStalactit > 0)
         {
-            Instantiate(_prefabStalactit, new Vector3(Random.Range(this.transform.position.x - 10, this.transform.position.x + 10), 0, Random.Range(this.transform.position.z -10, this.transform.position.z + 10)), Quaternion.identity);
+            Instantiate(_prefabStalactit, new Vector3(Random.Range(this.transform.position.x - 15, this.transform.position.x + 15), 0, Random.Range(this.transform.position.z -15, this.transform.position.z + 15)), Quaternion.identity);
             Invoke("SpawnStalactit", _timeBetweenStalactits);
         }
         else
