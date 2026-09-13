@@ -108,8 +108,31 @@ public class PlayerLife : MonoBehaviour
                 
             }
         }
+        if (collision.gameObject.tag == "BigEnemy")
+        {
+            Debug.Log("TouchBigEnemy");
+            for (int i = 0; i < _renderers.Length; i++)
+            {
+                _renderers[i].material.color = _hitColor;
 
-      
+                Invoke("OriginalColors", 0.1f);
+            }
+            Debug.Log(collision.gameObject.GetComponentInParent<EnemyScript>()._enemy._attack);
+            _life -= 3;
+            SetVignette(0.4f);
+            GameFeel.Instance.PlayJuice(1.5f, 0.3f);
+            GameFeel.Instance.Flash(0.1f);
+
+            if (_life <= 0)
+            {
+                _life = 0;
+                Death();
+
+            }
+        }
+
+
+
     }
 
     private void OnTriggerStay(Collider collision)
@@ -130,6 +153,27 @@ public class PlayerLife : MonoBehaviour
                 Invoke("OriginalColors", 0.1f);
             }
             _life -= 0.01f;
+            SetVignette(0.4f);
+            GameFeel.Instance.PlayJuice(1.5f, 0.3f);
+            GameFeel.Instance.Flash(0.1f);
+
+            if (_life <= 0)
+            {
+                _life = 0;
+                Death();
+
+            }
+        }
+        if (collision.gameObject.tag == "BigEnemy")
+        {
+            Debug.Log("TouchBigEnemy");
+            for (int i = 0; i < _renderers.Length; i++)
+            {
+                _renderers[i].material.color = _hitColor;
+
+                Invoke("OriginalColors", 0.1f);
+            }
+            _life -= 0.1f;
             SetVignette(0.4f);
             GameFeel.Instance.PlayJuice(1.5f, 0.3f);
             GameFeel.Instance.Flash(0.1f);
