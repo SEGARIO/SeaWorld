@@ -1,5 +1,7 @@
+using System;
 using TMPro;
 using UnityEngine;
+using System.Runtime.InteropServices;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -18,6 +20,16 @@ public class MenuButton : MonoBehaviour
     public AudioClip _clip;
     AudioSource _source;
     bool _canPlaySound;
+    int indexQuit;
+
+    [DllImport("user32.dll", CharSet = CharSet.Unicode)]
+    private static extern int MessageBox(
+      IntPtr hWnd,
+      string text,
+      string caption,
+      uint type
+  );
+
     private void Awake()
     {
         _source = FindObjectOfType<AudioSource>();
@@ -43,7 +55,7 @@ public class MenuButton : MonoBehaviour
 
             if(_canPlaySound)
             {
-                _source.pitch = Random.Range(0.8f, 1.2f);
+                _source.pitch = UnityEngine.Random.Range(0.8f, 1.2f);
                 _source.PlayOneShot(_clip);
                 _canPlaySound = false;
             }
@@ -67,5 +79,74 @@ public class MenuButton : MonoBehaviour
                 Time.deltaTime * lerpSpeed
             );
         }
+    }
+
+    public void Quit()
+    {
+        if(indexQuit == 0)
+        {
+            MessageBox(
+           IntPtr.Zero,
+           "Où tu crois aller comme ça?",
+           "Erreur",
+           0x10
+       );
+           
+        }
+        if (indexQuit == 1)
+        {
+            MessageBox(
+           IntPtr.Zero,
+           "Retourne jouer au jeu.",
+           "Erreur",
+           0x10
+       );
+            
+        }
+        if (indexQuit == 2)
+        {
+            MessageBox(
+           IntPtr.Zero,
+           "Qu'est ce que je t'ai dit?",
+           "Erreur",
+           0x10
+       );
+            
+        }
+        if (indexQuit == 3)
+        {
+            MessageBox(
+           IntPtr.Zero,
+           "Allez hop, on joue ensemble!",
+           "Erreur",
+           0x10
+       );
+          
+        }
+        if (indexQuit == 4)
+        {
+            MessageBox(
+           IntPtr.Zero,
+           "...",
+           "Erreur",
+           0x10
+       );
+           
+        }
+        if (indexQuit == 5)
+        {
+            MessageBox(
+           IntPtr.Zero,
+           "Bon très bien, j'ai compris...",
+           "Erreur",
+           0x10
+       );
+           
+        }
+        if (indexQuit == 6)
+        {
+            Application.Quit();
+        }
+        indexQuit += 1;
     }
 }
