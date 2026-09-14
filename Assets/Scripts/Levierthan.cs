@@ -32,18 +32,28 @@ public class Levierthan : MonoBehaviour
     [Header("Vulnerable")]
     public float _minVulnerableTime;
     public float _maxVulnerableTime;
+
+    [Header("Underground")]
+    public float _undergroundTime;
+
+    public float _timerUnderground;
     
+
 
     [Header("Between Attacks")]
     public float _minTimeBeforeAttack;
     public float _maxTimeBeforeAttack;
 
     public bool _canNewAttack;
+    public Transform _originPosition;
+    public Animator _animator;
+    public Animator _camAnimator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _life = _scriptable._life;
         _timer = _introDuration;
+        
     }
 
     // Update is called once per frame
@@ -52,6 +62,7 @@ public class Levierthan : MonoBehaviour
         _timer -= Time.deltaTime;
         _timerAcid -= Time.deltaTime;
         _timerStalactit -= Time.deltaTime;
+        _timerUnderground -= Time.deltaTime;
 
         if(_timer <= 0)
         {
@@ -59,12 +70,17 @@ public class Levierthan : MonoBehaviour
             NewAttack();
         }
 
+        if(_life <= 0)
+        {
+            Death();
+        }
+
         transform.LookAt(new Vector3(_playerTransform.transform.position.x,this.transform.position.y, _playerTransform.transform.position.z));
     }
 
     void NewAttack()
     {
-        _randomAttack = Random.Range(0, 3);
+        _randomAttack = Random.Range(0, 4);
         if(_canNewAttack)
         {
             if (_randomAttack == 0)
@@ -79,6 +95,10 @@ public class Levierthan : MonoBehaviour
             {
                 Vulnerable();
             }
+            if (_randomAttack == 3)
+            {
+                Underground();
+            }
             _canNewAttack = false;
         }
 
@@ -87,7 +107,7 @@ public class Levierthan : MonoBehaviour
     void Acid()
     {
         _timerAcid = Random.Range(_minTimerAcidAttack, _maxTimerAcidAttack);
-        _timer = Random.Range(_minTimerAcidAttack, _maxTimerAcidAttack);
+        _timer = _timerAcid;
         Invoke("ShootAcid", _timeBetweenAcidAttacks);
     }
 
@@ -114,7 +134,7 @@ public class Levierthan : MonoBehaviour
     void Stalactit()
     {
         _timerStalactit = Random.Range(_minTimerStalactitAttack, _maxTimerStalactitAttack);
-        _timer = Random.Range(_minTimerStalactitAttack, _maxTimerStalactitAttack);
+        _timer = _timerStalactit;
         Invoke("SpawnStalactit", _timeBetweenStalactits);
     }
 
@@ -122,7 +142,7 @@ public class Levierthan : MonoBehaviour
     {
         if (_timerStalactit > 0)
         {
-            Instantiate(_prefabStalactit, new Vector3(Random.Range(this.transform.position.x - 15, this.transform.position.x + 15), 0, Random.Range(this.transform.position.z -15, this.transform.position.z + 15)), Quaternion.identity);
+            Instantiate(_prefabStalactit, new Vector3(Random.Range(_originPosition.transform.position.x - 15, _originPosition.transform.position.x + 15), 0, Random.Range(_originPosition.transform.position.z -15, _originPosition.transform.position.z + 15)), Quaternion.identity);
             Invoke("SpawnStalactit", _timeBetweenStalactits);
         }
         else
@@ -134,5 +154,30 @@ public class Levierthan : MonoBehaviour
     void Vulnerable()
     {
         _timer = Random.Range(_minVulnerableTime, _maxVulnerableTime);
+        _animator.SetTrigger("Vulnerable");
+        Invoke("EndVulnerable", _timer - 2);
+    }
+
+    void EndVulnerable()
+    {
+        _animator.SetTrigger("EndVulnerable");
+    }
+
+    void Underground()
+    {
+        _timer = _undergroundTime;
+        _timerUnderground = _undergroundTime;
+        _animator.SetTrigger("Underground");
+        Invoke("MoveUnderground", 2);
+    }
+
+    void MoveUnderground()
+    {
+        this.transform.position = new Vector3(Random.Range(_originPosition.transform.position.x - 13, _originPosition.transform.position.x + 13), 0, Random.Range(_originPosition.transform.position.z - 13, _originPosition.transform.position.z + 13));
+    }
+
+    void Death()
+    {
+
     }
 }
