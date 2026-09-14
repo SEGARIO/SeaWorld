@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cam: {fileID: 1707801576}
   _names: {fileID: 1536416130}
-  _creditsDuration: 5
+  _creditsDuration: 30
 --- !u!1001 &36572234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12070,7 +12070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cam: {fileID: 1707801576}
   _names: {fileID: 1536416130}
-  _creditsDuration: 5
+  _creditsDuration: 30
 --- !u!895512359 &481893506
 AimConstraint:
   m_ObjectHideFlags: 0
@@ -22191,6 +22191,11 @@ MonoBehaviour:
   _timeOfPowerUp: 10
   _system: {fileID: 705643598}
   _lightSystem: {fileID: 1501530895}
+  _originalBullet: {fileID: 0}
+  _bigBullet: {fileID: 0}
+  _originalCooldown: 0
+  _bigCooldown: 0
+  _shooter: {fileID: 0}
 --- !u!114 &695788116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22340,6 +22345,7 @@ MonoBehaviour:
   _isCurrentPlayer: 1
   _deathPart: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}
   _isMainChar: 1
+  _healthBarAnim: {fileID: 0}
 --- !u!114 &695788118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24089,6 +24095,11 @@ MonoBehaviour:
   _timeOfPowerUp: 10
   _system: {fileID: 1381181274}
   _lightSystem: {fileID: 649039713}
+  _originalBullet: {fileID: 0}
+  _bigBullet: {fileID: 0}
+  _originalCooldown: 0
+  _bigCooldown: 0
+  _shooter: {fileID: 0}
 --- !u!114 &1486995000
 MonoBehaviour:
   m_ObjectHideFlags: 0

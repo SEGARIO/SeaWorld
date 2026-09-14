@@ -29,7 +29,7 @@ public class TouchedByBullet : MonoBehaviour
     {
         if(collision.gameObject.tag ==  "Bullet")
         {
-
+            //GetComponent<Animator>().SetTrigger("Hit");
             for (int i = 0; i < _renderers.Length; i++)
             {
                 _renderers[i].material.color = _hitColor;
