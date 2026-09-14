@@ -51,7 +51,11 @@ public class MenuButton : MonoBehaviour
 
         if (isHighlighted)
         {
-            objectToActivate.SetActive(true);
+            if(objectToActivate != null)
+            {
+                objectToActivate.SetActive(true);
+            }
+          
 
             if(_canPlaySound)
             {
