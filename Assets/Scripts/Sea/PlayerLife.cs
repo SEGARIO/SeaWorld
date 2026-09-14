@@ -26,6 +26,7 @@ public class PlayerLife : MonoBehaviour
     public bool _isCurrentPlayer;
     public GameObject _deathPart;
     public bool _isMainChar;
+    public Animator _healthBarAnim;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -100,8 +101,9 @@ public class PlayerLife : MonoBehaviour
             SetVignette(0.4f);
             GameFeel.Instance.PlayJuice(1.5f, 0.3f);
             GameFeel.Instance.Flash(0.1f);
+            _healthBarAnim.SetTrigger("Hit");
 
-            if(_life <= 0)
+            if (_life <= 0)
             {
                 _life = 0;
                 Death();
@@ -122,6 +124,7 @@ public class PlayerLife : MonoBehaviour
             SetVignette(0.4f);
             GameFeel.Instance.PlayJuice(1.5f, 0.3f);
             GameFeel.Instance.Flash(0.1f);
+            _healthBarAnim.SetTrigger("Hit");
 
             if (_life <= 0)
             {
@@ -156,6 +159,7 @@ public class PlayerLife : MonoBehaviour
             SetVignette(0.4f);
             GameFeel.Instance.PlayJuice(1.5f, 0.3f);
             GameFeel.Instance.Flash(0.1f);
+            _healthBarAnim.SetTrigger("Hit");
 
             if (_life <= 0)
             {
@@ -177,6 +181,7 @@ public class PlayerLife : MonoBehaviour
             SetVignette(0.4f);
             GameFeel.Instance.PlayJuice(1.5f, 0.3f);
             GameFeel.Instance.Flash(0.1f);
+            _healthBarAnim.SetTrigger("Hit");
 
             if (_life <= 0)
             {
@@ -197,8 +202,8 @@ public class PlayerLife : MonoBehaviour
 
     void Death()
     {
-       
 
+        _life = 0;
         if(_isMainChar)
         {
             FindObjectOfType<PlayerSwitcher>().Death();
