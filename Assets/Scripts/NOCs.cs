@@ -10,12 +10,14 @@ public class NOCs : MonoBehaviour
 {
 
     public string _npcName;
+    public Color _npcNameColor;
     public bool _isInRange;
     public Transform _player;
     public bool _isTalking;
     public GameObject _dialoguePanel;
     public GameObject _pressA;
     public TextMeshProUGUI _text;
+    public TextMeshProUGUI _nameText;
     public bool _canActivateSomething;
     public bool _canActivateAnimation;
     public GameObject[] _thingToActivate;
@@ -39,10 +41,14 @@ public class NOCs : MonoBehaviour
     public Transform _target;
     public bool _canTurnWhenTalking;
     public bool _haveMultipleIdles;
+    public Color _cosmoColor;
+    public Color _secondaryColor;
+    public string _secondaryName;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+       
         //_audioSource = FindObjectOfType<AudioSource>();
         for (int i = 0; i < _thingToActivate.Length; i++)
         {
@@ -58,7 +64,8 @@ public class NOCs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_anim != null && _haveMultipleIdles)
+        
+        if (_anim != null && _haveMultipleIdles)
         {
             _anim.SetInteger("Random", UnityEngine.Random.Range(0, 4));
         }
@@ -72,8 +79,9 @@ public class NOCs : MonoBehaviour
             if (Gamepad.current.buttonSouth.isPressed && _canPress)
             {
                 _isTalking = true ;
-
-                if(_anim != null)
+                _nameText.text = _npcName;
+                _nameText.color = _npcNameColor;
+                if (_anim != null)
                 {
                     _anim.SetBool("IsTalking", true);
                 }
@@ -109,6 +117,41 @@ public class NOCs : MonoBehaviour
 
         if(_isTalking)
         {
+            Debug.Log("TEXT : " + _text.color);
+            Debug.Log("SECONDARY : " + _secondaryColor);
+
+            Debug.Log($"R: {_text.color.r} / {_secondaryColor.r}");
+            Debug.Log($"G: {_text.color.g} / {_secondaryColor.g}");
+            Debug.Log($"B: {_text.color.b} / {_secondaryColor.b}");
+            Debug.Log($"A: {_text.color.a} / {_secondaryColor.a}");
+            if (Vector4.Distance(_text.color, _secondaryColor) < 0.01f)
+            {
+                Debug.Log("SameColor");
+                _nameText.text = _secondaryName;
+                _nameText.color = _secondaryColor;
+            }
+            Debug.Log("I S talking");
+            if (_text.color == _cosmoColor)
+            {
+                _nameText.text = "Cosmo";
+                _nameText.color = _cosmoColor;
+            }
+            if (_text.color == Color.white)
+            {
+                _nameText.text = _npcName;
+                _nameText.color = _npcNameColor;
+            }
+            if (_text.color == Color.blue)
+            {
+                _nameText.text = "Enfant";
+                _nameText.color = Color.blue;
+            }
+            if (_text.color == Color.red)
+            {
+                _nameText.text = "Homme aux toilettes";
+                _nameText.color = Color.red;
+            }
+            
             _pressA.SetActive(false);
 
             if(_canTurnWhenTalking)
