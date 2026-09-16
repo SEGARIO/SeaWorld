@@ -8,6 +8,7 @@ public class DelayedPlayerFollower : MonoBehaviour
     public float distanceTrigger = 3f;
     public float delay = 2f;
     public GameObject _talkingNpc;
+    public Animator _anim;
     private struct PlayerState
     {
         public Vector3 position;
@@ -58,17 +59,19 @@ public class DelayedPlayerFollower : MonoBehaviour
             }
 
             FollowDelayed();
+            _anim.SetBool("IsWalking", true);
         }
         else
         {
             wasFollowing = false;
+            _anim.SetBool("IsWalking", false);
         }
     }
 
     void FollowDelayed()
     {
         float targetTime = Time.time - delay;
-
+     
         if (history.Count < 2)
             return;
 
