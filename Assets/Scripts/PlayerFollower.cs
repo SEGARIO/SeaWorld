@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DelayedPlayerFollower : MonoBehaviour
 {
@@ -29,9 +30,17 @@ public class DelayedPlayerFollower : MonoBehaviour
 
     private void Start()
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
         player = FindObjectOfType<PlayerController>().gameObject.transform;
         this.transform.position = _talkingNpc.transform.position;
         Destroy(_talkingNpc);
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        player = FindObjectOfType<PlayerController>().gameObject.transform;
+        this.transform.position = player.transform.position;
+        
     }
     void Update()
     {

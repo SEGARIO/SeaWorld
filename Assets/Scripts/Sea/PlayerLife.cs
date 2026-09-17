@@ -1,8 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class PlayerLife : MonoBehaviour
 {
@@ -21,7 +22,8 @@ public class PlayerLife : MonoBehaviour
     public RectTransform _pivotwLife;
     float _maxlife;
 
-    public Image _image;
+    public UnityEngine.UI.Image _image;
+    public GameObject Acolyt;
     public Color[] _colorsBar;
     public bool _isCurrentPlayer;
     public GameObject _deathPart;
@@ -31,6 +33,7 @@ public class PlayerLife : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Acolyt = FindObjectOfType<DelayedPlayerFollower>().gameObject;
         _maxlife = _life;
         if (volume.profile.TryGet(out vignette))
         {
@@ -218,6 +221,10 @@ public class PlayerLife : MonoBehaviour
    
     public void Restart()
     {
+        if (Acolyt != null)
+        {
+            Acolyt.transform.position = transform.position;
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void Resetter()
