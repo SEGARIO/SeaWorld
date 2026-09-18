@@ -8,7 +8,7 @@ public class InteractibleScript : MonoBehaviour
     
     public GameObject _pressA;
     public bool _givesItem;
-    public SO_Item item;
+   // public SO_Item item;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -46,7 +46,7 @@ public class InteractibleScript : MonoBehaviour
     {
         if (_givesItem)
         {
-            item._quantity += 1;
+           // item._quantity += 1;
         }
     }
 }

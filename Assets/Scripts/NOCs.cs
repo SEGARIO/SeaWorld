@@ -45,6 +45,12 @@ public class NOCs : MonoBehaviour
     public Color _secondaryColor;
     public string _secondaryName;
 
+    public bool _canGiveSomething;
+    public SO_Items _itemToGive;
+    public TMP_Text _itemText;
+    public GameObject _buyPanel;
+    public BuyPanel _buyScript;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -212,6 +218,12 @@ public class NOCs : MonoBehaviour
                     _thingToActivate[i].SetActive(true);
                 }
                 
+            }
+            if(_canGiveSomething)
+            {
+                _buyPanel.SetActive(true);
+                _buyScript._item = _itemToGive;
+                _itemText.text = "Acheter " + _itemToGive._name + " pour " + _itemToGive._price + "?";
             }
 
             if(_canActivateAnimation && _anim != null)

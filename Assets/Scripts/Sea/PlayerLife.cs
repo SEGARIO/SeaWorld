@@ -20,7 +20,7 @@ public class PlayerLife : MonoBehaviour
     private Vignette vignette;
     public RectTransform _pivotLife;
     public RectTransform _pivotwLife;
-    float _maxlife;
+    public float _maxlife;
 
     public UnityEngine.UI.Image _image;
     public GameObject Acolyt;
