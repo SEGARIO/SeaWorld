@@ -5,6 +5,7 @@ public class WaterRiser : MonoBehaviour
 {
     public float _newWaterLevel;
     public GameObject _waterLevel;
+    public float _riseSpeed = 2;
     public int _life;
     [SerializeField] private float currentSpeed = 500f;
     [SerializeField] private float targetSpeed = 50f;
@@ -35,7 +36,7 @@ public class WaterRiser : MonoBehaviour
             if (_canRiseWater)
             {
                 
-                _waterLevel.transform.position = Vector3.Lerp(_waterLevel.transform.position, new Vector3(_waterLevel.transform.position.x, _newWaterLevel, _waterLevel.transform.position.z), Time.deltaTime * 2);
+                _waterLevel.transform.position = Vector3.Lerp(_waterLevel.transform.position, new Vector3(_waterLevel.transform.position.x, _newWaterLevel, _waterLevel.transform.position.z), Time.deltaTime * _riseSpeed);
                 Invoke("StopRise", 2);
             }
         }
