@@ -21,7 +21,7 @@ public class BuyPanel : MonoBehaviour
     public void Yes()
     {
         _playerController.speed += _item._speed;
-        _life._maxlife += _item._life;
+        //_life._maxlife += _item._life;
         _shoot.cooldown -= _item._shootSpeed / 10;
     }
 }
