@@ -16,9 +16,13 @@ public class Teleporter : MonoBehaviour
     public GameObject _circleOut;
     public PlayerController playerController;
     public CharacterController _ch;
+    public bool _isBoss;
+    
+    public GameObject _nextRoom;
 
     private void Start()
     {
+        _nextRoom.SetActive(false);
         _light = GameObject.Find("Sun Light").GetComponent<Light>();
     }
     private void OnTriggerEnter(Collider other)
@@ -54,6 +58,14 @@ public class Teleporter : MonoBehaviour
         if (Acolyt != null)
         {
             Acolyt.transform.position = _position.position;
+        }
+        if (_nextRoom != null)
+        {
+            _nextRoom.SetActive(true);
+        }
+       if(_isBoss)
+        {
+            //FindObjectOfType<Camera>().gameObject.SetActive(false);
         }
     }
 }
