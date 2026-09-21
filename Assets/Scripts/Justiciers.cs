@@ -7,7 +7,7 @@ public class Justiciers : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        _anim.SetInteger("Index", _index);
     }
 
     // Update is called once per frame

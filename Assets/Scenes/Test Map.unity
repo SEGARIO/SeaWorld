@@ -12085,11 +12085,11 @@ Transform:
   - {fileID: 534445759}
   - {fileID: 1624965500}
   - {fileID: 2100349528}
+  - {fileID: 1497056970}
   - {fileID: 861221261}
   - {fileID: 1288482282}
-  - {fileID: 1497056970}
-  - {fileID: 470497219}
   - {fileID: 1589034992}
+  - {fileID: 470497219}
   - {fileID: 691199986}
   - {fileID: 614356904}
   - {fileID: 411193269}
@@ -92710,7 +92710,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: c1c0cd84f84404b4fa2079066baa248d, type: 3}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _dialogues.Array.size
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[10]'
@@ -92747,11 +92747,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[7]'
-      value: "On aurait dit que l'espace nous tombait sur la t\xEAte!"
+      value: JUSTICIERS, EN AVANT!!!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[8]'
-      value: "Oh, \xE7a? Je pensais que c'\xE9tait normal! "
+      value: (Il faut vraiment qu'on change de slogan...)
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[9]'
@@ -92763,7 +92763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherDialogues.Array.size
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.size
@@ -92947,19 +92947,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[1]'
-      value: "Les activit\xE9s principales dans la ville sont:"
+      value: Le fugitif portait un costume vert!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
-      value: Aller visiter les grottes et les ruines...
+      value: Comme moi!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
-      value: Parler aux habitants...
+      value: "Mais lui, il le portait moins bien, h\xE9 h\xE9!"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[4]'
-      value: Et euh...
+      value: JUSTICIERS, EN AVANT!!!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
@@ -93182,7 +93182,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1907633266}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 470497222}
   m_SourcePrefab: {fileID: 100100000, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
 --- !u!4 &470497219 stripped
 Transform:
@@ -93194,6 +93197,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3735687216003641097, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
   m_PrefabInstance: {fileID: 470497218}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &470497221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+  m_PrefabInstance: {fileID: 470497218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &470497222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470497221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa7e34ab8e22a6419d36a39789a0b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _index: 4
+  _anim: {fileID: 1907633267}
 --- !u!1001 &471392563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -162288,7 +162310,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       insertIndex: -1
       addedObject: {fileID: 951106697}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 861221264}
   m_SourcePrefab: {fileID: 100100000, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
 --- !u!4 &861221261 stripped
 Transform:
@@ -162300,6 +162325,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3735687216003641097, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
   m_PrefabInstance: {fileID: 861221260}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &861221263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+  m_PrefabInstance: {fileID: 861221260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &861221264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861221263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa7e34ab8e22a6419d36a39789a0b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _index: 1
+  _anim: {fileID: 951106698}
 --- !u!1 &861363696
 GameObject:
   m_ObjectHideFlags: 0
@@ -243579,7 +243623,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: c1c0cd84f84404b4fa2079066baa248d, type: 3}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _dialogues.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[10]'
@@ -243611,11 +243655,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[6]'
-      value: JUSTICIERS, EN AVANT!
+      value: "Il m'a sem\xE9, \xE0 vrai dire..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[7]'
-      value: "On aurait dit que l'espace nous tombait sur la t\xEAte!"
+      value: JUSTICIERS, EN AVANT!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[8]'
@@ -244050,7 +244094,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       insertIndex: -1
       addedObject: {fileID: 163327548}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1288482285}
   m_SourcePrefab: {fileID: 100100000, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
 --- !u!4 &1288482282 stripped
 Transform:
@@ -244062,6 +244109,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3735687216003641097, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
   m_PrefabInstance: {fileID: 1288482281}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1288482284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+  m_PrefabInstance: {fileID: 1288482281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1288482285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288482284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa7e34ab8e22a6419d36a39789a0b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _index: 2
+  _anim: {fileID: 163327549}
 --- !u!1001 &1288593622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282071,11 +282137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[4]'
-      value: 
+      value: Merci de le signaler si vous le rencontrez.
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[5]'
-      value: "Bon s\xE9jour chez nous!"
+      value: JUSTICIERS, EN AVANT!!!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[6]'
@@ -282099,7 +282165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherDialogues.Array.size
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.size
@@ -282283,15 +282349,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[1]'
-      value: "Les activit\xE9s principales dans la ville sont:"
+      value: "Mes accolytes se trouvent un peu partout \xE0 sa recherche."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
-      value: Aller visiter les grottes et les ruines...
+      value: "Si tu leur parle, peut-\xEAtre que leurs recherches ont mieux avanc\xE9
+        que les miennes."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
-      value: Parler aux habitants...
+      value: JUSTICIERS, EN AVANT!!!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[4]'
@@ -282518,7 +282585,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       insertIndex: -1
       addedObject: {fileID: 848940723}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1497056973}
   m_SourcePrefab: {fileID: 100100000, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
 --- !u!4 &1497056970 stripped
 Transform:
@@ -282530,6 +282600,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3735687216003641097, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
   m_PrefabInstance: {fileID: 1497056969}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1497056972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+  m_PrefabInstance: {fileID: 1497056969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1497056973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497056972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa7e34ab8e22a6419d36a39789a0b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _index: 0
+  _anim: {fileID: 848940724}
 --- !u!1001 &1497241057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -297375,7 +297464,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: c1c0cd84f84404b4fa2079066baa248d, type: 3}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _dialogues.Array.size
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[10]'
@@ -297395,23 +297484,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[3]'
-      value: "La plan\xE8te compte 1,2 Milliards d'habitants!"
+      value: "Nous sommes \xE0 la recherche d'un fugitif."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[4]'
-      value: "Il fait actuellement 21\xB0C."
+      value: Il est capable de rester sous l'eau.
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[5]'
-      value: "Bon s\xE9jour chez nous!"
+      value: "Donc j'ai bien peur qu'il s'y soit cach\xE9, pour ne pas qu'on le trouve."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[6]'
-      value: Parle pour toi...
+      value: Mais si tu le vois, merci de nous en informer.
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[7]'
-      value: "On aurait dit que l'espace nous tombait sur la t\xEAte!"
+      value: JUSTICIERS, EN AVANT!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[8]'
@@ -297427,7 +297516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherDialogues.Array.size
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.size
@@ -297539,11 +297628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[6].g
-      value: 0.31764707
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[6].r
-      value: 0.654902
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[7].a
@@ -297555,11 +297644,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[7].g
-      value: 0.31764707
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[7].r
-      value: 0.654902
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[8].a
@@ -297611,19 +297700,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[1]'
-      value: "Les activit\xE9s principales dans la ville sont:"
+      value: Le fugitif est capable de rester sous l'eau.
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
-      value: Aller visiter les grottes et les ruines...
+      value: "Il s'y est s\xFBrement cach\xE9 pour nous \xE9chaper."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
-      value: Parler aux habitants...
+      value: Essayons de le trouver!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[4]'
-      value: Et euh...
+      value: JUSTICIERS, EN AVANT!!!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
@@ -297691,11 +297780,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[3].g
-      value: 0.31764707
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[3].r
-      value: 0.654902
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[4].a
@@ -297707,11 +297796,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[4].g
-      value: 1
+      value: 0.31764707
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[4].r
-      value: 1
+      value: 0.654902
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[5].a
@@ -297846,7 +297935,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1095626280}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1589034995}
   m_SourcePrefab: {fileID: 100100000, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
 --- !u!4 &1589034992 stripped
 Transform:
@@ -297858,6 +297950,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3735687216003641097, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
   m_PrefabInstance: {fileID: 1589034991}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1589034994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+  m_PrefabInstance: {fileID: 1589034991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1589034995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589034994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa7e34ab8e22a6419d36a39789a0b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _index: 3
+  _anim: {fileID: 1095626281}
 --- !u!4 &1589058957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8771972552311404736, guid: bbf9e36a48d6c5648a13889afab076fd, type: 3}
