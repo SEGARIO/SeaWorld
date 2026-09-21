@@ -10,6 +10,7 @@ public class BoxesBreakable : MonoBehaviour
     public Material[] _materials;
     public GameObject _particle;
 
+   
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,6 +37,7 @@ public class BoxesBreakable : MonoBehaviour
 
     void Death()
     {
+        
         Instantiate(_particle, this.transform.position, Quaternion.identity);
         GameFeel.Instance.PlayJuice(1.5f, 0.3f);
         if (_canGiveSomething)
