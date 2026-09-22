@@ -20,6 +20,7 @@ public class Powerup : MonoBehaviour
     public GameObject Aimage;
     [SerializeField] private Image _fillImage;
     public PlayerController _playerController;
+    public GameObject _interactableText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -54,7 +55,7 @@ public class Powerup : MonoBehaviour
                 
                 PlayerIn();
             }
-            if (_playerController.enabled == true)
+            if (_playerController.enabled == true && _interactableText.activeSelf == false)
             {
                 if (_isActivated)
                 {
@@ -67,6 +68,10 @@ public class Powerup : MonoBehaviour
                 }
             }
             if (_playerController.enabled == false)
+            {
+                Aimage.SetActive(false);
+            }
+            if (_interactableText.activeSelf == true)
             {
                 Aimage.SetActive(false);
             }

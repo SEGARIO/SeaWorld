@@ -21,6 +21,7 @@ public class PlayerLife : MonoBehaviour
     public RectTransform _pivotLife;
     public RectTransform _pivotwLife;
     public float _maxlife;
+    public Animator _anim;
 
     public UnityEngine.UI.Image _image;
     public GameObject Acolyt;
@@ -213,8 +214,9 @@ public class PlayerLife : MonoBehaviour
         }
         else
         {
+            _controller.enabled = false;
             Instantiate(_deathPart, this.transform.position, Quaternion.identity);
-             Destroy(gameObject);
+            _anim.SetTrigger("Death");
         }
     }
 

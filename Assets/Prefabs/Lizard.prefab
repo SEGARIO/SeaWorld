@@ -78,7 +78,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: -9.8, z: 0}
-  m_LocalScale: {x: 0.344163, y: 0.344163, z: 0.344163}
+  m_LocalScale: {x: 0.21944177, y: 0.21944177, z: 0.21944177}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3369158379560904483}
@@ -1045,6 +1045,15 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.08383233
         - serializedVersion: 3
+          time: 0.04934525
+          value: 0.5994864
+          inSlope: 2.6129322
+          outSlope: 2.6129322
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.08215994
+        - serializedVersion: 3
           time: 1
           value: 0
           inSlope: -4.549029
@@ -1348,7 +1357,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    separateAxes: 0
+    separateAxes: 1
   ColorModule:
     enabled: 0
     gradient:

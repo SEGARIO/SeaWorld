@@ -114,7 +114,8 @@ public class PlayerSwitcher : MonoBehaviour
     public void Death()
     {
         _controller.enabled = false;
-        _visual.SetActive(false);
+        _visual.GetComponentInChildren<Animator>().SetTrigger("Death");
+        _visual.GetComponentInParent<PlayerController>().enabled = false;
         Invoke("DeathPanel", 2);
     }
     void DeathPanel()
