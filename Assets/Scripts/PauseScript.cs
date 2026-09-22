@@ -19,7 +19,7 @@ public class PauseScript : MonoBehaviour
         {
             Pause();
         }
-
+      
 
     }
 

@@ -19,6 +19,7 @@ public class Powerup : MonoBehaviour
 
     public GameObject Aimage;
     [SerializeField] private Image _fillImage;
+    public PlayerController _playerController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -54,7 +55,7 @@ public class Powerup : MonoBehaviour
                 PlayerIn();
             }
 
-            if (_isActivated)
+            if (_isActivated && _playerController.enabled == true)
             {
 
                 Aimage.SetActive(true);
@@ -111,6 +112,7 @@ public class Powerup : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, _range);
     }
+
 
     void ActivatePowerUp()
     {

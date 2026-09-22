@@ -32,7 +32,7 @@ public class DelayedPlayerFollower : MonoBehaviour
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
         player = FindObjectOfType<PlayerController>().gameObject.transform;
-        this.transform.position = _talkingNpc.transform.position;
+        this.transform.position = new Vector3(_talkingNpc.transform.position.x, _talkingNpc.transform.position.y +1 , _talkingNpc.transform.position.z);
         Destroy(_talkingNpc);
     }
 
@@ -42,6 +42,8 @@ public class DelayedPlayerFollower : MonoBehaviour
         this.transform.position = player.transform.position;
         
     }
+
+
     void Update()
     {
         // Enregistre la position du joueur
@@ -77,6 +79,13 @@ public class DelayedPlayerFollower : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Plank")
+        {
+            this.transform.position = new Vector3(this.transform.position.x, player.transform.position.y, this.transform.position.z);
+        }
+    }
     void FollowDelayed()
     {
         float targetTime = Time.time - delay;
