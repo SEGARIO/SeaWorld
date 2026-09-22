@@ -19,7 +19,7 @@ public class Teleporter : MonoBehaviour
     public bool _isBoss;
     
     public GameObject _nextRoom;
-
+    public Animator _anim;
     private void Start()
     {
         _nextRoom.SetActive(false);
@@ -32,6 +32,8 @@ public class Teleporter : MonoBehaviour
             Debug.Log("Trigger touché par : " + other.name);
             Debug.Log("Référence player : " + player.name);
             playerController.enabled = false;
+            _anim.enabled = false;
+            FindObjectOfType<LerpPosition>().enabled = true;
             //agent = Acolyt.GetComponent<NavMeshAgent>();
             //agent.enabled = false;
             _ch.enabled = false;
@@ -44,12 +46,12 @@ public class Teleporter : MonoBehaviour
 
     void Teleport()
     {
-        
-      
+
+        _anim.enabled = true;
         _circleOut.SetActive(true);
         _circleIn.SetActive(false);
         player.transform.position = new Vector3(_position.position.x, _position.position.y +1, _position.position.z);
-       
+        FindObjectOfType<LerpPosition>().enabled = true;
         _light.color = _lightColor;
          _cam.gameObject.transform.position = _position.position;
         playerController.enabled = true;
