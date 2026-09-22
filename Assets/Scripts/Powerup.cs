@@ -54,16 +54,23 @@ public class Powerup : MonoBehaviour
                 
                 PlayerIn();
             }
-
-            if (_isActivated && _playerController.enabled == true)
+            if (_playerController.enabled == true)
             {
+                if (_isActivated)
+                {
 
-                Aimage.SetActive(true);
+                    Aimage.SetActive(true);
+                }
+                else
+                {
+                    Aimage.SetActive(false);
+                }
             }
-            else
+            if (_playerController.enabled == false)
             {
                 Aimage.SetActive(false);
             }
+
         }
         else
         {
