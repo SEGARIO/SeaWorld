@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Levierthan : MonoBehaviour
 {
@@ -48,6 +49,8 @@ public class Levierthan : MonoBehaviour
     public Transform _originPosition;
     public Animator _animator;
     public Animator _camAnimator;
+    public GameObject _deathScene;
+    public GameObject _dialogueText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -178,6 +181,11 @@ public class Levierthan : MonoBehaviour
 
     void Death()
     {
-
+       
+        _deathScene.SetActive(true);
+        _dialogueText.SetActive(true);
+        Destroy(this.gameObject);
     }
+
+  
 }
