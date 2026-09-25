@@ -111,6 +111,7 @@ public class Levierthan : MonoBehaviour
     {
         _timerAcid = Random.Range(_minTimerAcidAttack, _maxTimerAcidAttack);
         _timer = _timerAcid;
+        _animator.SetBool("Acid", true);
         Invoke("ShootAcid", _timeBetweenAcidAttacks);
     }
 
@@ -129,6 +130,7 @@ public class Levierthan : MonoBehaviour
         }
         else
         {
+            _animator.SetBool("Acid", false);
             return;
         }
        
@@ -138,6 +140,7 @@ public class Levierthan : MonoBehaviour
     {
         _timerStalactit = Random.Range(_minTimerStalactitAttack, _maxTimerStalactitAttack);
         _timer = _timerStalactit;
+        _animator.SetTrigger("Stalactit");
         Invoke("SpawnStalactit", _timeBetweenStalactits);
     }
 
