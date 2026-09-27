@@ -8,6 +8,7 @@ public class PcInteraction : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _text;
     [SerializeField, TextArea] private string _message;
+    [SerializeField, TextArea] private string _messageEnglish;
     [SerializeField] private float _letterDelay = 0.05f;
 
     private Coroutine _typingCoroutine;
@@ -18,6 +19,11 @@ public class PcInteraction : MonoBehaviour
     public GameObject _objectToActivate;
     public PlayerController _controller;
     public Animator _anim;
+
+    private void Start()
+    {
+        _message = _messageEnglish;
+    }
 
     public void StartTyping()
     {
