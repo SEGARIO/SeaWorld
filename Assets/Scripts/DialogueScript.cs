@@ -6,6 +6,7 @@ using TMPro;
 public class DialogueScript : MonoBehaviour
 {
     [SerializeField] private List<Dial> entries = new List<Dial>();
+    [SerializeField] private List<Dial> entriesEnglish = new List<Dial>();
     public TextMeshProUGUI _text;
     public int _index = -1;
     public bool _imobilisePlayer;
@@ -16,6 +17,11 @@ public class DialogueScript : MonoBehaviour
     private void Start()
     {
         NextDialogue();
+
+        if(LanguageManager._language == 1)
+        {
+            entries = entriesEnglish;
+        }
 
         if(_imobilisePlayer)
         {

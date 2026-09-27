@@ -1,5 +1,6 @@
 using System;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -51,6 +52,11 @@ public class NOCs : MonoBehaviour
     public GameObject _buyPanel;
     public BuyPanel _buyScript;
 
+    [Header("English")]
+    public string _npcNameEnglish;
+    public string[] _dialoguesEnglish;
+    public string[] _otherDialoguesEnglish;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -64,6 +70,16 @@ public class NOCs : MonoBehaviour
         if(_isGivingMission)
         {
             _exclamationMark.SetActive(true);
+        }
+
+        if(LanguageManager._language == 1)
+        {
+            if(_npcNameEnglish != null)
+            {
+                _npcName = _npcNameEnglish;
+            }
+            _dialogues = _dialoguesEnglish;
+            _otherDialogues = _otherDialoguesEnglish;
         }
     }
 

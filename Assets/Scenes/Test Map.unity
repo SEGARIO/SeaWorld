@@ -1634,6 +1634,32 @@ MonoBehaviour:
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: Heyyyy... This one is big!
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: You're right, it's scary...
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: But I'm stronger than him! Ha! Ha!
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: You will see!
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
   _text: {fileID: 844839097}
   _index: -1
   _imobilisePlayer: 0
@@ -10352,6 +10378,22 @@ MonoBehaviour:
     _voice: {fileID: 0}
     _time: 2
   - _text: "Qu'est ce que c'est que ces trucs qui bougent, l\xE0?"
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: Ouuuuh... What a dark place...
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: What are these things moving?
     _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
@@ -20982,12 +21024,16 @@ PrefabInstance:
       objectReference: {fileID: 2032579138}
     - target: {fileID: 2067796320526716448, guid: 31f8ff1bec8ba7342b4af40d87776b8a, type: 3}
       propertyPath: _message
-      value: C'est juste un os
+      value: C'est juste un os.
       objectReference: {fileID: 0}
     - target: {fileID: 2067796320526716448, guid: 31f8ff1bec8ba7342b4af40d87776b8a, type: 3}
       propertyPath: _textPanel
       value: 
       objectReference: {fileID: 1743687525}
+    - target: {fileID: 2067796320526716448, guid: 31f8ff1bec8ba7342b4af40d87776b8a, type: 3}
+      propertyPath: _messageEnglish
+      value: Just a bone.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2533756077966361890, guid: 31f8ff1bec8ba7342b4af40d87776b8a, type: 3}
@@ -90886,6 +90932,53 @@ MonoBehaviour:
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: "Alright, I\u2019ll go with you, but either way, you won\u2019t get very
+      far without me."
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: Talk for yourself...
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: "We\u2019re going to come across a locked door."
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: The electrical circuit that opens it is broken.
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: That means it needs an extern electric impulse.
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: And that means...?
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: "Ce qui veut dire que je te pr\xEAte mes balles \xE9lectriques."
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: "Which means I\u2019ll lend you my electric bullets."
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
   _text: {fileID: 844839097}
   _index: -1
   _imobilisePlayer: 0
@@ -132648,6 +132741,22 @@ MonoBehaviour:
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: Huh? We're already in the ruins?
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: Have we been walking for that long?
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
   _text: {fileID: 844839097}
   _index: -1
   _imobilisePlayer: 0
@@ -140108,6 +140217,7 @@ MonoBehaviour:
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
+  entriesEnglish: []
   _text: {fileID: 844839097}
   _index: -1
   _imobilisePlayer: 0
@@ -168981,6 +169091,10 @@ PrefabInstance:
       propertyPath: _letterDelay
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2067796320526716448, guid: 31f8ff1bec8ba7342b4af40d87776b8a, type: 3}
+      propertyPath: _messageEnglish
+      value: A blue crystal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7483787249819646851, guid: 31f8ff1bec8ba7342b4af40d87776b8a, type: 3}
@@ -177605,6 +177719,47 @@ MonoBehaviour:
     _voice: {fileID: 0}
     _time: 3
   - _text: "Mais il doit forc\xE9ment avoir un point faible..."
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: Hey! That's my spaceship right there!
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: ' '
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: Fight the Leworthan and let's tae my ship back!
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: Okayyyy, let's go!
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: ' '
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 10
+  - _text: It's seems like its skinis to thick to even hurt it!
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 3
+  - _text: But it has to have a weak spot...
     _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
@@ -187242,6 +187397,9 @@ MonoBehaviour:
   _itemText: {fileID: 0}
   _buyPanel: {fileID: 0}
   _buyScript: {fileID: 0}
+  _npcNameEnglish: 
+  _dialoguesEnglish: []
+  _otherDialoguesEnglish: []
 --- !u!54 &934330349
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -206216,6 +206374,27 @@ MonoBehaviour:
     _voice: {fileID: 0}
     _time: 2
   - _text: "T'inqui\xE8te pas! Avec moi, tu es en s\xE9curit\xE9!"
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: What is this place?
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: We'll never leave this place alive!
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: Don't worry! You're safe with me!
     _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
@@ -232271,6 +232450,27 @@ MonoBehaviour:
     _voice: {fileID: 0}
     _time: 2
   - _text: "Bon, maintenant, je dois trouver un moyen d'atteindre la prochaine plan\xE8te!"
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: Aaaaahh! What a sunny day!
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: I finally arrived in Igara! Woohoo!
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: And now... I have to find a way to leave this planet, hehe!
     _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
@@ -259155,6 +259355,17 @@ MonoBehaviour:
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: There's a book right there!
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
   _text: {fileID: 844839097}
   _index: -1
   _imobilisePlayer: 0
@@ -283668,6 +283879,17 @@ MonoBehaviour:
     _voice: {fileID: 0}
     _time: 1
   - _text: Qu'est ce que c'est, cette grande fresque sur le mur?
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: What is this thing on the wall?
     _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
@@ -324274,6 +324496,17 @@ MonoBehaviour:
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: What is this place?
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
   _text: {fileID: 844839097}
   _index: -1
   _imobilisePlayer: 0
@@ -337679,6 +337912,17 @@ MonoBehaviour:
     _voice: {fileID: 0}
     _time: 1
   - _text: "H\xE9, elle est grande cette grotte, en fait!"
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: Hey, this cave is huge!
     _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
@@ -409145,6 +409389,17 @@ MonoBehaviour:
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: "Come on, we\u2019re almost there!"
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
   _text: {fileID: 844839097}
   _index: -1
   _imobilisePlayer: 0
@@ -418653,6 +418908,42 @@ MonoBehaviour:
     _voice: {fileID: 0}
     _time: 2
   - _text: Enfin bref, on verra plus tard...
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: 'That was cool! Let''s do it again!No. My electric bullets '
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: No. My electric bullets need a reloading time.
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: So you can only use it every 20 seconds.
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: "Ugh\u2026 That sucks\u2026"
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: You can use them on things other than doors, though.
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: "Anyway, we\u2019ll see about that later\u2026"
     _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
@@ -432795,6 +433086,22 @@ MonoBehaviour:
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: Ruis again?
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: When is it over?
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
   _text: {fileID: 844839097}
   _index: -1
   _imobilisePlayer: 0
@@ -436549,6 +436856,17 @@ MonoBehaviour:
     _voice: {fileID: 0}
     _time: 1
   - _text: "H\xE9! Y'a quelqu'un l\xE0-bas!"
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 1
+  - _text: Hey! There's someone!
     _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
