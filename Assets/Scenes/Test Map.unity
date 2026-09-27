@@ -140373,7 +140373,32 @@ MonoBehaviour:
     _characterSprite: {fileID: 0}
     _voice: {fileID: 0}
     _time: 2
-  entriesEnglish: []
+  entriesEnglish:
+  - _text: ' '
+    _textColor: {r: 0, g: 0, b: 0, a: 0}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: We beat it! Let's go!
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: You mean I beat it.
+    _textColor: {r: 0.654902, g: 0.31764707, b: 1, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: No time to play on words, come!
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
+  - _text: Let's ride the spaceship!
+    _textColor: {r: 1, g: 0.49019608, b: 0, a: 1}
+    _characterSprite: {fileID: 0}
+    _voice: {fileID: 0}
+    _time: 2
   _text: {fileID: 844839097}
   _index: -1
   _imobilisePlayer: 0
@@ -187427,7 +187452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4423071090435520619, guid: 4032bc0cd51f63a4db05b3a2006340e0, type: 3}
       propertyPath: m_Name
-      value: Bob
+      value: Roger
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -187508,7 +187533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9120656213edeb46ac503429c757394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _npcName: Bob
+  _npcName: Roger
   _npcNameColor: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
   _isInRange: 0
   _player: {fileID: 1425743613}
@@ -187578,7 +187603,8 @@ MonoBehaviour:
   _buyPanel: {fileID: 0}
   _buyScript: {fileID: 0}
   _npcNameEnglish: 
-  _dialoguesEnglish: []
+  _dialoguesEnglish:
+  - ...
   _otherDialoguesEnglish: []
 --- !u!54 &934330349
 Rigidbody:
@@ -386174,7 +386200,7 @@ PrefabInstance:
       objectReference: {fileID: 2050450522}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _npcName
-      value: Roger
+      value: Bob
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _nameText
@@ -386601,6 +386627,10 @@ PrefabInstance:
       value: 0.654902
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -387007,7 +387037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: m_Name
-      value: Roger
+      value: Bob
       objectReference: {fileID: 0}
     - target: {fileID: 6349966705830778109, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: m_LocalPosition.x
@@ -400451,6 +400481,7 @@ GameObject:
   - component: {fileID: 1911377485}
   - component: {fileID: 1911377487}
   - component: {fileID: 1911377486}
+  - component: {fileID: 1911377488}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -400577,6 +400608,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911377484}
   m_CullTransparentMesh: 1
+--- !u!114 &1911377488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911377484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275a82b7775b701458146a07e88a767c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 1911377486}
+  _englishText: LEWORTHAN
 --- !u!1001 &1911501718
 PrefabInstance:
   m_ObjectHideFlags: 0
