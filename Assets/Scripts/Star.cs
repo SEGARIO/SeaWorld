@@ -1,5 +1,7 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Star : MonoBehaviour
 {
@@ -18,6 +20,8 @@ public class Star : MonoBehaviour
     public bool _canChangeSomething;
     public GameObject _objectToDisactivate;
     public GameObject _objectToActivate;
+    public TMP_Text _text;
+    public Animator _textAnim;
 
     void Update()
     {
@@ -50,6 +54,8 @@ public class Star : MonoBehaviour
 
     void Destroyer()
     {
+        _text.text = _starNumber.ToString();
+        _textAnim.SetTrigger("Go");
         Destroy(objectToActivate);
     }
 }
