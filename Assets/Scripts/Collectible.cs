@@ -29,7 +29,11 @@ public class Collectible : MonoBehaviour
             Instantiate(_particle, this.transform.position, Quaternion.identity);
             _numberCollectibles += 1;
             _lifeAnim = GameObject.Find("LifeBar").GetComponent<Animator>();
-            _lifeAnim.SetTrigger(_animName);
+            if(_lifeAnim != null)
+            {
+                _lifeAnim.SetTrigger(_animName);
+            }
+         
             _life._life += _lifeToHeal;
             Destroy(gameObject);
         }
