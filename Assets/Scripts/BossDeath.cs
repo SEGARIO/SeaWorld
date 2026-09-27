@@ -3,10 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class BossDeath : MonoBehaviour
 {
+    public GameObject[] _objectsToDestroy;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnEnable()
     {
-        Invoke("ChangeScene", 10);
+        for (int i = 0; i < _objectsToDestroy.Length; i++)
+        {
+            Destroy(_objectsToDestroy[i]);
+        }
+        Invoke("ChangeScene", 12);
     }
 
     // Update is called once per frame

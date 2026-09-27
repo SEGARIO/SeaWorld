@@ -2,21 +2,17 @@ using UnityEngine;
 
 public class VulnerableSpot : MonoBehaviour
 {
-    public Renderer[] _renderers;
-
-    public Color[] _originalColors;
-    public Color _hitColor;
+    public Renderer _rend;
+    public Material _originalColors;
+    public Material _hitColor;
     public Levierthan _enemyScript;
    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _renderers = GetComponentsInChildren<Renderer>();
-        for (int i = 0; i < _renderers.Length; i++)
-        {
-            _originalColors[i] = _renderers[i].material.color;
-        }
+       
+      _rend.material = _originalColors;
     }
 
     // Update is called once per frame
@@ -30,12 +26,9 @@ public class VulnerableSpot : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
 
-            for (int i = 0; i < _renderers.Length; i++)
-            {
-                _renderers[i].material.color = _hitColor;
+            _rend.material = _hitColor;
 
-                Invoke("OriginalColors", 0.1f);
-            }
+            Invoke("OriginalColors", 0.05f);
             _enemyScript._life -= 1;
 
            
@@ -51,9 +44,6 @@ public class VulnerableSpot : MonoBehaviour
 
     void OriginalColors()
     {
-        for (int i = 0; i < _renderers.Length; i++)
-        {
-            _renderers[i].material.color = _originalColors[i];
-        }
+        _rend.material = _originalColors;
     }
 }

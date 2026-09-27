@@ -34,7 +34,7 @@ public class TouchedByBullet : MonoBehaviour
             {
                 _renderers[i].material.color = _hitColor;
                 
-                Invoke("OriginalColors", 0.1f);
+                Invoke("OriginalColors", 0.05f);
             }
             _enemyScript._life -= collision.gameObject.GetComponent<ElectricBullet>()._attack;
 
