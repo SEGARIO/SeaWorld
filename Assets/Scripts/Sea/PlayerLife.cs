@@ -68,7 +68,11 @@ public class PlayerLife : MonoBehaviour
         {
             _life = _maxlife;
         }
-        vignette.intensity.value -= Time.deltaTime / 3;
+        if(_life >0)
+        {
+            vignette.intensity.value -= Time.deltaTime / 3;
+        }
+      
         _pivotLife.localScale = new Vector3(_life / _maxlife, _pivotLife.localScale.y, _pivotLife.localScale.z);
 
         _pivotwLife.localScale = new Vector3(
