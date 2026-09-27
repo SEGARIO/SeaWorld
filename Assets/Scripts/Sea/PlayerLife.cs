@@ -30,26 +30,27 @@ public class PlayerLife : MonoBehaviour
     public GameObject _deathPart;
     public bool _isMainChar;
     public Animator _healthBarAnim;
+    public Vignette _vignette;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Acolyt = FindObjectOfType<DelayedPlayerFollower>().gameObject;
+      
         _maxlife = _life;
         if (volume.profile.TryGet(out vignette))
         {
-
-            vignette.intensity.value = 0;
+            vignette.intensity.value = 0f;
         }
-       
+
         _renderers = GetComponentsInChildren<Renderer>();
         for (int i = 0; i < _renderers.Length; i++)
         {
             _originalColors[i] = _renderers[i].material.color;
         }
+       
+        Acolyt = FindObjectOfType<DelayedPlayerFollower>().gameObject;
         _checkpointPosition = FindObjectOfType<GameManager>()._checkpoint;
         this.transform.position = _checkpointPosition.position;
-
     }
 
     // Update is called once per frame
@@ -57,36 +58,38 @@ public class PlayerLife : MonoBehaviour
     {
         if(_isCurrentPlayer)
         {
-            if (_life > _maxlife)
-            {
-                _life = _maxlife;
-            }
-            vignette.intensity.value -= Time.deltaTime / 3;
-            _pivotLife.localScale = new Vector3(_life / _maxlife, _pivotLife.localScale.y, _pivotLife.localScale.z);
-
-            _pivotwLife.localScale = new Vector3(
-        Mathf.Lerp(_pivotwLife.localScale.x, _pivotLife.localScale.x, 2 * Time.deltaTime),
-        _pivotwLife.localScale.y,
-        _pivotwLife.localScale.z
-    );
+           
 
 
 
-            if (_life >= _maxlife / 2)
-            {
-                _image.color = _colorsBar[0];
-            }
-            if (_life >= _maxlife / 4 && _life < _maxlife / 2)
-            {
-                _image.color = _colorsBar[1];
-            }
-            if (_life < _maxlife / 4)
-            {
-                _image.color = _colorsBar[2];
-            }
         }
-      
 
+        if (_life > _maxlife)
+        {
+            _life = _maxlife;
+        }
+        vignette.intensity.value -= Time.deltaTime / 3;
+        _pivotLife.localScale = new Vector3(_life / _maxlife, _pivotLife.localScale.y, _pivotLife.localScale.z);
+
+        _pivotwLife.localScale = new Vector3(
+    Mathf.Lerp(_pivotwLife.localScale.x, _pivotLife.localScale.x, 2 * Time.deltaTime),
+    _pivotwLife.localScale.y,
+    _pivotwLife.localScale.z
+);
+
+
+        if (_life >= _maxlife / 2)
+        {
+            _image.color = _colorsBar[0];
+        }
+        if (_life >= _maxlife / 4 && _life < _maxlife / 2)
+        {
+            _image.color = _colorsBar[1];
+        }
+        if (_life < _maxlife / 4)
+        {
+            _image.color = _colorsBar[2];
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
