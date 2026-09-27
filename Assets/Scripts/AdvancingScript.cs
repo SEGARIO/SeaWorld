@@ -31,7 +31,7 @@ public class AdvancingScript : MonoBehaviour
         {
             _anim.enabled = true;
             _anim.SetTrigger("Right");
-            
+           
         }
 
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("SpaceshipRight") && _anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
@@ -42,7 +42,7 @@ public class AdvancingScript : MonoBehaviour
 
     void Space()
     {
-        _cam.backgroundColor = Color.black;
+        _cam.clearFlags = CameraClearFlags.Skybox;
         _fadeout.SetTrigger("Y");
         _anim.enabled = false;
         _speed = _spaceSpeed;
