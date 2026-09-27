@@ -10,6 +10,8 @@ public class AdvancingScript : MonoBehaviour
     public Camera _cam;
     public AdvancingScript _trainSpaceScript;
     public Advance advanceStar;
+    public GameObject _viser;
+    public bool _canVibrate;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,6 +27,7 @@ public class AdvancingScript : MonoBehaviour
         {
             _anim.enabled = true;
             _anim.SetTrigger("Up");
+          
             Invoke("Space", 9);
         }
         if (this.transform.position.z >= 6000)
@@ -32,6 +35,11 @@ public class AdvancingScript : MonoBehaviour
             _anim.enabled = true;
             _anim.SetTrigger("Right");
            
+        }
+
+        if(_canVibrate)
+        {
+            GameFeel.Instance.PlayJuice(1.5f, 0.6f);
         }
 
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("SpaceshipRight") && _anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
@@ -42,11 +50,12 @@ public class AdvancingScript : MonoBehaviour
 
     void Space()
     {
+        Destroy(_viser);
         _cam.clearFlags = CameraClearFlags.Skybox;
         _fadeout.SetTrigger("Y");
         _anim.enabled = false;
         _speed = _spaceSpeed;
         _trainSpaceScript.enabled = true;
-        advanceStar.enabled = true;
+       // advanceStar.enabled = true;
     }
 }

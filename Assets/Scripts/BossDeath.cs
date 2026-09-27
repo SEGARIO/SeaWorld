@@ -7,6 +7,7 @@ public class BossDeath : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnEnable()
     {
+        GameFeel.Instance.PlayJuice(1.5f, 0.6f);
         for (int i = 0; i < _objectsToDestroy.Length; i++)
         {
             Destroy(_objectsToDestroy[i]);
