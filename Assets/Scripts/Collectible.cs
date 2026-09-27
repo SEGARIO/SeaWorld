@@ -32,9 +32,10 @@ public class Collectible : MonoBehaviour
             if(_lifeAnim != null)
             {
                 _lifeAnim.SetTrigger(_animName);
+                _life._life += _lifeToHeal;
             }
          
-            _life._life += _lifeToHeal;
+            
             Destroy(gameObject);
         }
     }

@@ -11,7 +11,8 @@ public class NoamScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if(Star._starNumber != 3)
+        Application.targetFrameRate = 60;
+        if (Star._starNumber != 3)
         {
             gameObject.SetActive(false);
         }
