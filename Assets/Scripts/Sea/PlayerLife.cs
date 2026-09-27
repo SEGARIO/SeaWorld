@@ -238,7 +238,7 @@ public class PlayerLife : MonoBehaviour
     }
     public void Resetter()
     {
-        FindObjectOfType<GameManager>()._checkpoint = null;
+        //FindObjectOfType<GameManager>()._checkpoint = null;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
