@@ -13942,7 +13942,6 @@ Transform:
   - {fileID: 1194603909}
   - {fileID: 665474924}
   - {fileID: 1789581027}
-  - {fileID: 200581167}
   - {fileID: 907275906}
   - {fileID: 310001109}
   - {fileID: 985795624}
@@ -21936,6 +21935,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -21962,6 +21965,35 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
       value: "Un ver g\xE9ant ou quelque chose dans le genre..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Ahhh\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Je pourrais tuer pour un M\xE9gadrink, j'ai tellement soif! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Moi aussi!O\xF9 est ce que je peux en acheter?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: Au bar du coin, ils en ont d'habitude.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: "Mais aujourd'hui, il parait qu'un abruti appel\xE9 Wolf a achet\xE9
+        le dernier."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: "Grrrr\u2026 Ce Wolf\u2026 C'est mon enemi jur\xE9\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -43031,666 +43063,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3345655955597003079, guid: 1f1db7a332e8d3c408084f02d6664b5e, type: 3}
   m_PrefabInstance: {fileID: 1392684819}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &200581166
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 75405615}
-    m_Modifications:
-    - target: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -162.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 13.488
-      objectReference: {fileID: 0}
-    - target: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 334.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.011569461
-      objectReference: {fileID: 0}
-    - target: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.99993306
-      objectReference: {fileID: 0}
-    - target: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -181.326
-      objectReference: {fileID: 0}
-    - target: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1987768328509903883, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _anim
-      value: 
-      objectReference: {fileID: 1494536183}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _text
-      value: 
-      objectReference: {fileID: 1052860081}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _player
-      value: 
-      objectReference: {fileID: 1425743613}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _pressA
-      value: 
-      objectReference: {fileID: 200581168}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _target
-      value: 
-      objectReference: {fileID: 2050450522}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _npcName
-      value: Robert
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _nameText
-      value: 
-      objectReference: {fileID: 1544763696}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _audioSource
-      value: 
-      objectReference: {fileID: 73226433}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _cosmoColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _cosmoColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _cosmoColor.g
-      value: 0.31764707
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _cosmoColor.r
-      value: 0.654902
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _dialoguePanel
-      value: 
-      objectReference: {fileID: 1574069596}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherDialogue
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _npcNameColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _npcNameColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _npcNameColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _npcNameColor.r
-      value: 0.5188679
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _isGivingMission
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _audios.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _haveMultipleIdles
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _canTurnWhenTalking
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _hasAnotherDialogue
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_audios.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 9f5b6c2d003f947489bef7b58e607af2, type: 3}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_audios.Array.data[1]'
-      value: 
-      objectReference: {fileID: 8300000, guid: c1c0cd84f84404b4fa2079066baa248d, type: 3}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_audios.Array.data[2]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_audios.Array.data[3]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 395f9994122a12445b2c4abd04438d0b, type: 3}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_audios.Array.data[4]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 9f5b6c2d003f947489bef7b58e607af2, type: 3}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_audios.Array.data[5]'
-      value: 
-      objectReference: {fileID: 8300000, guid: c1c0cd84f84404b4fa2079066baa248d, type: 3}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_audios.Array.data[6]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_audios.Array.data[7]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 395f9994122a12445b2c4abd04438d0b, type: 3}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_audios.Array.data[8]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 9f5b6c2d003f947489bef7b58e607af2, type: 3}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_audios.Array.data[9]'
-      value: 
-      objectReference: {fileID: 8300000, guid: c1c0cd84f84404b4fa2079066baa248d, type: 3}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _dialogues.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_audios.Array.data[10]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_dialogues.Array.data[1]'
-      value: Salut toi!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_dialogues.Array.data[2]'
-      value: "Si tu arrives \xE0 me ramener 30 Big Collectibles..."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_dialogues.Array.data[3]'
-      value: "Peut-\xEAtre que je te donnerai un cadeau..."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_dialogues.Array.data[4]'
-      value: Mais n'oublie pas, on touche seulement avec les yeux!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_dialogues.Array.data[5]'
-      value: De nombreuses recherches ont lieu pour retrouver des ruines.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_dialogues.Array.data[6]'
-      value: "Des dizaines de caisses de transport se sont renvers\xE9es partout
-        dans le train! "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_dialogues.Array.data[7]'
-      value: "On aurait dit que l'espace nous tombait sur la t\xEAte!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_dialogues.Array.data[8]'
-      value: "Oh, \xE7a? Je pensais que c'\xE9tait normal! "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_dialogues.Array.data[9]'
-      value: "C'est la premi\xE8re fois que je prends le train."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_dialogues.Array.data[10]'
-      value: "Ah... Ca explique tout alors\u2026."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherDialogues.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[0].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[0].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[0].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[0].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[1].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[1].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[1].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[1].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[2].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[2].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[2].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[2].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[3].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[3].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[3].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[3].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[4].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[4].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[4].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[4].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[5].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[5].b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[5].g
-      value: 0.36862746
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[5].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[6].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[6].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[6].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[6].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[7].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[7].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[7].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[7].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[8].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[8].b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[8].g
-      value: 0.36862746
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[8].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[9].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[9].b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[9].g
-      value: 0.36862746
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[9].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[10].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[10].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[10].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _textColors.Array.data[10].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_otherDialogues.Array.data[1]'
-      value: "Alors, tu as ce que je t'ai demand\xE9?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_otherDialogues.Array.data[2]'
-      value: Toujours pas?
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: '_otherDialogues.Array.data[3]'
-      value: Ne me fais pas perdre mon temps...
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[0].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[0].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[0].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[0].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[1].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[1].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[1].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[1].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[2].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[2].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[2].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[2].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[3].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[3].b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[3].g
-      value: 0.36862746
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[3].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[4].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[4].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[4].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[4].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[5].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[5].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[5].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[5].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[6].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[6].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[6].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[6].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[7].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[7].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[7].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[7].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[8].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[8].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[8].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[8].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[9].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[9].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[9].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[9].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[10].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[10].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[10].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _otherTextColors.Array.data[10].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4219750200953209086, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4219750200953209086, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 4219750200953209086, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 4236973547731206313, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: ac14a79128642324a9ddf6a562288432, type: 2}
-    - target: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_Name
-      value: Robert
-      objectReference: {fileID: 0}
-    - target: {fileID: 6349966705830778109, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6897157001225615235, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: _target
-      value: 
-      objectReference: {fileID: 321464596}
-    - target: {fileID: 8062602008786069744, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1987768328509903883, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1494536181}
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
---- !u!4 &200581167 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1131282136322708919, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-  m_PrefabInstance: {fileID: 200581166}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &200581168 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3735687216003641097, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
-  m_PrefabInstance: {fileID: 200581166}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &200982552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55573,6 +54945,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -55608,6 +54984,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "La visite vous pla\xEEt?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Vous avez vu? On a plein de super trucs, hein?
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -57374,6 +56762,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -57409,6 +56801,26 @@ PrefabInstance:
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "Ils se sont donc mis \xE0 inventer  des chansons pour penser \xE0 autre
         chose."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Oh?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Tu te demandes ce que je chantais, c'est \xE7a?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Cette m\xE9lodie est connue dans tout le syst\xE8me solaire."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "La chanson nous vient des premiers humains qui ont v\xE9cu ici."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -62530,6 +61942,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -62556,6 +61972,34 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
       value: Laisse tomber...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "C'est dur \xE0 croire mais quand j'\xE9tais jeune j'\xE9tais manequin."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Je vous ai d\xE9j\xE0 vu quelque part..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Les gens me connaissent surtout pour la pub M\xE9gadrink."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "\"M\xE9gardink, la M\xE9gaboisson qui calme les M\xE9gasoif\"!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: "Je savais que je vous avez d\xE9j\xE0 vu!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: Oh, un fan?
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -64245,6 +63689,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -64281,6 +63729,23 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Personne ne me croit quand je parle du ver g\xE9ant qui vit dans les
+        grottes!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Un ver g\xE9ant?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: Oui, on raconte que son point faible est sa queue.
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -67031,6 +66496,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -67061,6 +66530,50 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[4]'
       value: "Euh... Non, j'en ai besoin pour m'acheter un M\xE9gadrink..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Je r\xEAve d'aller un jour sur New Genis."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Pourquoi?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Il y a un parc d'attraction g\xE9ant l\xE0-bas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "Avec des man\xE8ges..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: Une grande roue...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: Des toboggans...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[7]'
+      value: Plein de peluches souvenirs...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[8]'
+      value: Et puis un zoo...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[9]'
+      value: Et une super grande ville luxueuse...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[10]'
+      value: "Mais bon, je n'ai pas assez d'argent pour faire le voyage jusque l\xE0-bas. "
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -70395,6 +69908,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -70437,6 +69954,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[7]'
+      value: Yop Di Dop Di Dop!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Yop Di Dop Di Dop!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "C'est moi, Captain M\xE9gadrink!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Le super-h\xE9ros des canettes!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "(Pfff... Qu'est ce que j'ai chaud l\xE0-dedans...)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: Nous sommes actuellement en rupture de stock!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: Donc revenez plus tard!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[7]'
       value: Yop Di Dop Di Dop!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
@@ -79525,6 +79074,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -79560,6 +79113,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Brrrrr...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Ca fait peur non?
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -81452,6 +81017,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -81478,6 +81047,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
       value: Le fond de la grotte, enfin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Attention si tu prends cette porte...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Tu risques de ne pas en revenir vivant...
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -83229,6 +82810,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -83264,6 +82849,26 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Waaaah!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Je voulais boire un M\xE9gadrink..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: Mais il n'y en a plus!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: Waaaaah!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -90656,6 +90261,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -90698,6 +90307,50 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[7]'
       value: "Ca devait \xEAtre une sacr\xE9e aventure!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: On se fait envahir de touristes qui viennent de Kairos.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Tu viens d'o\xF9, toi?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: Euh...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: Top...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: Mega...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[7]'
+      value: Cool...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[8]'
+      value: Ville...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[9]'
+      value: Oh? Top Mega Cool Ville?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[10]'
+      value: "J'adore cet endroit! J'y suis all\xE9 pour ma lune de miel!"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -93945,6 +93598,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -93987,6 +93644,30 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[7]'
       value: "Ca devait \xEAtre une sacr\xE9e aventure!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "s\xE9 leur de ma poz kf\xE9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: alor less moa trenkil
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: pask g une gross tass
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: et g pa bocou de tant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: et le tant c de la rgen
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -100581,6 +100262,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -100616,6 +100301,42 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Bienvenue dans ce bar!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Le bar le plus c\xE9l\xE8bre de la ville!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "(S\xFBrement parce que c'est le seul...)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: Que puis-je faire pour toi?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: "Je voudrais un M\xE9gadrink! J'ai besoin d'\xE9nergie!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: "Un M\xE9gadrink?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[7]'
+      value: "Je suis d\xE9sol\xE9, un pilote a achet\xE9 ma derni\xE8re canette..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[8]'
+      value: Oh, non! C'est pas vrai!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -102117,6 +101838,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -102143,6 +101868,28 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
       value: Le fond de la grotte, enfin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Cette statue fait partie des nombreux vestiges que nous avons trouv\xE9
+        ici."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "On imagine qu'elle repr\xE9sentait l'esp\xE8ce qui vivait dans ces
+        ruines."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Mais seulement les pieds ont \xE9t\xE9 \xE9pargn\xE9s par le temps."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "On ne peut donc que sp\xE9culer sur l'apparence de ce peuple."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -120752,6 +120499,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -120787,6 +120538,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Mais comment tu fais pour gagner \xE0 chaque fois?!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "(En plus j'ai trich\xE9...)"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -126000,6 +125763,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -126036,6 +125803,26 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Tout le monde dit que j'ai les fesses \xE0 l'air..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Ce que les gens ne savent pas...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "C'est que j'ai un pantalon de la m\xEAme couleur que ma peau."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "Mais je l'ai oubli\xE9 chez moi alors j'ai les fesses \xE0 l'air."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -135845,6 +135632,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -135867,6 +135658,14 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
       value: "Pense \xE0 prendre une douche avant, d'accord?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Difficile \xE0 croire qu'un crapaud de cette envergure ait exist\xE9..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -143408,6 +143207,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -143443,6 +143246,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Ce bar est trop nul!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Ils vendent m\xEAme pas d'alcool!"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -152127,6 +151942,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -152322,6 +152141,34 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: L'huissier de justice vient de me prendre tous mes meubles.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Donc je reste assis par terre.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: La seule chose qu'il me reste c'est mon ordinateur...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "On me l'a laiss\xE9 parce qu'apparemment c'est une relique."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: "C'est un vestige de l'\xE9poque ou on vivait sur Terre."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: Tu peux l'utiliser si tu veux.
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -153528,6 +153375,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -153550,6 +153401,26 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
       value: "Pense \xE0 prendre une douche avant, d'accord?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Ici, c'est la suite des ruines!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Il y avait aussi un autre chemin \xE0 gauche avant le mus\xE9e."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: Mais je vois que tu es quelqu'un d'aventureux!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "C'est tr\xE8s bien, \xE7a. Allez, roulez jeunesse!"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -158601,6 +158472,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -158636,6 +158511,22 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Mon fr\xE8re travaille sur la Station Spatiale Internationale!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Toute la famille est tr\xE8s fi\xE8re de lui."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Il a r\xE9ussi sa vie, lui au moins..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -161831,6 +161722,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -161861,6 +161756,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[4]'
       value: "Euh... Non, j'en ai besoin pour m'acheter un M\xE9gadrink..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Je suis en rendez-vous galant avec mon amoureuse.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Je vais la demander en mariage.
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -165324,6 +165231,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -165360,6 +165271,38 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: J'aime observer le ciel.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Aujourd'hui, on peut voir La Com\xE8te plus clairement que jamais."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "La Com\xE8te?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "Oui, La Com\xE8te qui voyage dans notre syst\xE8me solaire."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: La plupart du temps, elle est trop loin pour qu'on puisse l'observer.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: Mais ces derniers temps, j'ai l'impression qu'elle se rapproche.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[7]'
+      value: D'ici peu, on pourra presque la prendre en photo!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -171291,6 +171234,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -171333,6 +171280,38 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[7]'
       value: ZZZZZZZZ
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: ZZZZZZZ
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Un homme avec un bandeau...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: Des orbes...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: Un homme avec une cicatrice...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: Hein?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: "Oh, c\xE9tait juste un r\xEAve..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[7]'
+      value: ZZZZZZZ
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -183273,6 +183252,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -183299,6 +183282,22 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
       value: Laisse tomber...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: What beautiful pottery!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "De vrais vestiges du pass\xE9!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: Ce serait une honte que quelqu'un les casse...
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -187794,6 +187793,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -187831,6 +187834,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Si tu cours jusqu'au fond sans t'arr\xEAter..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Je pense que tu peux \xE9viter les cr\xE9atures de ce couloir..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -191220,6 +191235,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -191250,6 +191269,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[4]'
       value: "Euh... Non, j'en ai besoin pour m'acheter un M\xE9gadrink..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Je suis en rendez-vous galant avec mon amoureux.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "J'esp\xE8re qu''il va me demander en mariage..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -194370,7 +194401,7 @@ PrefabInstance:
       objectReference: {fileID: 2050450522}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _npcName
-      value: Clok
+      value: Robert
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _nameText
@@ -194954,7 +194985,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ea0f825e0a1167b43b6551d4b768bd45, type: 2}
     - target: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: m_Name
-      value: Clok
+      value: Robert
       objectReference: {fileID: 0}
     - target: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: m_IsActive
@@ -196942,6 +196973,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -196964,6 +196999,22 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
       value: Ce serait dommage, non?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Si tu pars vers l'Ouest, tu auras un chemin court.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Si tu traverses le mus\xE9e, tu auras un chemin plus long"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: A toi de voir.
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -200034,6 +200085,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -200064,6 +200119,22 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[4]'
       value: "Euh... Non, j'en ai besoin pour m'acheter un M\xE9gadrink..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Quand je serai grand, je voudrais faire le m\xEAme m\xE9tier que Papa!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Et c'est quoi, le m\xE9tier de ton Papa?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: Je sais pas, mais il fait des fraudes fiscales!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -207195,6 +207266,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -207225,6 +207300,34 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[4]'
       value: "Euh... Non, j'en ai besoin pour m'acheter un M\xE9gadrink..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: C'est quoi l'espace?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Maman dit qu'on vit sur un rocher g\xE9ant qui flotte dans l'espace..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "On est dans le vide, c'est \xE7a?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: On va...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: Mourir?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: Beuuuaaaaah!!!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -215642,6 +215745,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -215672,6 +215779,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[4]'
       value: "Euh... Non, j'en ai besoin pour m'acheter un M\xE9gadrink..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "J'envoie plein de pi\xE8ces dans la fontaine!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Il parait que \xE7a porte chance!"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -218345,6 +218464,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -218381,6 +218504,34 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: J'ai peur... J'ai peur...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Nous les Myc\xE9liens, on ne part pas de notre plan\xE8te d'habitude..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "C'est la premi\xE8re fois que je sors de mon petit village..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "Je voulais prendre le ferry pour aller dans la grande ville de Myc\xE9lia..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: "Mais je me suis endormi et je me suis retrouv\xE9 ici..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: "Le ferry est ferm\xE9 aujourd'hui! Comment je vais faire???"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -223370,6 +223521,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -223392,6 +223547,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
       value: "Pense \xE0 prendre une douche avant, d'accord?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Merci de ne pas toucher les vitrines.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Merci de ne pas l\xE9cher les vitrines non plus."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -232116,6 +232283,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -232142,6 +232313,19 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
       value: Le fond de la grotte, enfin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Sur ce pillier se trouve probablement l'histoire du peuple qui vivait
+        l\xE0."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Impossible de savoir ce que \xE7a veut dire."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -232953,6 +233137,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -232979,6 +233167,23 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
       value: Le fond de la grotte, enfin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Bienvenue \xE0 l'expo \"Les voix du pass\xE9\"!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Cette exposition regroupe l'ensemble des d\xE9couvertes sp\xE9cifiques
+        \xE0 ces ruines."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: Bonne visite!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -236794,6 +236999,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -236830,6 +237039,33 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Nous sommes une troupe de chercheurs qui avons pos\xE9 notre camp ici!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Nous sommes originaires de Zadana, et nous faisions des fouilles dans
+        un temple.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Mais nous avons d\xE9couvert une fresque repr\xE9sentant une sc\xE8ne
+        \xE9trange."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "Alors nous sommes venus ici, car nous connaissons la r\xE9putation
+        de ces ruines."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: "En esp\xE9rant trouver des r\xE9ponses \xE0 nos questions..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -238547,6 +238783,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -238589,6 +238829,26 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[7]'
       value: 'Des centaines de '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Cette petite ville a \xE9t\xE9 creus\xE9e dans la roche."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "S\xE9rieux?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Oui, la plan\xE8te Igara est enti\xE8rement faite de roches."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "Alors nos anc\xEAtres n'avaient pas vraiment le choix... "
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -247078,88 +247338,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 130}
   m_SizeDelta: {x: -318.24, y: -178.992}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1181606364
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1494536182}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0135155795
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0135155795
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0135155795
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.04511
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4683669308469848369, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 29435073a85b89d4083e1cb11aaf37f3, type: 2}
-    - target: {fileID: -1461304994638716399, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f9d4c802115c4d9479952087742ea4fc, type: 2}
-    - target: {fileID: 919132149155446097, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-      propertyPath: m_Name
-      value: StrawHat
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
---- !u!4 &1181606365 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 90547a5428d1b8d49957ede7fce6c49f, type: 3}
-  m_PrefabInstance: {fileID: 1181606364}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1181904851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -251693,6 +251871,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -251890,6 +252072,42 @@ PrefabInstance:
       value: "C'est un \xE9v\xE8nement historique!"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "J'ai essay\xE9 d'explorer les ruines..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Mais il y avait trop de monstres l\xE0-dedans."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: Je n'y retournerai qu'une fois qu'ils auront tous disparu.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "Bon ok, peut-\xEAtre pas tous..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: "Faisons un march\xE9."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: "Si tu arrives \xE0 \xE9liminer 30 enemis..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[7]'
+      value: "Je te donnerai une belle r\xE9compense."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[8]'
+      value: "Que dis-tu de \xE7a?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
       value: 1
       objectReference: {fileID: 0}
@@ -252068,6 +252286,10 @@ PrefabInstance:
     - target: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: m_Name
       value: Low
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6349966705830778109, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: m_LocalPosition.x
@@ -253980,6 +254202,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -254015,6 +254241,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: ZZZZZZ
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: J'ai un peu trop bu je pense...
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -257324,6 +257562,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -257359,6 +257601,14 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "J'aime pas les mus\xE9es..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -258565,6 +258815,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -258596,6 +258850,22 @@ PrefabInstance:
       propertyPath: '_otherDialogues.Array.data[3]'
       value: "Mais avant \xE7a, mes anc\xEAtres \xE9taient \xE0 bord de la fus\xE9e
         qui a amen\xE9 les humains ici."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Je n'ai jamais quitt\xE9 cette ville depuis ma naissance."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Et pourtant, je n'ai aucune id\xE9e de comment elle s'appelle."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "\"Ville Rocheuse\" ou un truc comme \xE7a, j'imagine..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -274869,7 +275139,7 @@ PrefabInstance:
       objectReference: {fileID: 2050450522}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _npcName
-      value: Glub
+      value: Low
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _nameText
@@ -275451,7 +275721,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac14a79128642324a9ddf6a562288432, type: 2}
     - target: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: m_Name
-      value: Glub
+      value: Low
       objectReference: {fileID: 0}
     - target: {fileID: 4758034300892036237, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: m_IsActive
@@ -277338,6 +277608,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -277373,6 +277647,14 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Il est pas super, notre campement, dis?
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -310541,149 +310823,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ba6d6755d54d1954bbf903ea2ed29fcc, type: 3}
   m_PrefabInstance: {fileID: 1967735556}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1494536180
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 200581167}
-    m_Modifications:
-    - target: {fileID: 1022230475350065904, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: acf564930689bbc4caafc9d102c3fd31, type: 2}
-    - target: {fileID: 1629439024360601842, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 9b4d33da99214c54096760d3ee1024ee, type: 2}
-    - target: {fileID: 3495762077134970641, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: acf564930689bbc4caafc9d102c3fd31, type: 2}
-    - target: {fileID: 4578712282709325616, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7ec94a5d8acc04c44a36f206dd757030, type: 2}
-    - target: {fileID: 4880639797587285412, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 9b4d33da99214c54096760d3ee1024ee, type: 2}
-    - target: {fileID: 5081791315375709606, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7302e3b9c2050574987ff05cf18b817d, type: 2}
-    - target: {fileID: 5325448661890821417, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: ca3563177389e1349ba863b90a2e2581, type: 2}
-    - target: {fileID: 6071118199823610219, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7302e3b9c2050574987ff05cf18b817d, type: 2}
-    - target: {fileID: 6276514675946079061, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: acf564930689bbc4caafc9d102c3fd31, type: 2}
-    - target: {fileID: 6446840329168794759, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: acf564930689bbc4caafc9d102c3fd31, type: 2}
-    - target: {fileID: 6883360546473126937, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_Name
-      value: Wadoxien
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.25691333
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.25691336
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.25691333
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.403
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7209662391505408654, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7ec94a5d8acc04c44a36f206dd757030, type: 2}
-    - target: {fileID: 7428624045924753085, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7302e3b9c2050574987ff05cf18b817d, type: 2}
-    - target: {fileID: 8172436753578115932, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: acf564930689bbc4caafc9d102c3fd31, type: 2}
-    - target: {fileID: 8884296157176720321, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7ec94a5d8acc04c44a36f206dd757030, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8626263430625354392, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1181606365}
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
---- !u!4 &1494536181 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6980370648857433578, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-  m_PrefabInstance: {fileID: 1494536180}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1494536182 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8626263430625354392, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-  m_PrefabInstance: {fileID: 1494536180}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1494536183 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6720219348233211250, guid: 546caba0f54671643b0fcddc73d3d9e4, type: 3}
-  m_PrefabInstance: {fileID: 1494536180}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1494564051
 GameObject:
   m_ObjectHideFlags: 0
@@ -315045,6 +315184,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -315080,6 +315223,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Fais attention!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Ces monstres ne t'attaqueront pas tant que tu ne les attaque pas.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Evite de les toucher par m\xE9garde!"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -329616,6 +329771,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -329638,6 +329797,22 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
       value: "Je me sens b\xEAte, l\xE0..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "J'esp\xE8re que ce mus\xE9e vaut le coup..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "J'ai d\xFB traverser des grottes et des ruines..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "J'ai d\xFB me battre contre des monstres pour arriver ici!"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -330587,6 +330762,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -330629,6 +330808,26 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[7]'
       value: "Ca devait \xEAtre une sacr\xE9e aventure!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Salut, mon pote!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Je te conseille de contourner ces scarab\xE9es!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: Ils t'attaqueront si tu passes dans leur champ de vision.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "Nous on a appris \xE0 vivre avec mais on sait jamais..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -336572,6 +336771,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -336607,6 +336810,22 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Incroyable!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "On dirait un ancien campement antique abandonn\xE9!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Je devrais faire des recherches l\xE0-dessus..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -339002,6 +339221,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -339024,6 +339247,14 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
       value: "Pense \xE0 prendre une douche avant, d'accord?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Surtout ne va pas croire que j'ai vol\xE9 quelque chose..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -348841,6 +349072,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -348876,6 +349111,27 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Il semblerait que ces esp\xE8ces de socles servaient de r\xE9c\xE9ptacles."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Un r\xE9ceptacle pour quelque chose, mais quoi?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "J'ai remarqu\xE9 que tous ces socles \xE9taient expos\xE9s \xE0 la
+        lumi\xE8re du Soleil."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "Peut-\xEAtre que ce n'est qu'une co\xEFncidence apr\xE8s tout..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -350338,6 +350594,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -350373,6 +350633,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Wohoo!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Je suis en train de gagner!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -353381,6 +353653,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -353416,6 +353692,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Je me suis perdu!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Je vais mourir de faim!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Ca fait d\xE9j\xE0 2 heures que j'attends ici..."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -360016,6 +360304,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -360042,6 +360334,32 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
       value: Le fond de la grotte, enfin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "C'est tr\xE8s interessant!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "C'est sympa de voir l'histoire d'une plan\xE8te."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Moi, je viens de Mechatris, la plan\xE8te usine, comme la plupart des
+        robots."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "Et avant la cr\xE9ation des usines, il n'y avait pas grand chose."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: "Mais vous, les esp\xE8ces issues de l'\xE9volution, vous en avez de
+        la chance!"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -373060,6 +373378,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -373086,6 +373408,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
       value: "(C'est s\xFBrement pour \xE7a qu'on est pas pay\xE9s)..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: So, did you like it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Hop you had a good time!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -373248,6 +373582,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _otherDialoguesEnglish.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -373262,6 +373600,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[10].r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_otherDialoguesEnglish.Array.data[1]'
+      value: Comeback whenever you want!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_otherDialoguesEnglish.Array.data[2]'
+      value: It's free, anyway!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_otherDialoguesEnglish.Array.data[3]'
+      value: (Maybe that's why they won't pay us)
       objectReference: {fileID: 0}
     - target: {fileID: 4219750200953209086, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: m_LocalPosition.x
@@ -387672,6 +388022,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -387694,6 +388048,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
       value: "Pense \xE0 prendre une douche avant, d'accord?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Merci de ne pas toucher les vitrines.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Merci de ne pas l\xE9cher les vitrines non plus."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -389716,7 +390082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _dialoguesEnglish.Array.size
-      value: 1
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
@@ -389946,6 +390312,98 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Tu cherches \xE0 t'enfoncer dans les grottes, hein?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "Je cherche surtout un moyen de quitter cette plan\xE8te."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: Le Ferry Stellaire rejoint directement Kepler B.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: Et il passe toutes les heures.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: "Super \xE7a! O\xF9 est ce que je peux le trouver?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: "A seulement 2 minutes \xE0 pieds d'ici."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[7]'
+      value: "C'est tr\xE8s proche."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[8]'
+      value: Et en plus c'est gratuit!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[9]'
+      value: "Alors \xE7a, c'est g\xE9nial! J'y vais tout de suite!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[10]'
+      value: "Ah non, \xE7a va pas \xEAtre possible."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[11]'
+      value: "On est dimanche. C'est ferm\xE9."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[12]'
+      value: Oh, non, dommage...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[13]'
+      value: "Si tu comptes quitter Igara d\xE8s \xE0 pr\xE9sent, "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[14]'
+      value: le plus simple c'est de trouver quelqu'un avec un vaisseau
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[15]'
+      value: qui acceptera de t'emmener.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[16]'
+      value: "O\xF9 est ce que je peux trouver quelqu'un comme \xE7a?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[17]'
+      value: J'ai vu un pilote partir dans les grottes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[18]'
+      value: "Si tu lui demandes peut-\xEAtre qu'il acceptera."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[19]'
+      value: "Quoique, il avait l'air plut\xF4t chafouin..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[20]'
+      value: Enfin bref, si tu comptes aller dans les grottes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[21]'
+      value: "Le plus simple, c'est d'utiliser l'entr\xE9e juste ici."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[22]'
+      value: Merci, l'ami!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -398196,6 +398654,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -398223,6 +398685,34 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[3]'
       value: Le fond de la grotte, enfin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Salut salut, mon petit loulou tout doux!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "C'est moi, le marchand de M\xE9gadrink itin\xE9rant!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "Tu tombes tr\xE8s mal, la derni\xE8re canette vient d'\xEAtre bue..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: (Par moi, je l'avoue)...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: Mais j'ai des canettes vides si tu veux...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: (Je me rattrape comme je peux mais j'avais vraiment trop trop soif).
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -400084,6 +400574,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -400105,6 +400599,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
+      value: "J'me suis juste habill\xE9 pareil qu'eux par m\xE9garde."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: Non, j'travaille pas ici...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
       value: "J'me suis juste habill\xE9 pareil qu'eux par m\xE9garde."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
@@ -432621,6 +433127,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -433057,6 +433567,18 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Ici, les maisons sont taill\xE9es dans la roche."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: Ca tient chaud quand il fait frois, et froid quand il fait chaud!
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -445936,6 +446458,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -446372,6 +446898,160 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[5]'
       value: "C'est un \xE9v\xE8nement historique!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: "Je vais te faire la liste de toutes les plan\xE8te du syst\xE8me solaire."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: "De la plus \xE9loign\xE9e \xE0 la plus proche du soleil."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: "La plus lointaine est Kairos, la plan\xE8te d\xE9potoire."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: "On l'appelle comme \xE7a parce que la plupart des d\xE9chets se retrouvent
+        l\xE0-bas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: "Ici, c'est Igara, la deuxi\xE8me plan\xE8te la plus \xE9loign\xE9e
+        du soleil."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: "Ensuite, on a Kepler B, la plan\xE8te de glace."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[7]'
+      value: Apparemment, des restes de civilisations disparues se trouveraient sous
+        la glace...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[8]'
+      value: "Apr\xE8s, on a Estelion."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[9]'
+      value: "La plan\xE8te est coup\xE9e en deux, une partie est toujours expos\xE9e
+        au soleil, sur l'autre il fait toujours nuit."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[10]'
+      value: "Puis, Gorgon, la plan\xE8te de lave."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[11]'
+      value: "C'est l\xE0-bas que se trouve la prison internationale."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[12]'
+      value: "Ensuite, on a Garas, la plan\xE8te mar\xE9cageuse."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[13]'
+      value: "Il parait qu'il y a des lacs d'acide l\xE0-bas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[14]'
+      value: "Ma plan\xE8te d'origine, Dokan, la plan\xE8te d\xE9sertique."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[15]'
+      value: Notamment connue pour ses pyramides.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[16]'
+      value: "Et on arrive \xE0 la moiti\xE9 avec Myc\xE9lia, la plan\xE8te champignon."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[17]'
+      value: "C'est la plan\xE8te d'origine des myc\xE9liens..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[18]'
+      value: "Les deux parties du syst\xE8me solaire sont s\xE9par\xE9es par l'ISS."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[19]'
+      value: "Et on commence la deuxi\xE8me moiti\xE9 avec Zadana, la plan\xE8te
+        jungle."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[20]'
+      value: "A ce qu'il parait, il y aurait une cit\xE9 faite d'or dans la jungle."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[21]'
+      value: "Apr\xE8s \xE7a, on a Mechatris, la plan\xE8te industrielle."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[22]'
+      value: "Elle est quasi uniquement peupl\xE9e de robots."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[23]'
+      value: "Ma plan\xE8te pr\xE9f\xE9r\xE9e, Zepton, plan\xE8te aquatique."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[24]'
+      value: "La plan\xE8te est compos\xE9e d'un oc\xE9an g\xE9ant. Il parait qu'une
+        esp\xE8ce aquatique vit l\xE0-bas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[25]'
+      value: "La premi\xE8re plan\xE8te \xE0 avoir \xE9t\xE9 explor\xE9e, Jaker."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[26]'
+      value: "C'est la plan\xE8te sur laquelle s'est \xE9cras\xE9e la fus\xE9e amenant
+        les humains dans ce syst\xE8me solaire."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[27]'
+      value: "Ensuite, on a New Genis, la plan\xE8te luxueuse."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[28]'
+      value: Il y a un zoo et un parc d'attraction! J'aimerais trop y aller!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[29]'
+      value: "Reli\xE9e \xE0 New Genis par la Grande Fus\xE9e, nous avons ensuite
+        Synkron."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[30]'
+      value: "Il parait que c'est une plan\xE8te miroir, invisible tant qu'on n'est
+        pas pos\xE9 dessus."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[31]'
+      value: "Et pour terminer, la plan\xE8te la plus proche du Soleil..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[32]'
+      value: "H\xE9liopolis, la plan\xE8te royale!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[33]'
+      value: "Apr\xE8s \xE7a, on a la station solaire, mais c'est pas une plan\xE8te,
+        alors..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[34]'
+      value: "Merci de m'avoir aid\xE9 \xE0 r\xE9viser!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[35]'
+      value: "J'ai redoubl\xE9 13 fois, alors je prends toute l'aide possible!"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
