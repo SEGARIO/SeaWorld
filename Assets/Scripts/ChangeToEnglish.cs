@@ -15,6 +15,14 @@ public class ChangeToEnglish : MonoBehaviour
       
     }
 
+    public void English()
+    {
+        LanguageManager._language = 1;
+    }
+    public void French()
+    {
+        LanguageManager._language = 0;
+    }
     // Update is called once per frame
     void Update()
     {

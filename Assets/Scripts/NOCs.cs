@@ -54,6 +54,7 @@ public class NOCs : MonoBehaviour
 
     [Header("English")]
     public string _npcNameEnglish;
+    public string _npcSecondNameEnglish;
     public string[] _dialoguesEnglish;
     public string[] _otherDialoguesEnglish;
 
@@ -78,8 +79,13 @@ public class NOCs : MonoBehaviour
             {
                 _npcName = _npcNameEnglish;
             }
+            if (_npcSecondNameEnglish != null)
+            {
+                _secondaryName = _npcSecondNameEnglish;
+            }
             _dialogues = _dialoguesEnglish;
             _otherDialogues = _otherDialoguesEnglish;
+          
         }
     }
 
