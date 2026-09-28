@@ -75,7 +75,7 @@ public class NOCs : MonoBehaviour
 
         if(LanguageManager._language == 1)
         {
-            if(_npcNameEnglish != null)
+            if(_npcNameEnglish != "")
             {
                 _npcName = _npcNameEnglish;
             }
@@ -172,11 +172,20 @@ public class NOCs : MonoBehaviour
             if (_text.color == Color.blue)
             {
                 _nameText.text = "Enfant";
+                if (LanguageManager._language == 1)
+                {
+                    _nameText.text = "Child";
+                }
                 _nameText.color = Color.blue;
             }
             if (_text.color == Color.red)
             {
+               
                 _nameText.text = "Homme aux toilettes";
+                if (LanguageManager._language == 1)
+                {
+                    _nameText.text = "Bathroom dude";
+                }
                 _nameText.color = Color.red;
             }
             
