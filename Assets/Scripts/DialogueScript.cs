@@ -16,17 +16,18 @@ public class DialogueScript : MonoBehaviour
 
     private void Start()
     {
-        NextDialogue();
+        
 
         if(LanguageManager._language == 1)
         {
             entries = entriesEnglish;
         }
-
-        if(_imobilisePlayer)
+        NextDialogue();
+        if (_imobilisePlayer)
         {
             _controller.enabled = false;
         }
+       
     }
     void NextDialogue()
     {

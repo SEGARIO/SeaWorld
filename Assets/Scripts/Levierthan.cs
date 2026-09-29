@@ -51,12 +51,21 @@ public class Levierthan : MonoBehaviour
     public Animator _camAnimator;
     public GameObject _deathScene;
     public GameObject _dialogueText;
+    public GameObject _aWolf;
+    public GameObject _smoke;
+    public GameObject circle;
+    public Powerup _powerup;
+   public PlayerController playerController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Destroy(_aWolf);
+        Destroy(_smoke);
+        Destroy(circle);
+        _powerup.enabled = false;
         _life = _scriptable._life;
         _timer = _introDuration;
-        
+        playerController.enabled = true;
     }
 
     // Update is called once per frame

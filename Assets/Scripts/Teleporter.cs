@@ -22,6 +22,8 @@ public class Teleporter : MonoBehaviour
     public Animator _anim;
     public GameObject _dialogue;
     public GameObject _dialogueText;
+
+  
     private void Start()
     {
         _nextRoom.SetActive(false);
@@ -74,6 +76,7 @@ public class Teleporter : MonoBehaviour
         }
        if(_isBoss)
         {
+            playerController.enabled = false;
             //FindObjectOfType<Camera>().gameObject.SetActive(false);
         }
     }

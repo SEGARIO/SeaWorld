@@ -10,6 +10,8 @@ public class SpaceShipLife : MonoBehaviour
     public GameObject _explo;
     bool canexplode;
     public GameObject _dial;
+    public GameObject _text;
+    public GameObject _fire;
     public GameObject[] _flames;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,7 +46,9 @@ public class SpaceShipLife : MonoBehaviour
         if(canexplode)
         {
             Destroy(_dial);
+            Destroy(_fire);
             Destroy(_visual);
+            Destroy(_text);
             Instantiate(_explo, this.transform.position, Quaternion.identity);
             GameFeel.Instance.PlayJuice(1.5f, 0.6f);
             canexplode = false;

@@ -56,7 +56,13 @@ public class PlayerLife : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_isCurrentPlayer)
+        if (_life <= 0)
+        {
+            _life = 0;
+            Death();
+
+        }
+        if (_isCurrentPlayer)
         {
            
 

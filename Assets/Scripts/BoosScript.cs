@@ -41,10 +41,12 @@ public class BoosScript : MonoBehaviour
     public float _minVulnerableDuration;
     public float _maxVulnerableDuration;
     bool _isVulnerable;
-    
+ 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+       
         _life = _scriptable._life;
         Invoke("AcidAttack", _introDuration);
         for (int i = 0; i < _renderers.Length; i++)

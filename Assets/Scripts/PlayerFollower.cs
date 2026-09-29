@@ -89,7 +89,7 @@ public class DelayedPlayerFollower : MonoBehaviour
     void FollowDelayed()
     {
         float targetTime = Time.time - delay;
-     
+
         if (history.Count < 2)
             return;
 
@@ -116,11 +116,12 @@ public class DelayedPlayerFollower : MonoBehaviour
                     t
                 );
 
-                // Déplacement progressif vers la position retardée
-                transform.position = Vector3.MoveTowards(
-                    transform.position,
-                    targetPosition,
-                    5f * Time.deltaTime
+                // X et Z : vitesse normale
+                // Y : 5 fois plus rapide
+                transform.position = new Vector3(
+                    Mathf.MoveTowards(transform.position.x, targetPosition.x, 6f * Time.deltaTime),
+                    Mathf.MoveTowards(transform.position.y, targetPosition.y, 25f * Time.deltaTime),
+                    Mathf.MoveTowards(transform.position.z, targetPosition.z, 6f * Time.deltaTime)
                 );
 
                 transform.rotation = Quaternion.RotateTowards(
