@@ -28,7 +28,7 @@ public class DelayedPlayerFollower : MonoBehaviour
 
     private bool wasFollowing = false;
 
-    private void Start()
+    private void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
         CheckpointManager._hasWolf = true;

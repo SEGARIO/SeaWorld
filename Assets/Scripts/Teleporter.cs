@@ -84,6 +84,7 @@ public class Teleporter : MonoBehaviour
        if(_isCheckpoint)
         {
             CheckpointManager._position = _position.position;
+            CheckpointManager._sunColor = _lightColor;
         }
     }
 }
