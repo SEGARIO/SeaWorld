@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 
 public class GameFeel : MonoBehaviour
 {
+    public string _sceneName;
+    
     public static GameFeel Instance;
 
     [Header("Camera")]
@@ -17,6 +19,7 @@ public class GameFeel : MonoBehaviour
 
     void Awake()
     {
+        CheckpointManager._lastSceneName = _sceneName;
         Application.targetFrameRate = 60;
         Instance = this;
 

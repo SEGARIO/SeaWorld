@@ -20,6 +20,7 @@ public class PcInteraction : MonoBehaviour
     public PlayerController _controller;
     public Animator _anim;
 
+
     private void Start()
     {
         _message = _messageEnglish;
@@ -101,7 +102,7 @@ public class PcInteraction : MonoBehaviour
         {
             _anim.enabled = true;
             _textPanel.SetActive(false);
-            _controller.enabled = true;
+           // _controller.enabled = true;
             isInRange = false;
             _objectToActivate.SetActive(true);
         }

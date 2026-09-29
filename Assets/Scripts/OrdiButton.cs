@@ -18,7 +18,8 @@ public class OrdiButton : MonoBehaviour
     private Color highlightedColor;
 
     private bool objectIsOnButton = false;
-
+    public bool _isPowerButton;
+    public PlayerController _controller;
     void Start()
     {
         button = GetComponent<Button>();
@@ -56,6 +57,10 @@ public class OrdiButton : MonoBehaviour
         {
             if (Gamepad.current.buttonSouth.wasPressedThisFrame)
             {
+                if(_isPowerButton)
+                {
+                    _controller.enabled = true;
+                }
                
                 if (objectToActivate != null)
                 {

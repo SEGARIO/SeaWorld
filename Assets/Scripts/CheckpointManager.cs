@@ -13,9 +13,15 @@ public class CheckpointManager : MonoBehaviour
     public Vector3 _check;
     public static Color _sunColor = new Color(255f, 244f, 214f) / 255f;
     public Light _light;
+    public static string _lastSceneName =  "Subway";
+    public MenuEvents _events;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if(_events != null)
+        {
+            _events._sceneName = _lastSceneName;
+        }
         _player.transform.position = _position;
         _light.color = _sunColor;
         if (_hasWolf)
@@ -31,6 +37,14 @@ public class CheckpointManager : MonoBehaviour
     {
         hasWolf = _hasWolf;
         _check = _position;
+
+    }
+
+    public void ResetCoordinates()
+    {
+        _sunColor = new Color(255f, 244f, 214f) / 255f;
+        _position = new Vector3(93.08f, 2.178f, 48.21f);
+        _hasWolf = false;
 
     }
 }
