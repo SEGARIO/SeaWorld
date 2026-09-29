@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeToEnglish : MonoBehaviour
 {
@@ -18,10 +19,16 @@ public class ChangeToEnglish : MonoBehaviour
     public void English()
     {
         LanguageManager._language = 1;
+        Debug.Log("1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("2");
     }
     public void French()
     {
         LanguageManager._language = 0;
+        Debug.Log("1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("2");
     }
     // Update is called once per frame
     void Update()

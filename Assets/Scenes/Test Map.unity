@@ -114071,6 +114071,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _npcNameEnglish
+      value: Logbook
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _secondaryColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -114133,6 +114137,10 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _dialogues.Array.size
       value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _npcSecondNameEnglish
+      value: Logbook
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[10]'
@@ -114389,7 +114397,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[18]'
-      value: "L'un d'entre eux a percut\xE9 un rocher et nous a ouvert un passage."
+      value: "Nous avons r\xE9ussi \xE0 les semer quand ils se sont heurt\xE9s entre
+        eux."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[19]'
@@ -114439,7 +114448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[30]'
-      value: Un autre crystal s'y trouve. Cette fois, Elo a vuolu y toucher.
+      value: Un autre crystal s'y trouve. Cette fois, Russell a vuolu y toucher.
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[31]'
@@ -114532,7 +114541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_dialogues.Array.data[53]'
-      value: "Et c'est sign\xE9 \"Queen\"."
+      value: "Et c'est sign\xE9 \"Taylor\"."
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherDialogues.Array.size
@@ -114701,6 +114710,10 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[9].r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _dialoguesEnglish.Array.size
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _textColors.Array.data[10].a
@@ -115422,6 +115435,223 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[4]'
       value: Laisse tomber...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[1]'
+      value: LOGBOOK
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[2]'
+      value: EXPEDITION NUMBER 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[3]'
+      value: 'Day 1:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[4]'
+      value: We explored the ruins.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[5]'
+      value: No trace of that mura the old man told us about.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[6]'
+      value: Maybe he lied to us?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[7]'
+      value: I should have know...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[8]'
+      value: We'll continue to explore anyway....
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[9]'
+      value: 'Day 2:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[10]'
+      value: Anton drowned in one of the cave's rivers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[11]'
+      value: Even with the mecansims we found in the ruins.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[12]'
+      value: We found a secret room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[13]'
+      value: And we found a purple star on a pedestal.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[14]'
+      value: "We didn\u2019t dare touch it. So many strange things happen around
+        here."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[15]'
+      value: 'Day 3:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[16]'
+      value: We have been attacked by beetles.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[17]'
+      value: That's the first time I see bugs this big!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[18]'
+      value: We outrunned them when the bumped on each other.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[19]'
+      value: And we rested for the night.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[20]'
+      value: 'Day 4:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[21]'
+      value: We found the mura the old man told us about!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[22]'
+      value: It was in a secret room, with a purple star too.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[23]'
+      value: The mura represents an unknown species.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[24]'
+      value: Probably the one who lived in these ruins.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[25]'
+      value: 'Day 5: '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[26]'
+      value: Strange vases started running oufter us.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[27]'
+      value: I guess they were created by the people who lived here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[28]'
+      value: 'Day 6:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[29]'
+      value: When we tried to leave the caves we found another secret room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[30]'
+      value: Another star was in there, and this time, Russell touched it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[31]'
+      value: Nothing happened.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[32]'
+      value: 'Day 7:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[33]'
+      value: Already one week.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[34]'
+      value: We were surprised by a giant beast.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[35]'
+      value: A worm? A snake? I don't really know...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[36]'
+      value: Thankfully, the beast did not see us.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[37]'
+      value: However, we came back to the last secret room to avoid it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[38]'
+      value: 'Dy 10:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[39]'
+      value: We are still in the same room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[40]'
+      value: The beast won't let us out.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[41]'
+      value: If this situation goes on, we will die of hunger.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[42]'
+      value: 'Day 18:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[43]'
+      value: It can't goes on anymore.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[44]'
+      value: The beast seems to have a weak spot on its tail.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[45]'
+      value: We will attack it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[46]'
+      value: 'Day 19:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[47]'
+      value: It worked!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[48]'
+      value: The beast ran away when we attacked its weak spot.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[49]'
+      value: We can leave this place and go to Kairos!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[50]'
+      value: The last planet on our list.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[51]'
+      value: I will let this logbook here if anyone needs advises.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[52]'
+      value: Good luck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_dialoguesEnglish.Array.data[53]'
+      value: And it's signed with the name "Taylor"
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[0].a
@@ -177993,7 +178223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _hasAnotherDialogue
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[0]'
@@ -178090,7 +178320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherDialogues.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.size
@@ -178278,7 +178508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[1]'
-      value: "Allez, ram\xE8ne-moi les 3 \xE9toiles cach\xE9es sur Igara!"
+      value: Meow.
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_otherDialogues.Array.data[2]'
@@ -178471,6 +178701,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _otherDialoguesEnglish.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[10].a
       value: 1
       objectReference: {fileID: 0}
@@ -178485,6 +178719,14 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _otherTextColors.Array.data[10].r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_otherDialoguesEnglish.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: '_otherDialoguesEnglish.Array.data[1]'
+      value: Meow.
       objectReference: {fileID: 0}
     - target: {fileID: 4219750200953209086, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: m_LocalPosition.y

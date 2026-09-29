@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LanguageManager : MonoBehaviour
 {
@@ -18,10 +19,12 @@ public class LanguageManager : MonoBehaviour
     public void English()
     {
         _language = 1;
+       
     }
 
     public void French()
     {
         _language = 0;
+       
     }
 }
