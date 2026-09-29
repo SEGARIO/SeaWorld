@@ -31,6 +31,7 @@ public class DelayedPlayerFollower : MonoBehaviour
     private void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
+        CheckpointManager._hasWolf = true;
         player = FindObjectOfType<PlayerController>().gameObject.transform;
         this.transform.position = new Vector3(_talkingNpc.transform.position.x, _talkingNpc.transform.position.y +1 , _talkingNpc.transform.position.z);
         Destroy(_talkingNpc);

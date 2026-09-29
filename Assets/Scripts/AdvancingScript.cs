@@ -12,6 +12,7 @@ public class AdvancingScript : MonoBehaviour
     public Advance advanceStar;
     public GameObject _viser;
     public bool _canVibrate;
+    public SpaceShipLife _life;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -56,6 +57,11 @@ public class AdvancingScript : MonoBehaviour
         _anim.enabled = false;
         _speed = _spaceSpeed;
         _trainSpaceScript.enabled = true;
-       // advanceStar.enabled = true;
+        // advanceStar.enabled = true;
+        _life._life = 20;
+        for (int i = 0; i < 9; i++)
+        {
+            _life._flames[i].SetActive(false);
+        }
     }
 }

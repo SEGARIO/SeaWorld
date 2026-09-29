@@ -245,6 +245,7 @@ public class PlayerLife : MonoBehaviour
     public void Resetter()
     {
         //FindObjectOfType<GameManager>()._checkpoint = null;
+        Star._starNumber = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

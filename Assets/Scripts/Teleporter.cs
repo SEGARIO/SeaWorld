@@ -22,11 +22,13 @@ public class Teleporter : MonoBehaviour
     public Animator _anim;
     public GameObject _dialogue;
     public GameObject _dialogueText;
-
+    CheckpointManager _checkpointManager;
+    public bool _isCheckpoint;
   
     private void Start()
     {
-        _nextRoom.SetActive(false);
+        _checkpointManager = FindObjectOfType<CheckpointManager>();
+        //_nextRoom.SetActive(false);
         _light = GameObject.Find("Sun Light").GetComponent<Light>();
     }
     private void OnTriggerEnter(Collider other)
@@ -78,6 +80,10 @@ public class Teleporter : MonoBehaviour
         {
             playerController.enabled = false;
             //FindObjectOfType<Camera>().gameObject.SetActive(false);
+        }
+       if(_isCheckpoint)
+        {
+            CheckpointManager._position = _position.position;
         }
     }
 }
