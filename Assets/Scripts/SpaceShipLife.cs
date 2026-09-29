@@ -34,7 +34,7 @@ public class SpaceShipLife : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             _life -= 1;
-            _flames[9 - _life].SetActive(true);
+            _flames[(18 - _life)/2].SetActive(true);
             GameFeel.Instance.PlayJuice(1.5f, 0.6f);
             GameFeel.Instance.Flash(0.5f);
 
