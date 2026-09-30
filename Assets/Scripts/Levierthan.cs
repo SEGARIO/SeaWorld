@@ -56,6 +56,7 @@ public class Levierthan : MonoBehaviour
     public GameObject circle;
     public Powerup _powerup;
    public PlayerController playerController;
+    public AudioSource _source;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -150,6 +151,7 @@ public class Levierthan : MonoBehaviour
         _timerStalactit = Random.Range(_minTimerStalactitAttack, _maxTimerStalactitAttack);
         _timer = _timerStalactit;
         _animator.SetTrigger("Stalactit");
+        _source.Play();
         Invoke("SpawnStalactit", _timeBetweenStalactits);
     }
 
