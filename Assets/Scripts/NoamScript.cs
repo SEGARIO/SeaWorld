@@ -19,7 +19,7 @@ public class NoamScript : MonoBehaviour
         else
         {
             _cam.backgroundColor = Color.white;
-            _names.color = Color.black;
+           // _names.color = Color.black;
         }
 
         Invoke("ChangeScene", _creditsDuration);

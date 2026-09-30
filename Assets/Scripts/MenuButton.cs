@@ -18,7 +18,7 @@ public class MenuButton : MonoBehaviour
     [SerializeField] private TMP_Text _buttonText;
     float lightAngle = 0f;
     public AudioClip _clip;
-    AudioSource _source;
+    public AudioSource _source;
     bool _canPlaySound;
     int indexQuit;
 
@@ -32,7 +32,7 @@ public class MenuButton : MonoBehaviour
 
     private void Awake()
     {
-        _source = FindObjectOfType<AudioSource>();
+      
         rectTransform = GetComponent<RectTransform>();
         startPosition = rectTransform.localPosition;
         _canPlaySound = true;

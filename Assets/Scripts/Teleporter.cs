@@ -24,7 +24,8 @@ public class Teleporter : MonoBehaviour
     public GameObject _dialogueText;
     CheckpointManager _checkpointManager;
     public bool _isCheckpoint;
-  
+    public AudioSource _musicSource;
+    public AudioClip _musicToPlay;
     private void Start()
     {
         _checkpointManager = FindObjectOfType<CheckpointManager>();
@@ -40,6 +41,11 @@ public class Teleporter : MonoBehaviour
             playerController.enabled = false;
             _anim.enabled = false;
             FindObjectOfType<LerpPosition>().enabled = false;
+            if (_musicToPlay != null && _musicSource.clip != _musicToPlay)
+            {
+                FindObjectOfType<MusicManager>()._nextClip = _musicToPlay ;
+                FindObjectOfType<MusicManager>().ChangeMusic();
+            }
             //agent = Acolyt.GetComponent<NavMeshAgent>();
             //agent.enabled = false;
             _ch.enabled = false;
