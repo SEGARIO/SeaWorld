@@ -16,6 +16,7 @@ public class WaterRiser : MonoBehaviour
     public Material _mat;
     bool _canRiseWater = true;
     public ParticleSystem _system;
+    public AudioSource _source;
     bool _canPLaySystem = true;
     private void Start()
     {
@@ -54,6 +55,8 @@ public class WaterRiser : MonoBehaviour
             if(_canPLaySystem)
             {
                 _system.Play();
+                
+                _source.Play();
                 GameFeel.Instance.PlayJuice(2, 0.5f);
                 _canPLaySystem =false;
             }

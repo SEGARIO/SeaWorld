@@ -57,7 +57,7 @@ public class NOCs : MonoBehaviour
     public string _npcSecondNameEnglish;
     public string[] _dialoguesEnglish;
     public string[] _otherDialoguesEnglish;
-
+    public Animator _camAnim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -107,6 +107,7 @@ public class NOCs : MonoBehaviour
             if (Gamepad.current.buttonSouth.isPressed && _canPress)
             {
                 _isTalking = true ;
+                _camAnim.SetBool("IsTalking", true);
                 _nameText.text = _npcName;
                 _nameText.color = _npcNameColor;
                 if (_anim != null)
@@ -234,6 +235,7 @@ public class NOCs : MonoBehaviour
         if(!_hasFinishedTalkingDialogue && _index >= _dialogues.Length)
         {
             _isTalking = false;
+            _camAnim.SetBool("IsTalking", false);
             _player.GetComponent<PlayerController>()._animator.SetBool("IsTalking", false);
             if (_anim != null)
             {
