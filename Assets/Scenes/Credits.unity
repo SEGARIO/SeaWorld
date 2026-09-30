@@ -11251,6 +11251,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 695788113}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _camAnim
+      value: 
+      objectReference: {fileID: 1830337300}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _npcName
       value: Noam
       objectReference: {fileID: 0}
@@ -11308,7 +11312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _audios.Array.size
-      value: 23
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _haveMultipleIdles
@@ -11325,43 +11329,43 @@ PrefabInstance:
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: 9f5b6c2d003f947489bef7b58e607af2, type: 3}
+      objectReference: {fileID: 8300000, guid: e6eb5701b570208439ff6c0f404b531c, type: 3}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[1]'
       value: 
-      objectReference: {fileID: 8300000, guid: c1c0cd84f84404b4fa2079066baa248d, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[2]'
       value: 
-      objectReference: {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[3]'
       value: 
-      objectReference: {fileID: 8300000, guid: 395f9994122a12445b2c4abd04438d0b, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[4]'
       value: 
-      objectReference: {fileID: 8300000, guid: 9f5b6c2d003f947489bef7b58e607af2, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[5]'
       value: 
-      objectReference: {fileID: 8300000, guid: c1c0cd84f84404b4fa2079066baa248d, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[6]'
       value: 
-      objectReference: {fileID: 8300000, guid: 3e6e96ee17f050247b85320468e46e47, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[7]'
       value: 
-      objectReference: {fileID: 8300000, guid: 395f9994122a12445b2c4abd04438d0b, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[8]'
       value: 
-      objectReference: {fileID: 8300000, guid: 9f5b6c2d003f947489bef7b58e607af2, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: '_audios.Array.data[9]'
       value: 
-      objectReference: {fileID: 8300000, guid: c1c0cd84f84404b4fa2079066baa248d, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _dialogues.Array.size
       value: 23
@@ -35298,6 +35302,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6294508013172393185, guid: d424932ca87e7b048b3065cff2f13635, type: 3}
   m_PrefabInstance: {fileID: 1800883969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1830337300 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5280856268953975849, guid: 82a04d1e6894c5c49a2653d25abde114, type: 3}
+  m_PrefabInstance: {fileID: 1695812380}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1893427525
 GameObject:
