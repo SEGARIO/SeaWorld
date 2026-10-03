@@ -17403,6 +17403,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 91931578}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _camAnim
+      value: 
+      objectReference: {fileID: 1566718898679037848}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _npcName
       value: BLOC NOTES
       objectReference: {fileID: 0}
@@ -19532,6 +19536,10 @@ PrefabInstance:
       propertyPath: _pressA
       value: 
       objectReference: {fileID: 94164953}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _camAnim
+      value: 
+      objectReference: {fileID: 1566718898679037848}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _npcName
       value: LIVRE D'HISTOIRE
@@ -109835,6 +109843,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2073789296}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _camAnim
+      value: 
+      objectReference: {fileID: 1566718898679037848}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _npcName
       value: Carnet de bord
       objectReference: {fileID: 0}
@@ -167888,7 +167900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &844839096
 RectTransform:
   m_ObjectHideFlags: 0
@@ -186738,7 +186750,7 @@ MonoBehaviour:
   _dialoguesEnglish:
   - ...
   _otherDialoguesEnglish: []
-  _camAnim: {fileID: 0}
+  _camAnim: {fileID: 1566718898679037848}
 --- !u!54 &934330349
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -212443,6 +212455,10 @@ PrefabInstance:
       propertyPath: _pressA
       value: 
       objectReference: {fileID: 1060973446}
+    - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: _camAnim
+      value: 
+      objectReference: {fileID: 1566718898679037848}
     - target: {fileID: 2067207842976549832, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
       propertyPath: _npcName
       value: JOURNAL INTIME
@@ -274763,7 +274779,7 @@ PrefabInstance:
       objectReference: {fileID: 844839095}
     - target: {fileID: 2787182260820641564, guid: 0cf10e12e2584f54e940949809188720, type: 3}
       propertyPath: _isCheckpoint
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2787182260820641564, guid: 0cf10e12e2584f54e940949809188720, type: 3}
       propertyPath: _lightColor.a
@@ -370786,6 +370802,10 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 321464596}
+    - target: {fileID: 7195930665758286006, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1987768328509903883, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
     - {fileID: 4236973547731206313, guid: 2fd1bc5000aaa9a4a9db607666e85755, type: 3}
@@ -433928,6 +433948,10 @@ PrefabInstance:
     - target: {fileID: 6064839140254414414, guid: 2fb7f69c652f79c4283795330131801d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485268806970938565, guid: 2fb7f69c652f79c4283795330131801d, type: 3}
+      propertyPath: _layerMask.m_Bits
+      value: 4979
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

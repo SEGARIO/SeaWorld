@@ -28,6 +28,8 @@ public class ElectricActivation : MonoBehaviour
             if (collision.gameObject.GetComponent<ElectricBullet>()._isElectric)
             {
                 _anim.SetTrigger("Activate");
+                GameFeel.Instance.PlayJuice(2, 0.5f);
+                GameFeel.Instance.Flash(0.1f);
                 _rend.material = _NewMat;
             }
 
