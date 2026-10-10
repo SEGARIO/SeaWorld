@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController))]
-public class PlayerController : MonoBehaviour
+public class RobotPlayerController : MonoBehaviour
 {
     public float speed = 6f;
     public float rotationSpeed = 10f;
@@ -13,15 +13,14 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
     private Vector3 velocity;
     public ParticleSystem _smokeParticles;
-    PlayerSwitcher _playerSwitcher;
-    float timerChangePlayer;
+  
     public Animator _animator;
     int _randomIdle;
+   
 
-    
     void Start()
     {
-        _playerSwitcher = FindObjectOfType<PlayerSwitcher>();
+       
         controller = GetComponent<CharacterController>();
         if (SceneManager.GetActiveScene().name != "Subway")
         {
@@ -47,20 +46,20 @@ public class PlayerController : MonoBehaviour
 
             controller.Move(move * speed * Time.deltaTime);
 
-            if(move.magnitude > 0.7f)
+            if (move.magnitude > 0.7f)
             {
                 _smokeParticles.startLifetime = move.magnitude;
             }
 
-            if(move.magnitude < 0.8f)
+            if (move.magnitude < 0.8f)
             {
-                _animator.speed = move.magnitude*3;
+                _animator.speed = move.magnitude * 3;
             }
             else
             {
                 _animator.speed = 1;
             }
-          
+
         }
         else
         {
@@ -99,12 +98,12 @@ public class PlayerController : MonoBehaviour
             _animator.SetBool("IsRunning", false);
             _animator.SetBool("IsWalking", false);
         }
-            if (move.magnitude >= 0.9f)
-            {
+        if (move.magnitude >= 0.9f)
+        {
             _animator.SetBool("IsRunning", true);
             _animator.SetBool("IsWalking", false);
         }
-               
+
         if (move.magnitude > 0f && move.magnitude < 0.9f)
         {
             _animator.SetBool("IsRunning", false);

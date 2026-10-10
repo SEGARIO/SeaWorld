@@ -12,6 +12,7 @@ public class Piece : MonoBehaviour
     public Color _enemyColor;
     public Color _playedColor;
     public Color _overColor;
+    public GameObject _targets;
 
     public SO_ChessPiece _chessPiece;
 
@@ -36,13 +37,26 @@ public class Piece : MonoBehaviour
     }
     private void OnMouseEnter()
     {
+        Debug.Log("Enter");
         onMouseEnter?.Invoke();
+
         for (int i = 0; i < _outlineRends.Length; i++)
         {
             _outlineRends[i].GetComponent<Renderer>().material.color = _overColor;
         }
     }
 
+    private void Update()
+    {
+        if(_isBeingPlayed)
+        {
+            _targets.SetActive(true);
+        }
+        else
+        {
+            _targets.SetActive(false);
+        }
+    }
     private void OnMouseExit()
     {
         onMouseExit?.Invoke();
@@ -58,6 +72,7 @@ public class Piece : MonoBehaviour
                 _outlineRends[i].GetComponent<Renderer>().material.color = _enemyColor;
             }
         }
+        _isBeingPlayed = false;
     }
 
     private void OnMouseDown()
@@ -67,5 +82,6 @@ public class Piece : MonoBehaviour
         {
             _outlineRends[i].GetComponent<Renderer>().material.color = _playedColor;
         }
+        _isBeingPlayed = true;
     }
 }
