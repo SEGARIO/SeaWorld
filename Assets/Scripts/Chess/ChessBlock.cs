@@ -11,6 +11,7 @@ public class ChessBlock : MonoBehaviour
     public UnityEvent onMouseEnter;
     public UnityEvent onMouseExit;
     public UnityEvent onMouseClick;
+    public GameObject _target;
 
     private void Start()
     {
@@ -49,5 +50,6 @@ public class ChessBlock : MonoBehaviour
         {
             _rend[i].material = _clickMat;
         }
+        _target.transform.position = this.transform.position;
     }
 }
