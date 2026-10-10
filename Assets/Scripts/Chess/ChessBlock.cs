@@ -20,6 +20,8 @@ public class ChessBlock : MonoBehaviour
           _mats[i] =  _rend[i].material;
         }
     }
+
+
     private void OnMouseEnter()
     {
         Debug.Log("Enter");
