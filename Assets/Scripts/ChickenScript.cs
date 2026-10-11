@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ChickenScript : MonoBehaviour
 {
-    public animator _anim;
+    public Animator _anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
