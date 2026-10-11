@@ -23,6 +23,7 @@ public class RobotPlayerController : MonoBehaviour
 
     void Update()
     {
+        _anim.SetInteger("Random", Random.Range(0, 3));
         // Directions relatives à la caméra
         Vector3 forward = _camera.forward;
         Vector3 right = _camera.right;
