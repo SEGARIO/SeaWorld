@@ -268,8 +268,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1740091962782629248}
   - component: {fileID: 3815459115281549925}
-  - component: {fileID: 7557463296967418579}
-  - component: {fileID: 9172537906853542414}
   m_Layer: 0
   m_Name: ChessBlock
   m_TagString: Untagged
@@ -312,74 +310,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &7557463296967418579
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3608646081980361673}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!114 &9172537906853542414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3608646081980361673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5c4ac086551ab47aa22211d7f709b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rend:
-  - {fileID: 3767693029599585763}
-  - {fileID: 9186439561204895456}
-  - {fileID: 8903362433935857113}
-  - {fileID: 1653473963456277352}
-  - {fileID: 8303047508712694848}
-  _mats:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  _overMat: {fileID: 2100000, guid: 17a28f65f4305ef43a25ff1e21ba8e96, type: 2}
-  _clickMat: {fileID: 2100000, guid: a24c0fec987e12a49b40f7d6bc26cb94, type: 2}
-  onMouseEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onMouseExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onMouseClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &6077494343412343725
 GameObject:
   m_ObjectHideFlags: 0
