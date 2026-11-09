@@ -3,20 +3,28 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
-public class ThirdPersonController : MonoBehaviour
+public class MotorcycleController : MonoBehaviour
 {
     [Header("References")]
     public Transform playerCamera;
+    public Transform bikeVisual;
 
     [Header("Movement")]
-    public float moveSpeed = 5f;
-    public float sprintSpeed = 8f;
-    public float acceleration = 12f;
-    public float rotationSpeed = 12f;
+    public float moveSpeed = 12f;
+    public float sprintSpeed = 20f;
+    public float acceleration = 5f;
+    public float brakeAcceleration = 12f;
+    public float coastDeceleration = 2f;
+    public float steeringSpeed = 90f;
+    public float lowSpeedSteering = 0.3f;
+
+    [Header("Motorcycle Lean")]
+    public float maxLeanAngle = 30f;
+    public float leanSmoothness = 5f;
 
     [Header("Camera")]
-    public float cameraDistance = 5f;
-    public float cameraHeight = 1.6f;
+    public float cameraDistance = 6f;
+    public float cameraHeight = 2f;
     public float mouseSensitivity = 0.15f;
     public float gamepadSensitivity = 120f;
     public float cameraSmoothness = 12f;
@@ -29,8 +37,11 @@ public class ThirdPersonController : MonoBehaviour
 
     private CharacterController controller;
 
-    private Vector3 horizontalVelocity;
+    private float currentSpeed;
     private float verticalVelocity;
+
+    private float steeringInput;
+    private float throttleInput;
 
     private float yaw;
     private float pitch = 15f;
@@ -41,6 +52,9 @@ public class ThirdPersonController : MonoBehaviour
     private float yawVelocity;
     private float pitchVelocity;
 
+    private float currentLean;
+    private Quaternion visualStartRotation;
+
     private bool cursorLocked = true;
 
     void Start()
@@ -49,6 +63,9 @@ public class ThirdPersonController : MonoBehaviour
 
         yaw = transform.eulerAngles.y;
         smoothYaw = yaw;
+
+        if (bikeVisual != null)
+            visualStartRotation = bikeVisual.localRotation;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -64,15 +81,15 @@ public class ThirdPersonController : MonoBehaviour
     void LateUpdate()
     {
         UpdateCamera();
+        UpdateLean();
     }
 
     // CURSOR
 
     void HandleCursor()
     {
-        if (Keyboard.current == null) return;
-
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        if (Keyboard.current != null &&
+            Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             cursorLocked = false;
             Cursor.lockState = CursorLockMode.None;
@@ -122,6 +139,8 @@ public class ThirdPersonController : MonoBehaviour
     {
         Vector2 input = Vector2.zero;
 
+        // Keyboard
+
         if (Keyboard.current != null)
         {
             if (Keyboard.current.wKey.isPressed ||
@@ -139,6 +158,8 @@ public class ThirdPersonController : MonoBehaviour
                 input.x += 1;
         }
 
+        // Gamepad
+
         if (Gamepad.current != null)
         {
             Vector2 stick = Gamepad.current.leftStick.ReadValue();
@@ -149,22 +170,8 @@ public class ThirdPersonController : MonoBehaviour
 
         input = Vector2.ClampMagnitude(input, 1f);
 
-        // Direction relative to camera
-
-        Vector3 camForward = playerCamera.forward;
-        Vector3 camRight = playerCamera.right;
-
-        camForward.y = 0;
-        camRight.y = 0;
-
-        camForward.Normalize();
-        camRight.Normalize();
-
-        Vector3 moveDirection =
-            camForward * input.y +
-            camRight * input.x;
-
-        moveDirection.Normalize();
+        throttleInput = input.y;
+        steeringInput = input.x;
 
         // Sprint
 
@@ -176,31 +183,61 @@ public class ThirdPersonController : MonoBehaviour
         if (Gamepad.current != null)
             sprinting |= Gamepad.current.leftStickButton.isPressed;
 
-        float targetSpeed = sprinting ? sprintSpeed : moveSpeed;
+        float maxSpeed = sprinting ? sprintSpeed : moveSpeed;
 
-        Vector3 targetVelocity = moveDirection * targetSpeed;
+        // ACCELERATION / BRAKING
 
-        horizontalVelocity = Vector3.MoveTowards(
-            horizontalVelocity,
-            targetVelocity,
-            acceleration * Time.deltaTime
-        );
+        float targetSpeed = throttleInput * maxSpeed;
 
-        // Rotate player
-
-        if (moveDirection.sqrMagnitude > 0.01f)
+        if (Mathf.Abs(throttleInput) > 0.01f)
         {
-            Quaternion targetRotation =
-                Quaternion.LookRotation(moveDirection);
+            float accel = Mathf.Sign(targetSpeed) != Mathf.Sign(currentSpeed)
+                && Mathf.Abs(currentSpeed) > 0.1f
+                ? brakeAcceleration
+                : acceleration;
 
-            transform.rotation = Quaternion.Slerp(
-                transform.rotation,
-                targetRotation,
-                rotationSpeed * Time.deltaTime
+            currentSpeed = Mathf.MoveTowards(
+                currentSpeed,
+                targetSpeed,
+                accel * Time.deltaTime
+            );
+        }
+        else
+        {
+            // Natural slowdown when releasing the throttle
+
+            currentSpeed = Mathf.MoveTowards(
+                currentSpeed,
+                0f,
+                coastDeceleration * Time.deltaTime
             );
         }
 
-        // Gravity
+        // STEERING
+
+        float speedFactor = Mathf.Lerp(
+            lowSpeedSteering,
+            1f,
+            Mathf.Clamp01(Mathf.Abs(currentSpeed) / moveSpeed)
+        );
+
+        float reverseFactor = currentSpeed < -0.1f ? -1f : 1f;
+
+        float turnAmount = steeringInput *
+                           steeringSpeed *
+                           speedFactor *
+                           reverseFactor *
+                           Time.deltaTime;
+
+        transform.Rotate(0f, turnAmount, 0f);
+
+        // FORWARD MOVEMENT
+
+        Vector3 moveDirection = transform.forward;
+
+        Vector3 horizontalVelocity = moveDirection * currentSpeed;
+
+        // GRAVITY
 
         if (controller.isGrounded && verticalVelocity < 0)
             verticalVelocity = -2f;
@@ -211,6 +248,37 @@ public class ThirdPersonController : MonoBehaviour
         finalVelocity.y = verticalVelocity;
 
         controller.Move(finalVelocity * Time.deltaTime);
+    }
+
+    // MOTORCYCLE LEAN
+
+    void UpdateLean()
+    {
+        if (bikeVisual == null) return;
+
+        float speedFactor = Mathf.Clamp01(
+            Mathf.Abs(currentSpeed) / moveSpeed
+        );
+
+        float targetLean = -steeringInput * maxLeanAngle * speedFactor;
+
+        currentLean = Mathf.Lerp(
+            currentLean,
+            targetLean,
+            leanSmoothness * Time.deltaTime
+        );
+
+        Quaternion leanRotation = Quaternion.Euler(
+            0f,
+            0f,
+            currentLean
+        );
+
+        bikeVisual.localRotation = Quaternion.Slerp(
+            bikeVisual.localRotation,
+            visualStartRotation * leanRotation,
+            leanSmoothness * Time.deltaTime
+        );
     }
 
     // CAMERA POSITION
