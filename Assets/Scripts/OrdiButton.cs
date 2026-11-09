@@ -34,9 +34,32 @@ public class OrdiButton : MonoBehaviour
     {
         if (objectToDetect == null)
             return;
+        if (Gamepad.current.buttonEast.wasPressedThisFrame)
+        {
+            if (_isPowerButton)
+            {
+                _controller.enabled = true;
+            }
 
-        // Vérifie si les deux RectTransform se chevauchent
-        objectIsOnButton = RectTransformUtility.RectangleContainsScreenPoint(
+            if (objectToActivate != null)
+            {
+                objectToActivate.SetActive(true);
+
+                for (int i = 0; i < objectToDisctivate.Length; i++)
+                {
+
+                    objectToDisctivate[i].SetActive(false);
+                }
+                if (objectToActivate2 != null)
+                {
+                    Invoke("Reactivate", 2);
+                }
+
+
+            }
+        }
+            // Vérifie si les deux RectTransform se chevauchent
+            objectIsOnButton = RectTransformUtility.RectangleContainsScreenPoint(
             GetComponent<RectTransform>(),
             objectToDetect.position,
             null
