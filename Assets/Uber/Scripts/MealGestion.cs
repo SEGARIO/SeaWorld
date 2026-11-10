@@ -16,6 +16,7 @@ public class MealGestion : MonoBehaviour
     public TMP_Text _dialogueText;
     public TMP_Text _timerText;
     public GameObject _dialogueBox;
+    public GameObject _bag;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,6 +31,11 @@ public class MealGestion : MonoBehaviour
         if (_hasMeal)
         {
             _ActiveClient.SetActive(true);
+            _bag.SetActive(true);
+        }
+        else
+        {
+           
         }
 
         if(_timer <= 0)
@@ -41,6 +47,7 @@ public class MealGestion : MonoBehaviour
         if (_hasMeal && other.gameObject.tag == "Player")
         {
             _ActiveClient.SetActive(false);
+            _bag.SetActive(false);
             FindObjectOfType<BuildingPicker>()._adressText.text = "";
             Invoke("NewOrder", 3);
             if(_timer >= _maxTimer / 2)
