@@ -56,7 +56,7 @@ public class MotorcycleController : MonoBehaviour
     private Quaternion visualStartRotation;
 
     private bool cursorLocked = true;
-
+    public ParticleSystem particleSystem;
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -76,6 +76,8 @@ public class MotorcycleController : MonoBehaviour
         HandleCursor();
         HandleCameraInput();
         HandleMovement();
+        var emission = particleSystem.emission;
+        emission.rateOverTime = controller.velocity.magnitude * 10f;
     }
 
     void LateUpdate()
