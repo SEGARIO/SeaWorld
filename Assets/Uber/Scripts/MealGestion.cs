@@ -1,6 +1,7 @@
 using System.Threading;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class MealGestion : MonoBehaviour
 {
@@ -10,8 +11,8 @@ public class MealGestion : MonoBehaviour
     public string[] _DialoguesGood;
     public string[] _DialoguesMedium;
     public string[] _DialoguesBad;
-
-     float _timer;
+    public ItemLots itemSelection;
+    public float _timer;
     public float _maxTimer = 100;
     public TMP_Text _dialogueText;
     public TMP_Text _timerText;
@@ -62,6 +63,8 @@ public class MealGestion : MonoBehaviour
             {
                 _dialogueText.text = _DialoguesBad[Random.RandomRange(0, _DialoguesBad.Length)];
             }
+            BikeManager._money += (int)_timer;
+            OpenShop();
             _dialogueBox.SetActive(true);
             _hasMeal = false;
         }
@@ -72,5 +75,10 @@ public class MealGestion : MonoBehaviour
         _dialogueBox.SetActive(false);
         FindObjectOfType<BuildingPicker>().NewAdress();
         _timer = _maxTimer;
+    }
+
+    void OpenShop()
+    {
+        itemSelection.ShowItems();
     }
 }

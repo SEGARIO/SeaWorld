@@ -67,8 +67,7 @@ public class MotorcycleController : MonoBehaviour
         if (bikeVisual != null)
             visualStartRotation = bikeVisual.localRotation;
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        
     }
 
     void Update()
